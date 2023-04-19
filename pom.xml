@@ -130,13 +130,6 @@
             </dependency>
 
 
-            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>5.8.14</version>
-            </dependency>
-
             <!--TODO 引入common 本模块的工具包-->
 
             <!--mybatis Jar包-->
@@ -256,11 +249,11 @@
                 <version>${guava.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>io.github.openfeign</groupId>
-                <artifactId>feigen-jackson</artifactId>
-                <version>${feigin.jackson.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>io.github.openfeign</groupId>-->
+<!--                <artifactId>feigen-jackson</artifactId>-->
+<!--                <version>${feigin.jackson.version}</version>-->
+<!--            </dependency>-->
 
         </dependencies>
     </dependencyManagement>
