@@ -11,6 +11,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>train-system-management</module>
+    </modules>
+
     <groupId>com.train</groupId>
     <artifactId>train-parents</artifactId>
     <version>0.0.1-SNAPSHOT</version>
