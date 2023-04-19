@@ -60,20 +60,8 @@
         <lombok.version>1.18.10</lombok.version>
         <pagehelper.version>5.2.1</pagehelper.version>
         <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
-
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-test</artifactId>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--        </dependency>-->
-<!--    </dependencies>-->
 
     <repositories>
         <repository>
