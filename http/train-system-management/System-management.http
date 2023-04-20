@@ -1,0 +1,4 @@
+GET http://localhost:10002/system/management/account/name
+Accept: application/json
+
+###
