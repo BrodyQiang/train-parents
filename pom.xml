@@ -16,6 +16,7 @@
     <modules>
         <module>train-system-management</module>
         <module>train-gateway</module>
+        <module>train-common</module>
     </modules>
 
     <groupId>com.train</groupId>
@@ -35,9 +36,9 @@
 
         <!--定义公共jar的版本信息-->
         <spring-boot.version>2.1.18.RELEASE</spring-boot.version>
-        <spring-cloud.version>Greenwich.SR6</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.1.3.RELEASE</spring-cloud-alibaba.version>
-        <spring-boot-admin.version>2.1.5</spring-boot-admin.version>
+        <spring-cloud-local.version>Greenwich.SR6</spring-cloud-local.version>
+        <spring-cloud-alibaba-local.version>2.1.3.RELEASE</spring-cloud-alibaba-local.version>
+        <spring-boot-admin-local.version>2.1.5</spring-boot-admin-local.version>
         <fastjson.version>1.2.70</fastjson.version>
         <junit.version>4.12</junit.version>
         <mybatis-spring-version>1.3.1</mybatis-spring-version>
@@ -61,15 +62,9 @@
         <lombok.version>1.18.10</lombok.version>
         <pagehelper.version>5.2.1</pagehelper.version>
         <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
-        <project.version>0.0.1-SNAPSHOT</project.version>
+        <common.version>0.0.1-SNAPSHOT</common.version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.spring.io/release</url>
-        </repository>
-    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -84,25 +79,22 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>${spring-cloud-local.version}</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
 
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba.version}</version>
+                <version>${spring-cloud-alibaba-local.version}</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
 
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-dependencies</artifactId>
-                <version>${spring-boot-admin.version}</version>
+                <version>${spring-boot-admin-local.version}</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alibaba.fastjson2/fastjson2 -->
@@ -124,11 +116,11 @@
                 <version>${log4j.version}</version>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>com.train</groupId>-->
-<!--                <artifactId>train-common</artifactId>-->
-<!--                <version>${project.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.train</groupId>
+                <artifactId>train-common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
             <!--TODO 引入common 本模块的工具包-->
 
             <!--mybatis Jar包-->
