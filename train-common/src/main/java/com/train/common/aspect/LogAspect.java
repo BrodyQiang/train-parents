@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class LogAspect {
     public LogAspect() {
-        System.out.println("Common LogAspect");
+        System.out.println("-----调用切面成功-----");
     }
 
     private final static Logger LOG = LoggerFactory.getLogger(LogAspect.class);

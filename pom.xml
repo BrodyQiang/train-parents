@@ -17,6 +17,7 @@
         <module>train-system-management</module>
         <module>train-gateway</module>
         <module>train-common</module>
+        <module>train-generator</module>
     </modules>
 
     <groupId>com.train</groupId>
@@ -121,7 +122,6 @@
                 <artifactId>train-common</artifactId>
                 <version>${common.version}</version>
             </dependency>
-            <!--TODO 引入common 本模块的工具包-->
 
             <!--mybatis Jar包-->
             <dependency>

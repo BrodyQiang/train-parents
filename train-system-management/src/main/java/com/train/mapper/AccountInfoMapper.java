@@ -1,0 +1,42 @@
+package com.train.mapper;
+
+import com.train.domain.AccountInfo;
+import com.train.domain.AccountInfoExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface AccountInfoMapper {
+
+    //根据条件查询记录总数
+    long countByExample(AccountInfoExample example);
+
+    //根据条件删除记录
+    int deleteByExample(AccountInfoExample example);
+
+    //根据主键删除记录
+    int deleteByPrimaryKey(Long id);
+
+    //保存记录,不管记录里面的属性是否为空
+    int insert(AccountInfo record);
+
+    //保存属性不为空的记录
+    int insertSelective(AccountInfo record);
+
+    //根据条件查询记录集
+    List<AccountInfo> selectByExample(AccountInfoExample example);
+
+    //根据主键查询记录
+    AccountInfo selectByPrimaryKey(Long id);
+
+    //根据条件更新属性不为空的记录
+    int updateByExampleSelective(@Param("record") AccountInfo record, @Param("example") AccountInfoExample example);
+
+    //根据条件更新记录
+    int updateByExample(@Param("record") AccountInfo record, @Param("example") AccountInfoExample example);
+
+    //根据主键更新属性不为空的记录
+    int updateByPrimaryKeySelective(AccountInfo record);
+
+    //根据主键更新记录
+    int updateByPrimaryKey(AccountInfo record);
+}
