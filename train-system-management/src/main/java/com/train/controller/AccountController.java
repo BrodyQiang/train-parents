@@ -30,7 +30,7 @@ public class AccountController {
 
     @PostMapping("/register")
     public DBResult<Long> register(@Valid AccountRegisterReq bean) {
-        return new DBResult<>(accountService.register(bean));
+        return DBResult.success(accountService.register(bean));
     }
 
 }

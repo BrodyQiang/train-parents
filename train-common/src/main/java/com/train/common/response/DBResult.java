@@ -24,6 +24,22 @@ public class DBResult<T> {
         this.result = result;
     }
 
+    public static <T> DBResult success(T result) {
+        DBResult res = new DBResult();
+        res.setSuccess(true);
+        res.setMessage("操作成功");
+        res.setResult(result);
+        return res;
+    }
+
+    public static <T> DBResult fail(String message) {
+        DBResult res = new DBResult();
+        res.setSuccess(false);
+        res.setMessage(message);
+        res.setResult(null);
+        return res;
+    }
+
 
     public boolean getSuccess() {
         return success;

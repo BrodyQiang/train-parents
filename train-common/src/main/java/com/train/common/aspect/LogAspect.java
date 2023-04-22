@@ -36,6 +36,7 @@ public class LogAspect {
     public void controllerPointcut() {
     }
 
+    // 前置通知
     @Before("controllerPointcut()")
     public void doBefore(JoinPoint joinPoint) {
 

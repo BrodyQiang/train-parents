@@ -7,6 +7,6 @@ Accept: application/json
 POST http://localhost:10002/system/management/account/register
 Content-Type: application/x-www-form-urlencoded
 
-mobile=12445678031
+mobile=12444678031
 
 ###
