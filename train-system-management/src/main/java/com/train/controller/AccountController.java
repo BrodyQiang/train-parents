@@ -1,7 +1,10 @@
 package com.train.controller;
 
 import com.train.common.response.DBResult;
+import com.train.request.AccountLoginReq;
 import com.train.request.AccountRegisterReq;
+import com.train.request.AccountSendCodeReq;
+import com.train.response.AccountLoginRes;
 import com.train.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +34,17 @@ public class AccountController {
     @PostMapping("/register")
     public DBResult<Long> register(@Valid AccountRegisterReq bean) {
         return DBResult.success(accountService.register(bean));
+    }
+
+    @PostMapping("/rendCode")
+    public DBResult rendCode(@Valid AccountSendCodeReq bean) {
+        accountService.sendCode(bean);
+        return DBResult.success();
+    }
+
+    @PostMapping("/login")
+    public DBResult<AccountLoginRes> login(@Valid AccountLoginReq bean) {
+        return DBResult.success(accountService.login(bean));
     }
 
 }

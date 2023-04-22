@@ -32,6 +32,14 @@ public class DBResult<T> {
         return res;
     }
 
+    public static <T> DBResult success() {
+        DBResult res = new DBResult();
+        res.setSuccess(true);
+        res.setMessage("操作成功");
+        res.setResult(null);
+        return res;
+    }
+
     public static <T> DBResult fail(String message) {
         DBResult res = new DBResult();
         res.setSuccess(false);

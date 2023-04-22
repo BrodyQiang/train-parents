@@ -10,3 +10,17 @@ Content-Type: application/x-www-form-urlencoded
 mobile=12444678031
 
 ###
+
+POST http://localhost:10002/system/management/account/rendCode
+Content-Type: application/x-www-form-urlencoded
+
+mobile=13012345670
+
+###
+
+POST http://localhost:10002/system/management/account/login
+Content-Type: application/x-www-form-urlencoded
+
+mobile=13012345670&code=tref
+
+###
