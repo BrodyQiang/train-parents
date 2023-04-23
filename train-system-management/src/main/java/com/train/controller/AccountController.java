@@ -28,7 +28,7 @@ public class AccountController {
 
     @GetMapping("/count")
     public DBResult<Long> count() {
-        return new DBResult<>(accountService.count());
+        return DBResult.success(accountService.count());
     }
 
     @PostMapping("/register")
