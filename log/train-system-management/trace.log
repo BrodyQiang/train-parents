@@ -1341,3 +1341,49 @@ Correct the classpath of your application so that it contains a single, compatib
 2023-04-24 15:01:03.075 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-04-24 15:01:03.076 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
 2023-04-24 15:01:03.119 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 42 ms
+2023-04-24 15:21:11.148 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on LAPTOP-GCJDUA8L with PID 32484 (C:\Users\52847\Desktop\xiangmu\train-parents\train-system-management\target\classes started by 52847 in C:\Users\52847\Desktop\xiangmu\train-parents)
+2023-04-24 15:21:11.153 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 15:21:12.769 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 15:21:12.784 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 15:21:12.794 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 15:21:12.794 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 15:21:12.926 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 15:21:12.926 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1692 ms
+2023-04-24 15:21:13.549 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 15:21:13.686 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 15:21:13.951 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 15:21:13.989 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 15:21:13.992 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 15:21:14.022 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 15:21:14.139 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 15:21:14.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 15:21:14.167 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 3.748 seconds (JVM running for 6.24)
+2023-04-24 15:21:14.170 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 15:21:14.170 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 15:24:16.407 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:24:16.408 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:24:16.415 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
+2023-04-24 15:29:26.884 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-24 15:29:26.885 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-24 15:29:32.372 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on LAPTOP-GCJDUA8L with PID 28340 (C:\Users\52847\Desktop\xiangmu\train-parents\train-system-management\target\classes started by 52847 in C:\Users\52847\Desktop\xiangmu\train-parents)
+2023-04-24 15:29:32.375 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 15:29:34.042 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 15:29:34.057 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 15:29:34.066 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 15:29:34.066 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 15:29:34.209 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 15:29:34.209 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1788 ms
+2023-04-24 15:29:34.929 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 15:29:35.070 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 15:29:35.345 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 15:29:35.387 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 15:29:35.390 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 15:29:35.418 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 15:29:35.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 15:29:35.571 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 15:29:35.576 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 3.732 seconds (JVM running for 5.081)
+2023-04-24 15:29:35.578 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 15:29:35.579 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 15:29:49.168 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 15:29:49.168 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-24 15:29:49.176 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 8 ms

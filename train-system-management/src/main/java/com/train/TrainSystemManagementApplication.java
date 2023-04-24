@@ -21,6 +21,7 @@ public class TrainSystemManagementApplication {
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！！");
         LOG.info("系统支撑服务地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
+        LOG.info("谢李康的分支");
         System.out.println("-----项目启动成功-----");
         System.out.printf("系统支撑服务地址: \thttp://127.0.0.1:%s", env.getProperty("server.port"));
     }
