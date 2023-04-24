@@ -5,6 +5,7 @@ import com.train.common.exception.BusinessException;
 import com.train.common.response.DBResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -23,47 +24,42 @@ public class ControllerExceptionHandler {
 
     /**
      * 所有异常统一处理
+     *
      * @param e
      * @return
      */
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public DBResult exceptionHandler(Exception e) {
-        DBResult result = new DBResult();
         LOG.error("系统异常：", e);
-        result.setSuccess(false);
-        result.setMessage("系统出现异常，请联系管理员");
-        return result;
+        return DBResult.fail("系统出现异常，请联系管理员");
+
     }
 
     /**
      * 业务异常统一处理
+     *
      * @param e
      * @return
      */
     @ExceptionHandler(value = BusinessException.class)
     @ResponseBody
     public DBResult exceptionHandler(BusinessException e) {
-        DBResult result = new DBResult();
         LOG.error("业务异常：{}", e.getError().getDesc());
-        result.setSuccess(false);
-        result.setMessage(e.getError().getDesc());
-        return result;
+        return DBResult.fail(e.getError().getDesc());
     }
 
     /**
      * 校验异常统一处理
+     *
      * @param e
      * @return
      */
     @ExceptionHandler(value = BindException.class)
     @ResponseBody
     public DBResult exceptionHandler(BindException e) {
-        DBResult result = new DBResult();
-        LOG.error("校验异常：{}", e.getBindingResult().getAllErrors().stream().map(err -> err.getDefaultMessage()).collect(Collectors.toList()));
-        result.setSuccess(false);
-        result.setMessage(e.getBindingResult().getAllErrors().stream().map(err -> err.getDefaultMessage()).collect(Collectors.toList()).toString());
-        return result;
+        LOG.error("校验异常：{}", e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList()));
+        return DBResult.fail(e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList()).toString());
     }
 
 }
