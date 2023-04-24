@@ -1,0 +1,19 @@
+package com.train.request;
+
+import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+
+/**
+ * @author Mr.Liu
+ * @email yxml2580@163.com
+ * @createDate 2023/4/22 17:41
+ */
+@Data
+public class AccountSendCodeReq {
+
+    @NotBlank(message = "【手机号】不能为空")
+    @Pattern(regexp = "^1\\d{10}$", message = "手机号码格式错误")
+    private String mobile;
+}

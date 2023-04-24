@@ -1,5 +1,7 @@
 package com.train.common.exception;
 
+import com.train.common.enums.BusinessExceptionEnum;
+
 /***
  * @author Mr.Liu
  * @date 2023/4/21 21:45

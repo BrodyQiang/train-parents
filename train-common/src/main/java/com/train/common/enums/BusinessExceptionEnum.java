@@ -1,4 +1,4 @@
-package com.train.common.exception;
+package com.train.common.enums;
 
 public enum BusinessExceptionEnum {
 
