@@ -3,6 +3,7 @@ package com.train.controller;
 import com.train.common.response.DBResult;
 import com.train.request.AccountRegisterReq;
 import com.train.service.AccountService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +24,7 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
+    @ApiOperation("强你好")
     @GetMapping("/count")
     public DBResult<Long> count() {
         return new DBResult<>(accountService.count());
