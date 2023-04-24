@@ -64,6 +64,7 @@
         <pagehelper.version>5.2.1</pagehelper.version>
         <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
         <common.version>0.0.1-SNAPSHOT</common.version>
+        <spring-plugin-core.version>2.0.0.RELEASE</spring-plugin-core.version>
     </properties>
 
 
@@ -226,6 +227,12 @@
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.plugin</groupId>
+                <artifactId>spring-plugin-core</artifactId>
+                <version>${spring-plugin-core.version}</version>
             </dependency>
 
             <dependency>

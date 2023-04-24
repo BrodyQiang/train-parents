@@ -6,12 +6,10 @@ import com.train.request.AccountRegisterReq;
 import com.train.request.AccountSendCodeReq;
 import com.train.response.AccountLoginRes;
 import com.train.service.AccountService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -22,18 +20,21 @@ import javax.validation.Valid;
  */
 @RestController
 @RequestMapping("/account")
+@Api(value = "AccountController", tags = "账号管理")
 public class AccountController {
 
     @Autowired
     private AccountService accountService;
 
-    @ApiOperation("强你好")
+
     @GetMapping("/count")
+    @ApiOperation(value = "统计账号数量", notes = "统计账号数量")
     public DBResult<Long> count() {
         return DBResult.success(accountService.count());
     }
 
     @PostMapping("/register")
+    @ApiOperation(value = "注册账号", notes = "{}")
     public DBResult<Long> register(@Valid AccountRegisterReq bean) {
         return DBResult.success(accountService.register(bean));
     }
