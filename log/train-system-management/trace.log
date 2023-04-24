@@ -1341,3 +1341,563 @@ Correct the classpath of your application so that it contains a single, compatib
 2023-04-24 15:01:03.075 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-04-24 15:01:03.076 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
 2023-04-24 15:01:03.119 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 42 ms
+2023-04-24 19:06:58.938 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on DESKTOP-J1SB6R6 with PID 15948 (D:\studies\backend\train-parents\train-system-management\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-04-24 19:06:58.941 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 19:07:00.086 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 19:07:00.104 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:07:00.118 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 19:07:00.118 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 19:07:00.219 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 19:07:00.219 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1234 ms
+2023-04-24 19:07:00.834 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 19:07:00.970 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:07:01.276 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 19:07:01.340 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 19:07:01.349 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 19:07:01.390 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 19:07:01.486 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:07:01.503 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 19:07:01.505 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 2.97 seconds (JVM running for 4.251)
+2023-04-24 19:07:01.508 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 19:07:01.508 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 19:09:20.315 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 19:09:20.316 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-24 19:09:20.323 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
+2023-04-24 19:09:20.379 ERROR c.t.common.controller.ControllerExceptionHandler  :61   [32m                  [0;39m 校验异常：[【手机号】不能为空]
+2023-04-24 19:11:13.524 ERROR c.t.common.controller.ControllerExceptionHandler  :61   [32m                  [0;39m 校验异常：[【手机号】不能为空]
+2023-04-24 19:11:21.690 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-24 19:11:21.691 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:11:29.260 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on DESKTOP-J1SB6R6 with PID 15808 (D:\studies\backend\train-parents\train-system-management\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-04-24 19:11:29.263 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 19:11:30.348 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 19:11:30.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:11:30.367 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 19:11:30.367 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 19:11:30.449 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 19:11:30.450 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1156 ms
+2023-04-24 19:11:31.190 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 19:11:31.417 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:11:31.759 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 19:11:31.825 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 19:11:31.829 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 19:11:31.863 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 19:11:31.988 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:11:32.025 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 19:11:32.027 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 3.175 seconds (JVM running for 4.383)
+2023-04-24 19:11:32.029 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 19:11:32.030 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 19:11:46.867 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 19:11:46.867 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-24 19:11:46.881 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 14 ms
+2023-04-24 19:11:46.991 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:11:46.992 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:11:46.992 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:11:46.992 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:11:47.043 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13012345670"}]
+2023-04-24 19:12:06.241 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-24 19:12:06.549 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-24 19:12:06.594 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:12:06.780 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13012345670(String)
+2023-04-24 19:12:06.905 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:12:06.906 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1649752906733326336, 13012345670
+2023-04-24 19:12:06.909 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:12:10.798 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 19:12:12.021 INFO  com.train.service.AccountService                  :88   [32m                  [0;39m 生成的短信验证码为：xm64
+2023-04-24 19:12:15.065 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==>  Preparing: insert into sms_record (id, mobile, code, send_time, expire_time, send_status, send_type) values (?, ?, ?, ?, ?, ?, ?) 
+2023-04-24 19:12:15.069 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==> Parameters: 1650457612669554688(Long), 13012345670(String), xm64(String), null, null, null, null
+2023-04-24 19:12:16.549 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13012345670' for key 'mobile_unique'
+### The error may involve com.train.mapper.SmsRecordMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into sms_record (id, mobile, code,        send_time, expire_time, send_status,        send_type)     values (?, ?, ?,        ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13012345670' for key 'mobile_unique'
+; Duplicate entry '13012345670' for key 'mobile_unique'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13012345670' for key 'mobile_unique'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy88.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy90.insert(Unknown Source)
+	at com.train.service.AccountService.sendCode(AccountService.java:95)
+	at com.train.controller.AccountController.rendCode(AccountController.java:44)
+	at com.train.controller.AccountController$$FastClassBySpringCGLIB$$f9e7416a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.train.common.aspect.LogAspect.doAround(LogAspect.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.train.controller.AccountController$$EnhancerBySpringCGLIB$$de6e24ca.rendCode(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13012345670' for key 'mobile_unique'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy121.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy119.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 81 common frames omitted
+2023-04-24 19:14:04.005 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:14:04.005 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:14:04.006 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:14:04.006 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:14:04.007 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13012345671"}]
+2023-04-24 19:14:06.955 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:14:06.956 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13012345671(String)
+2023-04-24 19:14:06.957 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 0
+2023-04-24 19:14:06.957 INFO  com.train.service.AccountService                  :76   [32m                  [0;39m 手机号不存在，插入一条数据
+2023-04-24 19:14:06.958 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m ==>  Preparing: insert into account_info (id, mobile) values (?, ?) 
+2023-04-24 19:14:06.958 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m ==> Parameters: 1650458088387514368(Long), 13012345671(String)
+2023-04-24 19:14:06.963 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m <==    Updates: 1
+2023-04-24 19:14:06.963 INFO  com.train.service.AccountService                  :88   [32m                  [0;39m 生成的短信验证码为：b5j9
+2023-04-24 19:14:06.964 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==>  Preparing: insert into sms_record (id, mobile, code, send_time, expire_time, send_status, send_type) values (?, ?, ?, ?, ?, ?, ?) 
+2023-04-24 19:14:06.964 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==> Parameters: 1650458088416874496(Long), 13012345671(String), b5j9(String), null, null, null, null
+2023-04-24 19:14:06.966 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m <==    Updates: 1
+2023-04-24 19:14:06.966 INFO  com.train.service.AccountService                  :97   [32m                  [0;39m 保存短信记录表
+2023-04-24 19:14:06.967 INFO  com.train.service.AccountService                  :100  [32m                  [0;39m 对接短信通道
+2023-04-24 19:14:06.970 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-04-24 19:14:06.970 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：2965 ms -------------
+2023-04-24 19:30:41.083 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:30:41.083 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:30:41.083 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:30:41.083 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:30:41.084 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 19:30:41.085 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:30:41.086 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:30:41.086 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 0
+2023-04-24 19:30:41.087 INFO  com.train.service.AccountService                  :76   [32m                  [0;39m 手机号不存在，插入一条数据
+2023-04-24 19:30:41.087 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m ==>  Preparing: insert into account_info (id, mobile) values (?, ?) 
+2023-04-24 19:30:41.087 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m ==> Parameters: 1650462258070949888(Long), 13000000000(String)
+2023-04-24 19:30:41.089 DEBUG com.train.mapper.AccountInfoMapper.insert         :181  [32m                  [0;39m <==    Updates: 1
+2023-04-24 19:30:41.089 INFO  com.train.service.AccountService                  :88   [32m                  [0;39m 生成的短信验证码为：k76c
+2023-04-24 19:30:41.089 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==>  Preparing: insert into sms_record (id, mobile, code, send_time, expire_time, send_status, send_type) values (?, ?, ?, ?, ?, ?, ?) 
+2023-04-24 19:30:41.090 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==> Parameters: 1650462258079338496(Long), 13000000000(String), k76c(String), null, null, null, null
+2023-04-24 19:30:41.091 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m <==    Updates: 1
+2023-04-24 19:30:41.091 INFO  com.train.service.AccountService                  :97   [32m                  [0;39m 保存短信记录表
+2023-04-24 19:30:41.091 INFO  com.train.service.AccountService                  :100  [32m                  [0;39m 对接短信通道
+2023-04-24 19:30:41.091 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-04-24 19:30:41.092 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2023-04-24 19:32:16.578 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:32:16.579 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:32:16.579 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:32:16.579 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:32:16.580 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 19:32:16.581 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:32:16.581 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:32:16.582 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:32:16.582 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 19:32:16.583 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:32:16.583 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 19:32:16.583 INFO  com.train.service.AccountService                  :88   [32m                  [0;39m 生成的短信验证码为：y5sy
+2023-04-24 19:32:16.584 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==>  Preparing: insert into sms_record (id, mobile, code, send_time, expire_time, send_status, send_type) values (?, ?, ?, ?, ?, ?, ?) 
+2023-04-24 19:32:16.585 DEBUG com.train.mapper.SmsRecordMapper.insert           :181  [32m                  [0;39m ==> Parameters: 1650462658614398976(Long), 13000000000(String), y5sy(String), null, null, null, null
+2023-04-24 19:32:16.588 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13000000000' for key 'mobile_unique'
+### The error may involve com.train.mapper.SmsRecordMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into sms_record (id, mobile, code,        send_time, expire_time, send_status,        send_type)     values (?, ?, ?,        ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13000000000' for key 'mobile_unique'
+; Duplicate entry '13000000000' for key 'mobile_unique'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13000000000' for key 'mobile_unique'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy88.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy90.insert(Unknown Source)
+	at com.train.service.AccountService.sendCode(AccountService.java:95)
+	at com.train.controller.AccountController.rendCode(AccountController.java:44)
+	at com.train.controller.AccountController$$FastClassBySpringCGLIB$$f9e7416a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.train.common.aspect.LogAspect.doAround(LogAspect.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.train.controller.AccountController$$EnhancerBySpringCGLIB$$de6e24ca.rendCode(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '13000000000' for key 'mobile_unique'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy121.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy119.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 81 common frames omitted
+2023-04-24 19:38:12.094 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-24 19:38:12.095 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:38:12.097 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-24 19:38:12.102 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-24 19:38:19.266 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on DESKTOP-J1SB6R6 with PID 14808 (D:\studies\backend\train-parents\train-system-management\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-04-24 19:38:19.269 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 19:38:20.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 19:38:20.463 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:38:20.471 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 19:38:20.471 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 19:38:20.556 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 19:38:20.556 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1229 ms
+2023-04-24 19:38:21.129 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 19:38:21.255 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:38:21.481 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 19:38:21.528 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 19:38:21.531 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 19:38:21.559 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 19:38:21.694 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:38:21.720 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 19:38:21.723 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 2.855 seconds (JVM running for 4.013)
+2023-04-24 19:38:21.726 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 19:38:21.726 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 19:46:50.639 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-24 19:46:50.640 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:46:54.382 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on DESKTOP-J1SB6R6 with PID 6220 (D:\studies\backend\train-parents\train-system-management\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-04-24 19:46:54.385 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-24 19:46:55.526 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-24 19:46:55.537 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:46:55.545 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-24 19:46:55.545 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-24 19:46:55.623 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-24 19:46:55.623 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1207 ms
+2023-04-24 19:46:56.165 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-24 19:46:56.302 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-24 19:46:56.533 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-24 19:46:56.578 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-24 19:46:56.582 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-24 19:46:56.607 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-24 19:46:56.722 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-24 19:46:56.739 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-24 19:46:56.742 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 2.77 seconds (JVM running for 3.952)
+2023-04-24 19:46:56.744 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-24 19:46:56.744 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-24 19:49:43.888 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 19:49:43.890 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-24 19:49:43.920 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 29 ms
+2023-04-24 19:49:44.084 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:49:44.084 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:49:44.085 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:49:44.085 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:49:44.176 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 19:49:44.242 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-24 19:49:44.396 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-24 19:49:44.407 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:49:44.428 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:49:44.441 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:49:44.441 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 19:49:44.442 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:49:44.450 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 19:49:44.455 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 19:49:44.456 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:49:44.457 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 19:49:44.458 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650462258079338496, 13000000000, k76c, null, null, null, null
+2023-04-24 19:49:44.459 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:49:44.463 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":"k76c"}
+2023-04-24 19:49:44.463 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：381 ms -------------
+2023-04-24 19:50:59.760 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:50:59.761 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:50:59.761 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:50:59.761 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:50:59.761 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 19:50:59.763 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:50:59.764 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:50:59.765 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:50:59.765 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 19:50:59.765 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:50:59.766 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 19:50:59.767 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 19:50:59.768 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:50:59.768 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 19:50:59.768 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650462258079338496, 13000000000, k76c, null, null, null, null
+2023-04-24 19:50:59.769 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:50:59.769 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":"k76c"}
+2023-04-24 19:50:59.770 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2023-04-24 19:56:05.154 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:56:05.154 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 19:56:05.155 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 19:56:05.155 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:56:05.155 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 19:56:05.158 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:56:05.159 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:56:05.161 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:56:05.161 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 19:56:05.162 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:56:05.162 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 19:56:05.163 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 19:56:05.163 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:56:05.166 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 19:56:05.167 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650462258079338496, 13000000000, k76c, null, null, null, null
+2023-04-24 19:56:05.167 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:56:05.168 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":"k76c"}
+2023-04-24 19:56:05.168 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2023-04-24 19:56:06.340 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 19:56:06.341 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/login POST
+2023-04-24 19:56:06.341 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.login
+2023-04-24 19:56:06.342 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 19:56:06.346 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"k76c","mobile":"13000000000"}]
+2023-04-24 19:56:06.348 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 19:56:06.349 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:56:06.350 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 19:56:06.350 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 19:56:06.351 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:56:06.353 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 19:56:06.354 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 19:56:06.355 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 19:56:06.356 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650462258079338496, 13000000000, k76c, null, null, null, null
+2023-04-24 19:56:06.357 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 19:56:06.397 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":{"id":1650462258070949888,"mobile":"13000000000"}}
+2023-04-24 19:56:06.398 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：58 ms -------------
+2023-04-24 20:07:50.069 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 20:07:50.070 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 20:07:50.070 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 20:07:50.071 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 20:07:50.071 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-04-24 20:07:50.074 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 20:07:50.075 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 20:07:50.076 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 20:07:50.076 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650462258070949888, 13000000000
+2023-04-24 20:07:50.077 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 20:07:50.077 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 20:07:50.078 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 20:07:50.080 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13000000000(String)
+2023-04-24 20:07:50.081 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 20:07:50.082 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650462258079338496, 13000000000, k76c, null, null, null, null
+2023-04-24 20:07:50.082 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 20:07:50.083 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":"k76c"}
+2023-04-24 20:07:50.083 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2023-04-24 20:13:13.218 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 20:13:13.219 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/rendCode POST
+2023-04-24 20:13:13.219 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.rendCode
+2023-04-24 20:13:13.220 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-24 20:13:13.220 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"13012345671"}]
+2023-04-24 20:13:13.221 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==>  Preparing: select id, mobile from account_info WHERE ( mobile = ? ) 
+2023-04-24 20:13:13.222 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m ==> Parameters: 13012345671(String)
+2023-04-24 20:13:13.223 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==    Columns: id, mobile
+2023-04-24 20:13:13.224 TRACE com.train.mapper.AccountInfoMapper.selectByExample:187  [32m                  [0;39m <==        Row: 1650458088387514368, 13012345671
+2023-04-24 20:13:13.224 DEBUG com.train.mapper.AccountInfoMapper.selectByExample:181  [32m                  [0;39m <==      Total: 1
+2023-04-24 20:13:13.225 INFO  com.train.service.AccountService                  :83   [32m                  [0;39m 手机号存在，不需要插入数据
+2023-04-24 20:13:13.226 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==>  Preparing: select id, mobile, code, send_time, expire_time, send_status, send_type from sms_record WHERE ( mobile = ? ) 
+2023-04-24 20:13:13.227 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m ==> Parameters: 13012345671(String)
+2023-04-24 20:13:13.228 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==    Columns: id, mobile, code, send_time, expire_time, send_status, send_type
+2023-04-24 20:13:13.229 TRACE com.train.mapper.SmsRecordMapper.selectByExample  :187  [32m                  [0;39m <==        Row: 1650458088416874496, 13012345671, b5j9, null, null, null, null
+2023-04-24 20:13:13.229 DEBUG com.train.mapper.SmsRecordMapper.selectByExample  :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 20:13:13.230 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":"b5j9"}
+2023-04-24 20:13:13.230 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2023-04-24 20:17:48.599 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-24 20:17:48.599 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://localhost:10002/system/management/account/count GET
+2023-04-24 20:17:48.600 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.count
+2023-04-24 20:17:48.600 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2023-04-24 20:17:48.600 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: []
+2023-04-24 20:17:48.601 DEBUG com.train.mapper.AccountInfoMapper.countByExample :181  [32m                  [0;39m ==>  Preparing: select count(*) from account_info 
+2023-04-24 20:17:48.601 DEBUG com.train.mapper.AccountInfoMapper.countByExample :181  [32m                  [0;39m ==> Parameters: 
+2023-04-24 20:17:48.602 TRACE com.train.mapper.AccountInfoMapper.countByExample :187  [32m                  [0;39m <==    Columns: count(*)
+2023-04-24 20:17:48.603 TRACE com.train.mapper.AccountInfoMapper.countByExample :187  [32m                  [0;39m <==        Row: 10
+2023-04-24 20:17:48.603 DEBUG com.train.mapper.AccountInfoMapper.countByExample :181  [32m                  [0;39m <==      Total: 1
+2023-04-24 20:17:48.604 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":10}
+2023-04-24 20:17:48.604 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-04-24 20:18:27.869 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-24 20:18:27.870 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-24 20:18:27.872 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-24 20:18:27.878 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.

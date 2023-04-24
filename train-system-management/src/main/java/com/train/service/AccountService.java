@@ -64,7 +64,7 @@ public class AccountService {
         return info.getId();
     }
 
-    public void sendCode(AccountSendCodeReq bean) {
+    public String sendCode(AccountSendCodeReq bean) {
 
         String mobile = bean.getMobile();
 
@@ -83,21 +83,37 @@ public class AccountService {
             log.info("手机号存在，不需要插入数据");
         }
 
-        // 生成短信验证码
-        String code = RandomUtil.randomString(4);
-        log.info("生成的短信验证码为：{}", code);
+        String code;
 
-        // 保存短息记录表 表中字段应该有：手机号、验证码、发送时间、过期时间、发送状态、发送类型  --->手机号，短信验证码，有效期，是否已使用，业务类型，发送时间，使用时间
-        SmsRecord smsRecord = new SmsRecord();
-        smsRecord.setId(SnowUtil.getSnowflakeNextId());
-        smsRecord.setMobile(mobile);
-        smsRecord.setCode(code);
-        smsRecordMapper.insert(smsRecord);
+        // 判断短信信息表中是否存在该手机号的记录
+        SmsRecordExample smsRecordExample = new SmsRecordExample();
+        smsRecordExample.createCriteria().andMobileEqualTo(mobile);
+        List<SmsRecord> smsRecords = smsRecordMapper.selectByExample(smsRecordExample);
 
-        log.info("保存短信记录表");
+        // 如果不存在 进行插入
+        if (CollUtil.isEmpty(smsRecords)) {
 
-        // 对接短信通道，发送短信
-        log.info("对接短信通道");
+            // 生成短信验证码
+            code = RandomUtil.randomString(4);
+            log.info("生成的短信验证码为：{}", code);
+
+            // 保存短息记录表 表中字段应该有：手机号、验证码、发送时间、过期时间、发送状态、发送类型  --->手机号，短信验证码，有效期，是否已使用，业务类型，发送时间，使用时间
+            SmsRecord smsRecord = new SmsRecord();
+            smsRecord.setId(SnowUtil.getSnowflakeNextId());
+            smsRecord.setMobile(mobile);
+            smsRecord.setCode(code);
+            smsRecordMapper.insert(smsRecord);
+
+            log.info("保存短信记录表");
+
+            // 对接短信通道，发送短信
+            log.info("对接短信通道");
+        }else {
+            // 如果存在，就从数据库中查询出来
+            SmsRecord smsRecord = smsRecords.get(0);
+            code = smsRecord.getCode();
+        }
+        return code;
 
     }
 

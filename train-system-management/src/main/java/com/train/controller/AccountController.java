@@ -34,19 +34,20 @@ public class AccountController {
     }
 
     @PostMapping("/register")
-    @ApiOperation(value = "注册账号", notes = "{}")
-    public DBResult<Long> register(@Valid AccountRegisterReq bean) {
+    @ApiOperation(value = "注册账号", notes = "{\n" +
+            " \"mobile\": \"12312321\"\n" +
+            "}")
+    public DBResult<Long> register(@RequestBody @Valid AccountRegisterReq bean) {
         return DBResult.success(accountService.register(bean));
     }
 
     @PostMapping("/rendCode")
-    public DBResult rendCode(@Valid AccountSendCodeReq bean) {
-        accountService.sendCode(bean);
-        return DBResult.success();
+    public DBResult rendCode(@RequestBody @Valid AccountSendCodeReq bean) {
+        return DBResult.success(accountService.sendCode(bean));
     }
 
     @PostMapping("/login")
-    public DBResult<AccountLoginRes> login(@Valid AccountLoginReq bean) {
+    public DBResult<AccountLoginRes> login(@RequestBody @Valid AccountLoginReq bean) {
         return DBResult.success(accountService.login(bean));
     }
 

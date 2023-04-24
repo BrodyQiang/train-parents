@@ -2,3 +2,12 @@ GET http://localhost:10001/system/management/account/name
 Accept: application/json
 
 ###
+
+###
+
+POST http://localhost:10001/system/management/account/rendCode
+Content-Type: application/json
+
+{
+  "mobile":"13012345671"
+}
