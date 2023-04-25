@@ -47,8 +47,8 @@
         <druid.version>1.2.5</druid.version>
         <druid-spring-version>1.1.2</druid-spring-version>
         <hutool.version>5.4.1</hutool.version>
-        <mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
-        <mybatis-plus.version>3.2.0</mybatis-plus.version>
+        <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
+        <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <mysql-connector-java.version>5.1.30</mysql-connector-java.version>
         <httpclient.version>4.5.2</httpclient.version>
         <commons-lang.version>2.6</commons-lang.version>
@@ -70,6 +70,18 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>cglib</groupId>
@@ -125,44 +137,44 @@
             </dependency>
 
             <!--mybatis Jar包-->
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>${mybatis.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis</groupId>-->
+<!--                <artifactId>mybatis</artifactId>-->
+<!--                <version>${mybatis.version}</version>-->
+<!--            </dependency>-->
 
-            <!--mybatis 和 spring 整合包-->
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis-spring</artifactId>
-                <version>${mybatis-spring-version}</version>
-            </dependency>
+<!--            &lt;!&ndash;mybatis 和 spring 整合包&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis</groupId>-->
+<!--                <artifactId>mybatis-spring</artifactId>-->
+<!--                <version>${mybatis-spring-version}</version>-->
+<!--            </dependency>-->
 
             <!--druid 数据源-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-spring-version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>druid</artifactId>-->
+<!--                <version>${druid.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--                <version>${druid-spring-version}</version>-->
+<!--            </dependency>-->
 
             <!-- 集成mybatis-->
             <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-spring-boot-starter.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis.spring.boot</groupId>-->
+<!--                <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--                <version>${mybatis-spring-boot-starter.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus</artifactId>-->
+<!--                <version>${mybatis-plus.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
