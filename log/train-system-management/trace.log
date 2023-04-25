@@ -3629,3 +3629,44 @@ Caused by: java.sql.SQLException: Conversion not supported for type java.time.Lo
 2023-04-25 14:45:11.947 DEBUG com.train.mapper.AccountLoginMapper.selectOne     :143  [32m                  [0;39m <==      Total: 1
 2023-04-25 14:45:12.630 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":{"createTime":1682403547000,"id":1,"mobile":"17606512411","password":"1","token":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtb2JpbGUiOiIxNzYwNjUxMjQxMSIsImV4cCI6MTY4MjQwNjkxMX0.PTp2lkld1YdyxFHRWmzTZIR3FjE8l3R1Oe5cthQ_gZrqrcaAvg1vHtzNU77OgNBXiiDMlgKTmSKx3ni_glWeHQ"}}
 2023-04-25 14:45:12.631 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：975 ms -------------
+2023-04-25 14:53:09.511 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-04-25 14:53:09.512 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-25 14:53:09.513 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-25 14:53:09.518 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-25 14:53:13.847 INFO  com.train.TrainSystemManagementApplication        :50   [32m                  [0;39m Starting TrainSystemManagementApplication on LAPTOP-GCJDUA8L with PID 14936 (C:\Users\52847\Desktop\xiangmu\train-parents\train-system-management\target\classes started by 52847 in C:\Users\52847\Desktop\xiangmu\train-parents)
+2023-04-25 14:53:13.850 INFO  com.train.TrainSystemManagementApplication        :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 14:53:15.432 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10002 (http)
+2023-04-25 14:53:15.447 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10002"]
+2023-04-25 14:53:15.457 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 14:53:15.457 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 14:53:15.606 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 14:53:15.606 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1711 ms
+2023-04-25 14:53:17.291 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-04-25 14:53:17.426 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-25 14:53:17.685 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-04-25 14:53:17.722 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-04-25 14:53:17.724 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-04-25 14:53:17.751 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-04-25 14:53:17.867 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10002"]
+2023-04-25 14:53:17.891 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10002 (http) with context path '/system/management'
+2023-04-25 14:53:17.895 INFO  com.train.TrainSystemManagementApplication        :59   [32m                  [0;39m Started TrainSystemManagementApplication in 4.562 seconds (JVM running for 5.915)
+2023-04-25 14:53:17.898 INFO  com.train.TrainSystemManagementApplication        :22   [32m                  [0;39m 启动成功！！
+2023-04-25 14:53:17.898 INFO  com.train.TrainSystemManagementApplication        :23   [32m                  [0;39m 系统支撑服务地址: 	http://127.0.0.1:10002
+2023-04-25 14:53:17.898 INFO  com.train.TrainSystemManagementApplication        :24   [32m                  [0;39m 谢李康的分支
+2023-04-25 14:53:21.229 INFO  o.a.c.c.C.[.[localhost].[/system/management]      :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25 14:53:21.229 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-25 14:53:21.238 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 9 ms
+2023-04-25 14:53:21.312 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-04-25 14:53:21.313 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10002/system/management/account/login POST
+2023-04-25 14:53:21.313 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.AccountController.login
+2023-04-25 14:53:21.313 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-04-25 14:53:21.373 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"mobile":"17606512411","password":"1"}]
+2023-04-25 14:53:21.452 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-25 14:53:21.586 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-25 14:53:21.593 DEBUG com.train.mapper.AccountLoginMapper.selectOne     :143  [32m                  [0;39m ==>  Preparing: SELECT id,mobile,password,create_time,update_time,delete_flag FROM account_info WHERE delete_flag='0' AND (mobile = ?) 
+2023-04-25 14:53:21.605 DEBUG com.train.mapper.AccountLoginMapper.selectOne     :143  [32m                  [0;39m ==> Parameters: 17606512411(String)
+2023-04-25 14:53:21.614 TRACE com.train.mapper.AccountLoginMapper.selectOne     :149  [32m                  [0;39m <==    Columns: id, mobile, password, create_time, update_time, delete_flag
+2023-04-25 14:53:21.616 TRACE com.train.mapper.AccountLoginMapper.selectOne     :149  [32m                  [0;39m <==        Row: 1, 17606512411, 1, 2023-04-25 14:19:07.0, null, 0
+2023-04-25 14:53:21.619 DEBUG com.train.mapper.AccountLoginMapper.selectOne     :143  [32m                  [0;39m <==      Total: 1
+2023-04-25 14:53:22.354 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"msg":"操作成功","result":{"createTime":1682403547000,"id":1,"mobile":"17606512411","password":"1","token":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtb2JpbGUiOiIxNzYwNjUxMjQxMSIsImV4cCI6MTY4MjQwNzQwMX0.yUyaJ4RTsYbcSMJytDNjzhZwLen6ZSkMVKcUOzb9mz3jIHKc1GQdej9v5z_yLd3nhO1xRBvuU6He3KF88x9_sw"}}
+2023-04-25 14:53:22.354 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：1044 ms -------------
