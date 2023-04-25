@@ -40,3 +40,710 @@
 2023-04-24 15:30:51.158 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.468 seconds (JVM running for 10.092)
 2023-04-24 15:30:51.160 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
 2023-04-24 15:30:51.161 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 15:12:46.647 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:12:48.004 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:12:48.577 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=770ae577-e107-319c-9b4b-a267a156ab47
+2023-04-25 15:12:50.584 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 15:12:50.584 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 15:12:50.584 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 15:12:50.585 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 15:12:50.586 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 15:12:50.586 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 15:12:50.586 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 15:12:50.801 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 15:12:51.694 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 15:12:52.719 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.631 seconds (JVM running for 9.194)
+2023-04-25 15:12:52.720 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 15:12:52.721 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 15:41:11.783 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:41:13.180 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:41:14.356 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:41:14.434 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:41:14.966 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:41:14.985 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:41:14.996 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:41:14.996 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:41:15.160 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:41:15.161 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1969 ms
+2023-04-25 15:41:15.369 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:41:17.238 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:41:17.240 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:41:17.253 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:41:17.262 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:41:17.802 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 15:42:26.772 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:42:28.152 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:42:29.325 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:42:29.397 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:42:29.884 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:42:29.901 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:42:29.910 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:42:29.911 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:42:30.077 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:42:30.078 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1914 ms
+2023-04-25 15:42:30.210 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:42:32.163 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:42:32.165 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:42:32.176 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:42:32.184 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:42:32.707 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 15:42:55.934 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:42:57.380 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:42:58.790 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:42:58.877 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:42:59.446 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:42:59.469 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:42:59.480 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:42:59.481 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:42:59.672 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:42:59.673 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2274 ms
+2023-04-25 15:42:59.903 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:43:01.990 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:43:01.992 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:43:02.003 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:43:02.011 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:43:02.604 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 15:47:58.345 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:47:59.703 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:48:00.756 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:48:00.834 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:48:01.307 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:48:01.321 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:48:01.330 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:48:01.330 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:48:01.486 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:48:01.487 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1772 ms
+2023-04-25 15:48:01.615 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:48:03.491 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:48:03.495 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:48:03.506 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:48:03.515 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:48:03.993 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 15:49:39.150 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:49:40.556 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:49:41.755 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:49:41.825 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:49:42.340 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:49:42.357 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:49:42.366 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:49:42.367 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:49:42.526 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:49:42.526 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1956 ms
+2023-04-25 15:49:42.652 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:49:44.579 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:49:44.581 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:49:44.591 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:49:44.600 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:49:45.197 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 15:51:35.729 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 15:51:37.165 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 15:51:38.312 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 15:51:38.382 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=38fea925-6957-3987-b773-478125ca251a
+2023-04-25 15:51:38.873 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10001 (http)
+2023-04-25 15:51:38.889 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10001"]
+2023-04-25 15:51:38.897 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-25 15:51:38.898 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-25 15:51:39.061 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-25 15:51:39.061 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1884 ms
+2023-04-25 15:51:39.189 WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration:41   [32m                  [0;39m 
+
+**********************************************************
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway at this time. Please remove spring-boot-starter-web dependency.
+
+**********************************************************
+
+
+2023-04-25 15:51:41.279 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+2023-04-25 15:51:41.281 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-25 15:51:41.291 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2023-04-25 15:51:41.299 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 15:51:41.935 ERROR org.springframework.boot.SpringApplication        :823  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routeDefinitionRouteLocator' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'routeDefinitionRouteLocator' parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.train.gateway.GatewayApplication.main(GatewayApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.convert.ConversionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=webFluxConversionService)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 22 common frames omitted
+2023-04-25 16:13:01.928 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 16:13:03.683 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 16:13:04.746 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.train.gateway]' package. Please check your configuration.
+2023-04-25 16:13:04.810 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=af882909-37f2-393e-9abc-153d8f3f1368
+2023-04-25 16:13:07.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 16:13:07.348 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 16:13:07.348 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 16:13:07.348 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 16:13:07.348 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 16:13:07.349 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 16:13:07.349 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 16:13:07.349 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 16:13:07.349 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 16:13:07.349 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 16:13:07.350 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 16:13:07.350 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 16:13:07.350 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 16:13:07.558 WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext:558  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-04-25 16:13:07.589 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 16:13:07.602 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-04-25 16:18:17.638 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 16:18:19.032 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 16:18:19.867 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 16:18:21.930 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 16:18:21.931 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 16:18:21.931 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 16:18:21.931 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 16:18:21.931 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 16:18:21.932 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 16:18:21.933 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 16:18:22.220 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 16:18:23.142 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 16:18:24.136 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.109 seconds (JVM running for 9.691)
+2023-04-25 16:18:24.138 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 16:18:24.138 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 16:20:19.985 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 16:20:21.479 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 16:20:22.543 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 16:20:24.695 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 16:20:24.695 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 16:20:24.696 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 16:20:24.696 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 16:20:24.696 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 16:20:24.696 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 16:20:24.696 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 16:20:24.697 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 16:20:25.107 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 16:20:26.142 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 16:20:27.139 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 9.02 seconds (JVM running for 10.791)
+2023-04-25 16:20:27.141 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 16:20:27.141 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 16:21:10.155 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 16:21:12.077 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 16:21:13.027 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 16:21:15.180 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 16:21:15.181 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 16:21:15.181 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 16:21:15.181 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 16:21:15.182 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 16:21:15.183 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 16:21:15.183 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 16:21:15.183 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 16:21:15.530 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 16:21:16.565 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 16:21:17.542 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 9.131 seconds (JVM running for 10.78)
+2023-04-25 16:21:17.544 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 16:21:17.544 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:12:11.723 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:12:13.159 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:12:14.102 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:12:16.197 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:12:16.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:12:16.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:12:16.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:12:16.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:12:16.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:12:16.199 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:12:16.577 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:12:17.679 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:12:18.644 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.704 seconds (JVM running for 10.225)
+2023-04-25 17:12:18.646 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:12:18.646 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:15:15.153 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:15:16.925 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:15:17.846 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:15:20.064 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:15:20.065 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:15:20.065 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:15:20.065 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:15:20.066 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:15:20.067 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:15:20.067 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:15:20.067 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:15:20.397 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:15:21.307 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:15:22.290 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 9.116 seconds (JVM running for 10.649)
+2023-04-25 17:15:22.292 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:15:22.292 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:18:03.289 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:18:04.628 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:18:05.466 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:18:07.830 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:18:07.830 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:18:07.831 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:18:07.832 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:18:07.832 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:18:07.832 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:18:07.832 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:18:07.832 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:18:08.178 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:18:09.337 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:18:10.348 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.677 seconds (JVM running for 10.322)
+2023-04-25 17:18:10.350 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:18:10.351 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:19:04.597 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:19:06.117 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:19:06.996 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:19:08.953 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:19:08.953 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:19:08.953 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:19:08.954 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:19:08.954 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:19:08.954 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:19:08.954 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:19:08.954 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:19:08.955 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:19:08.955 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:19:08.955 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:19:08.955 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:19:08.955 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:19:09.262 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:19:10.134 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:19:11.086 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.205 seconds (JVM running for 9.677)
+2023-04-25 17:19:11.087 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:19:11.088 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:20:29.958 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:20:31.329 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:20:32.263 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:20:34.333 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:20:34.334 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:20:34.334 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:20:34.334 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:20:34.335 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:20:34.335 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:20:34.335 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:20:34.336 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:20:34.671 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:20:35.607 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:20:36.550 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.214 seconds (JVM running for 9.696)
+2023-04-25 17:20:36.552 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:20:36.552 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:22:52.905 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:22:54.884 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:22:55.370 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:22:55.902 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:22:57.166 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:22:58.290 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:22:58.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:22:58.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:22:58.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:22:58.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:22:58.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:22:58.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:22:58.665 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:22:58.665 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:22:59.010 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:23:01.044 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:23:02.330 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:23:02.330 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:23:02.331 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:23:02.331 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:23:02.331 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:23:02.331 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:23:02.331 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:23:02.332 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:23:02.783 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :60   [32m                  [0;39m Unable to start LiveReload server
+2023-04-25 17:23:03.047 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 13.041 seconds (JVM running for 14.71)
+2023-04-25 17:23:03.049 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:23:03.050 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:23:04.147 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-25 17:23:06.276 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10001 or configure this application to listen on another port.
+
+2023-04-25 17:23:21.182 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:23:22.620 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:23:23.542 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:23:25.596 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:23:25.596 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:23:25.596 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:23:25.597 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:23:25.598 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:23:25.598 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:23:25.598 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:23:25.598 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:23:25.941 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:23:26.891 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:23:27.848 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.591 seconds (JVM running for 10.223)
+2023-04-25 17:23:27.850 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:23:27.850 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:24:33.913 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:24:35.310 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:24:36.231 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:24:38.314 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:24:38.314 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:24:38.315 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:24:38.315 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:24:38.315 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:24:38.315 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:24:38.315 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:24:38.316 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:24:38.653 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:24:39.589 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:24:40.553 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 8.302 seconds (JVM running for 10.018)
+2023-04-25 17:24:40.555 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:24:40.555 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 17:26:25.685 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25 17:26:27.030 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 17:26:27.836 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=92ae3d66-adfd-3ba6-b7f0-7e62426a5f80
+2023-04-25 17:26:29.859 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 17:26:29.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 17:26:29.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 17:26:29.860 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 17:26:29.861 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 17:26:29.862 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 17:26:29.862 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 17:26:30.194 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-25 17:26:31.104 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 17:26:32.070 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.973 seconds (JVM running for 9.56)
+2023-04-25 17:26:32.072 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 17:26:32.073 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001

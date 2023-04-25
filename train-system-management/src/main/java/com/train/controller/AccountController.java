@@ -37,8 +37,8 @@ public class AccountController {
 
     @PostMapping("/register")
     @ApiOperation(value = "注册账号", notes = "{}")
-    public DBResult<Long> register(@Valid AccountRegisterReq bean) {
-        return DBResult.success(accountService.register(bean));
+    public DBResult<Boolean> register(@RequestBody AccountLoginDto Dto) {
+        return DBResult.success(accountService.register(Dto));
     }
 
     @PostMapping("/rendCode")

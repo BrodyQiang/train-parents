@@ -1,5 +1,6 @@
 package com.train.common.util;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
@@ -22,16 +23,13 @@ public class JwtUtil {
                 .setExpiration(expiresAt)// 24 hour
                 .signWith(SignatureAlgorithm.HS512, SECRET)
                 .compact();
-        return new StringBuilder("Bearer ").append(jwt).toString(); //jwt前面一般都会加Bearer
+        return jwt;//jwt前面一般都会加Bearer
     }
 
-    public static Map<String, Object> validateToken(String token) throws Exception{
+    public static Claims parseJWT(String token) throws Exception{
             // parse the token.
-        Map<String, Object> body = Jwts.parser()
-                    .setSigningKey(SECRET)
-                    .parseClaimsJws(token)
-                    .getBody();
-
-            return body;
+        return Jwts.parser().setSigningKey(SECRET)
+                .parseClaimsJws(token)
+                .getBody();
     }
 }

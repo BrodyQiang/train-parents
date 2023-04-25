@@ -177,4 +177,30 @@ public class AccountService {
             throw new BusinessException(BusinessExceptionEnum.MOBILE_PASSWORD);
         }
     }
+
+
+    public Boolean register(AccountLoginDto Dto) {
+        if (Dto==null){
+            throw new BusinessException(BusinessExceptionEnum.PARAMETER_ERROR);
+        }
+        //先去数据库查询是否存在
+        LambdaQueryWrapper<AccountInfoBean> queryWrapper = new LambdaQueryWrapper<AccountInfoBean>()
+                .eq(AccountInfoBean::getMobile, Dto.getMobile());
+        AccountInfoBean accountInfoBean = accountLoginMapper.selectOne(queryWrapper);
+
+        if (ObjectUtil.isNotNull(accountInfoBean)) {
+            //return result.get(0).getId();
+            //如果存在
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_EXIST);
+        }
+
+
+        AccountInfoBean info = new AccountInfoBean();
+
+        // 使用的是雪花算法
+        info.setId(SnowUtil.getSnowflakeNextId());
+        info.setMobile(Dto.getMobile()).setPassword(Dto.getPassword());
+        int insert = accountLoginMapper.insert(info);
+        return insert==0?false:true;
+    }
 }

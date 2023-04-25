@@ -4,12 +4,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.annotation.Order;
+import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.schema.ModelRef;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Parameter;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Mr.Liu
@@ -31,8 +37,8 @@ public class SwaggerConfig {
                 // 这里一定要标注你控制器的位置
                 .apis(RequestHandlerSelectors.basePackage("com.train"))
                 .paths(PathSelectors.any())
-                .build();
-        /*.globalOperationParameters(operationParameters())*/
+                .build()
+                .globalOperationParameters(listParameter());
     }
 
 
@@ -60,4 +66,17 @@ public class SwaggerConfig {
         headers.add(new ParameterBuilder().name("token").description("校验token").modelRef(new ModelRef("string")).parameterType("header").required(true).defaultValue("").build());
         return headers;
     }*/
+
+    private List<Parameter> listParameter() {
+        // 头部参数
+        List<Parameter> parameters = new ArrayList<>();
+        parameters.add(new ParameterBuilder()
+                .name("LOGIN_USER")
+                .description("令牌认证")
+                .modelRef(new ModelRef("string"))
+                .defaultValue("")
+                .parameterType("header")
+                .required(false).build());
+        return parameters;
+    }
 }
