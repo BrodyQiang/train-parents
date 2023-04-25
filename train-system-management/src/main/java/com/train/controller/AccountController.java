@@ -1,9 +1,11 @@
 package com.train.controller;
 
 import com.train.common.response.DBResult;
+import com.train.domain.vo.AccountInfoVo;
 import com.train.request.AccountLoginReq;
 import com.train.request.AccountRegisterReq;
 import com.train.request.AccountSendCodeReq;
+import com.train.request.Dto.AccountLoginDto;
 import com.train.response.AccountLoginRes;
 import com.train.service.AccountService;
 import io.swagger.annotations.Api;
@@ -46,8 +48,8 @@ public class AccountController {
     }
 
     @PostMapping("/login")
-    public DBResult<AccountLoginRes> login(@Valid AccountLoginReq bean) {
-        return DBResult.success(accountService.login(bean));
+    public DBResult<AccountInfoVo> login(@RequestBody AccountLoginDto Dto) {
+        return DBResult.success(accountService.login(Dto));
     }
 
 }

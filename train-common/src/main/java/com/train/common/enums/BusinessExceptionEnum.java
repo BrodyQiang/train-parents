@@ -2,6 +2,11 @@ package com.train.common.enums;
 
 public enum BusinessExceptionEnum {
 
+
+    PARAMETER_ERROR("参数错误"),
+    MEMBER_MOBILE_REGISTER("请先注册"),
+
+    MOBILE_PASSWORD("手机号或者密码错误"),
     MEMBER_MOBILE_EXIST("手机号已注册"),
     MEMBER_MOBILE_NOT_EXIST("请先获取短信验证码"),
     MEMBER_MOBILE_CODE_ERROR("短信验证码错误"),

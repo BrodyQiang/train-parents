@@ -2,26 +2,36 @@ package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.RandomUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.train.common.exception.BusinessException;
 import com.train.common.enums.BusinessExceptionEnum;
+import com.train.common.util.JwtUtil;
 import com.train.common.util.SnowUtil;
 import com.train.domain.AccountInfo;
 import com.train.domain.AccountInfoExample;
 import com.train.domain.SmsRecord;
 import com.train.domain.SmsRecordExample;
+import com.train.domain.entity.AccountInfoBean;
+import com.train.domain.vo.AccountInfoVo;
 import com.train.mapper.AccountInfoMapper;
+import com.train.mapper.AccountLoginMapper;
 import com.train.mapper.SmsRecordMapper;
 import com.train.request.AccountLoginReq;
 import com.train.request.AccountRegisterReq;
 import com.train.request.AccountSendCodeReq;
+import com.train.request.Dto.AccountLoginDto;
 import com.train.response.AccountLoginRes;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Mr.Liu
@@ -142,5 +152,29 @@ public class AccountService {
         }
         return result.get(0);
     }
+    @Autowired
+    AccountLoginMapper accountLoginMapper;
 
+    public AccountInfoVo login(AccountLoginDto Dto) {
+        if (Dto==null){
+            throw new BusinessException(BusinessExceptionEnum.PARAMETER_ERROR);
+        }
+        LambdaQueryWrapper<AccountInfoBean> queryWrapper = new LambdaQueryWrapper<AccountInfoBean>()
+                .eq(AccountInfoBean::getMobile, Dto.getMobile());
+        AccountInfoBean accountInfoBean = accountLoginMapper.selectOne(queryWrapper);
+        if (accountInfoBean==null){
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_REGISTER);
+        }
+        if (accountInfoBean.getMobile().equals(Dto.getMobile())&&accountInfoBean.getPassword().equals(Dto.getPassword())){
+            Map map=new HashMap();
+            map.put("mobile",Dto.getMobile());
+            String token = JwtUtil.generateToken(String.valueOf(accountInfoBean.getId()), map);
+            AccountInfoVo accountInfoVo=new AccountInfoVo();
+            BeanUtils.copyProperties(accountInfoBean,accountInfoVo);
+            accountInfoVo.setToken(token);
+            return accountInfoVo;
+        }else {
+            throw new BusinessException(BusinessExceptionEnum.MOBILE_PASSWORD);
+        }
+    }
 }
