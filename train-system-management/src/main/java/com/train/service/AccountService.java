@@ -6,6 +6,7 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.train.common.exception.BusinessException;
 import com.train.common.enums.BusinessExceptionEnum;
+import com.train.common.util.JwtUtil;
 import com.train.common.util.SnowUtil;
 import com.train.domain.AccountInfo;
 import com.train.domain.AccountInfoExample;
@@ -13,10 +14,10 @@ import com.train.domain.SmsRecord;
 import com.train.domain.SmsRecordExample;
 import com.train.mapper.AccountInfoMapper;
 import com.train.mapper.SmsRecordMapper;
-import com.train.request.AccountLoginReq;
-import com.train.request.AccountRegisterReq;
-import com.train.request.AccountSendCodeReq;
-import com.train.response.AccountLoginRes;
+import com.train.bean.request.AccountLoginReq;
+import com.train.bean.request.AccountRegisterReq;
+import com.train.bean.request.AccountSendCodeReq;
+import com.train.bean.response.AccountLoginRes;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -102,6 +103,8 @@ public class AccountService {
             smsRecord.setId(SnowUtil.getSnowflakeNextId());
             smsRecord.setMobile(mobile);
             smsRecord.setCode(code);
+            smsRecord.setSendStatus("1");
+            smsRecord.setSendType("1");
             smsRecordMapper.insert(smsRecord);
 
             log.info("保存短信记录表");
@@ -142,7 +145,9 @@ public class AccountService {
             throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_CODE_ERROR);
         }
 
-        return BeanUtil.copyProperties(result, AccountLoginRes.class);
+        AccountLoginRes res = BeanUtil.copyProperties(result, AccountLoginRes.class);
+        res.setAccessToken(JwtUtil.createToken(result.getId(), result.getMobile()));
+        return res;
 
     }
 

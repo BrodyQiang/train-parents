@@ -1,10 +1,10 @@
 package com.train.controller;
 
 import com.train.common.response.DBResult;
-import com.train.request.AccountLoginReq;
-import com.train.request.AccountRegisterReq;
-import com.train.request.AccountSendCodeReq;
-import com.train.response.AccountLoginRes;
+import com.train.bean.request.AccountLoginReq;
+import com.train.bean.request.AccountRegisterReq;
+import com.train.bean.request.AccountSendCodeReq;
+import com.train.bean.response.AccountLoginRes;
 import com.train.service.AccountService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

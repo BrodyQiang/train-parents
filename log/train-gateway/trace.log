@@ -1,42 +1,44 @@
-2023-04-24 11:09:12.991 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 11:09:13.364 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
-2023-04-24 11:09:13.808 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=770ae577-e107-319c-9b4b-a267a156ab47
-2023-04-24 11:09:14.492 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-04-24 11:09:14.492 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-04-24 11:09:14.494 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-04-24 11:09:14.494 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-04-24 11:09:14.494 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-04-24 11:09:14.494 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-04-24 11:09:14.494 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-04-24 11:09:14.495 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-04-24 11:09:14.495 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-04-24 11:09:14.495 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
-2023-04-24 11:09:14.495 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-04-24 11:09:14.495 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-04-24 11:09:14.496 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-04-24 11:09:14.674 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 11:09:15.087 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
-2023-04-24 11:09:15.211 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 2.819 seconds (JVM running for 3.551)
-2023-04-24 11:09:15.212 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
-2023-04-24 11:09:15.212 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
-2023-04-24 19:06:42.622 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 19:06:43.707 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
-2023-04-24 19:06:44.097 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=770ae577-e107-319c-9b4b-a267a156ab47
-2023-04-24 19:06:45.746 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-04-24 19:06:45.747 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-04-24 19:06:45.747 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-04-24 19:06:45.747 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-04-24 19:06:45.747 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-04-24 19:06:45.747 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-04-24 19:06:45.748 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-04-24 19:06:45.924 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :57   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 19:06:46.675 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
-2023-04-24 19:06:47.471 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 6.591 seconds (JVM running for 8.422)
-2023-04-24 19:06:47.472 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
-2023-04-24 19:06:47.473 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 20:18:46.079 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 20:18:46.398 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=eae98208-2433-3b75-a517-236a36fb1455
+2023-04-25 20:18:48.561 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 20:18:48.562 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 20:18:48.563 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 20:18:49.668 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 20:18:50.774 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.312 seconds (JVM running for 9.149)
+2023-04-25 20:18:50.776 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 20:18:50.776 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 20:19:33.660 INFO  com.train.gateway.file.LoginAccountFilter         :30   [32m                  [0;39m 需要登录验证：/system/management/account/rendCode
+2023-04-25 20:19:33.661 INFO  com.train.gateway.file.LoginAccountFilter         :34   [32m                  [0;39m 会员登录验证开始，accessToken：null
+2023-04-25 20:19:33.661 INFO  com.train.gateway.file.LoginAccountFilter         :36   [32m                  [0;39m accessToken为空，请求被拦截
+2023-04-25 20:27:30.025 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-04-25 20:27:30.326 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=eae98208-2433-3b75-a517-236a36fb1455
+2023-04-25 20:27:32.038 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-25 20:27:32.039 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-25 20:27:32.039 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-25 20:27:32.039 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-25 20:27:32.039 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-25 20:27:32.039 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-25 20:27:32.040 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-25 20:27:32.040 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-25 20:27:32.040 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-25 20:27:32.041 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-04-25 20:27:32.041 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-25 20:27:32.041 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-25 20:27:32.041 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-25 20:27:32.930 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-04-25 20:27:33.727 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 6.112 seconds (JVM running for 7.245)
+2023-04-25 20:27:33.728 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-04-25 20:27:33.729 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-25 20:29:45.974 INFO  com.train.gateway.file.LoginAccountFilter         :30   [32m                  [0;39m 需要登录验证：/system/management/account/rendCode
+2023-04-25 20:29:45.975 INFO  com.train.gateway.file.LoginAccountFilter         :34   [32m                  [0;39m 会员登录验证开始，accessToken：null
+2023-04-25 20:29:45.975 INFO  com.train.gateway.file.LoginAccountFilter         :36   [32m                  [0;39m accessToken为空，请求被拦截

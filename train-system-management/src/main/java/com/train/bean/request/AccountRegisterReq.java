@@ -1,4 +1,4 @@
-package com.train.request;
+package com.train.bean.request;
 
 import lombok.Data;
 

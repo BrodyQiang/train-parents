@@ -17,8 +17,8 @@ create table `sms_record` (
   `code` varchar(6) comment '验证码',
   `send_time` datetime default CURRENT_TIMESTAMP null comment '发送时间',
   `expire_time` datetime default CURRENT_TIMESTAMP null comment '过期时间',
-  `send_status` varchar(2) default '1' not null  comment '发送状态 0-已使用 1-未使用 2-已过期 ',
-  `send_type` varchar(2) default '1' not null comment '发送类型 0-注册 1-登录 2-找回密码 3-修改密码 4-修改手机号 5-绑定手机号 6-解绑手机号 7-其他',
+  `send_status` varchar(2) default 1 not null  comment '发送状态 0-已使用 1-未使用 2-已过期 ',
+  `send_type` varchar(2) default 1 not null comment '发送类型 0-注册 1-登录 2-找回密码 3-修改密码 4-修改手机号 5-绑定手机号 6-解绑手机号 7-其他',
   primary key (`id`),
   unique key `mobile_unique` (`mobile`)
 ) engine=innodb default charset=utf8mb4 comment='短信记录表';

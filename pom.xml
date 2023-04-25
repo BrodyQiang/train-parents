@@ -46,7 +46,7 @@
         <mybatis.version>3.4.2</mybatis.version>
         <druid.version>1.2.5</druid.version>
         <druid-spring-version>1.1.2</druid-spring-version>
-        <hutool.version>5.4.1</hutool.version>
+        <hutool.version>5.8.10</hutool.version>
         <mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
         <mybatis-plus.version>3.2.0</mybatis-plus.version>
         <mysql-connector-java.version>5.1.30</mysql-connector-java.version>
