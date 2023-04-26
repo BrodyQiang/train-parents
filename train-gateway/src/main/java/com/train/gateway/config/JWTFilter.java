@@ -21,7 +21,7 @@ public class JWTFilter implements GlobalFilter {
         String url = exchange.getRequest().getURI().getPath();
         System.out.println(url);
         // 1 判断URL
-        if (url.toString().contains("login")) {
+        if (url.toString().contains("login")||url.toString().contains("register")) {
             System.out.println("无需登录，直接放行");
             return chain.filter(exchange);
         }
@@ -30,14 +30,14 @@ public class JWTFilter implements GlobalFilter {
 //        // 3.获取authorization参数
 //        String token = params.getFirst("authorization");
 
-        List<String> tokens = exchange.getRequest().getHeaders().get("LOGIN_USER");
+        String tokens = exchange.getRequest().getHeaders().getFirst("LOGIN_USER");
 
         // 4判断是否为空
-        if (tokens != null && (tokens.size() == 1)) {
+        if (tokens != null && !"".equals(tokens)) {
             // 5 解析token
             Claims claims=null;
             try {
-                claims = JwtUtil.parseJWT(tokens.get(0));
+                claims = JwtUtil.parseJWT(tokens);
             } catch (Exception e) {
                 e.printStackTrace();
                 exchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
