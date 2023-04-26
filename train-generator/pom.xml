@@ -14,10 +14,7 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>com.train</groupId>
-            <artifactId>train-common</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build>
