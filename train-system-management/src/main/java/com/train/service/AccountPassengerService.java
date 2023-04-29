@@ -3,6 +3,7 @@ package com.train.service;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.date.DateTime;
 import com.train.bean.request.AccountPassengerSaveReq;
+import com.train.common.context.LoginAccountContext;
 import com.train.common.response.DBResult;
 import com.train.common.util.SnowUtil;
 import com.train.domain.AccountPassenger;
@@ -30,6 +31,7 @@ public class AccountPassengerService {
 
         //使用雪花算法生成id
         accountPassenger.setId(SnowUtil.getSnowflakeNextId());
+        accountPassenger.setMemberId(LoginAccountContext.getId());
         accountPassenger.setCreateTime(now);
         accountPassenger.setUpdateTime(now);
 

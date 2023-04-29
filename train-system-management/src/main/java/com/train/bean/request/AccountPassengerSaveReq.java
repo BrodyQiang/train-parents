@@ -11,7 +11,6 @@ public class AccountPassengerSaveReq {
 
     private Long id;
 
-    @NotNull(message = "【账号ID】不能为空")
     private Long memberId;
 
     @NotBlank(message = "【姓名】不能为空")

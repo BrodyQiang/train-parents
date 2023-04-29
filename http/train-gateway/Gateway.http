@@ -19,13 +19,35 @@ Content-Type: application/json
   "mobile": "13012345671", "code": "p4v2"
 }
 
+
+
+> {%
+    client.log(JSON.stringify(response.body));
+    client.log(JSON.stringify(response.body.result.accessToken));
+    client.global.set("accessToken",response.body.result.accessToken);
+%}
+
 ###
 
 POST http://localhost:10001/system/management/accountPassenger/save
 Content-Type: application/json
+accessToken: {{accessToken}}
 
 {
-  "mobile": "13012345671", "code": "p4v2"
+  "name": "test",
+  "idCard": "123321",
+  "phone": "13012345671",
+  "type": "01"
 }
-
 ###
+
+
+
+
+
+
+
+
+
+
+

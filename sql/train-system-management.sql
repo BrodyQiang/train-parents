@@ -32,7 +32,7 @@ create table `account_passenger` (
   `name` varchar(20) not null comment '乘车人姓名',
   `id_card` varchar(18) not null comment '乘车人身份证',
   `phone` varchar(18) not null comment '乘车人电话',
-  `type` char(1) not null comment '乘客类型|枚举[PassengerTypeEnum]',
+  `type` char(2) not null comment '乘客类型|枚举[PassengerTypeEnum]',
   `create_time` datetime default CURRENT_TIMESTAMP not null comment '新增时间',
   `update_time` datetime default CURRENT_TIMESTAMP not null comment '修改时间',
   primary key (`id`),
