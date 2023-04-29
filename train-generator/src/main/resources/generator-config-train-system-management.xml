@@ -45,6 +45,7 @@
                              type="XMLMAPPER"/>
 
         <!--对应数据库的那张表  生成的类首字母大写 多张表就是写多个 table 标签-->
-        <table tableName="sms_record" domainObjectName="SmsRecord"/>
+<!--        <table tableName="sms_record" domainObjectName="SmsRecord"/>-->
+        <table tableName="account_passenger" domainObjectName="AccountPassenger"/>
     </context>
 </generatorConfiguration>

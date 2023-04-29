@@ -7,7 +7,7 @@ POST http://localhost:10001/system/management/account/rendCode
 Content-Type: application/json
 
 {
-  "mobile":"13012345671"
+  "mobile":"13012345680"
 }
 
 

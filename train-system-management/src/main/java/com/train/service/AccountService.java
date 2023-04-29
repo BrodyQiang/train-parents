@@ -2,6 +2,8 @@ package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.train.common.exception.BusinessException;
@@ -97,12 +99,15 @@ public class AccountService {
             // 生成短信验证码
             code = RandomUtil.randomString(4);
             log.info("生成的短信验证码为：{}", code);
+            DateTime date = DateUtil.date();
 
             // 保存短息记录表 表中字段应该有：手机号、验证码、发送时间、过期时间、发送状态、发送类型  --->手机号，短信验证码，有效期，是否已使用，业务类型，发送时间，使用时间
             SmsRecord smsRecord = new SmsRecord();
             smsRecord.setId(SnowUtil.getSnowflakeNextId());
             smsRecord.setMobile(mobile);
             smsRecord.setCode(code);
+            smsRecord.setSendTime(date);
+            smsRecord.setExpireTime(date);
             smsRecord.setSendStatus("1");
             smsRecord.setSendType("1");
             smsRecordMapper.insert(smsRecord);
