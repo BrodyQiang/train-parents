@@ -1,29 +1,27 @@
-package com.train.bean.request;
+package com.train.bean.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Data
-public class AccountPassengerSaveReq {
+public class AccountPassengerQueryRes {
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long memberId;
 
-    @NotBlank(message = "【姓名】不能为空")
     private String name;
 
-    @NotBlank(message = "【身份证号】不能为空")
     private String idCard;
 
-    @NotBlank(message = "【手机号】不能为空")
     private String phone;
 
-    @NotBlank(message = "【乘客类型】不能为空")
     private String type;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
@@ -31,5 +29,4 @@ public class AccountPassengerSaveReq {
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updateTime;
-
 }

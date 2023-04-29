@@ -34,11 +34,38 @@ Content-Type: application/json
 accessToken: {{accessToken}}
 
 {
-  "name": "test",
+  "name": "test111",
   "idCard": "123321",
   "phone": "13012345671",
   "type": "01"
 }
+
+###
+
+# 修改乘客信息
+POST http://localhost:10001/system/management/accountPassenger/save
+Content-Type: application/json
+accessToken: {{accessToken}}
+
+{
+  "id": "1652216014135496704",
+  "name": "tes11t",
+  "idCard": "123321111",
+  "phone": "13012345671",
+  "type": "01"
+}
+###
+
+GET http://localhost:10001/system/management/accountPassenger/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+accessToken: {{accessToken}}
+
+###
+
+DELETE http://localhost:10001/system/management/accountPassenger/delete/1652218307891302400
+Content-Type: application/json
+accessToken: {{accessToken}}
+
 ###
 
 

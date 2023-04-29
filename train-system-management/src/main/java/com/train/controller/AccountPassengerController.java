@@ -1,14 +1,15 @@
 package com.train.controller;
 
+import com.train.bean.request.AccountPassengerQueryReq;
 import com.train.bean.request.AccountPassengerSaveReq;
+import com.train.bean.response.AccountPassengerQueryRes;
+import com.train.common.context.LoginAccountContext;
+import com.train.common.response.DBPages;
 import com.train.common.response.DBResult;
 import com.train.service.AccountPassengerService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -27,7 +28,20 @@ public class AccountPassengerController {
 
     @PostMapping("/save")
     public DBResult save(@RequestBody @Valid AccountPassengerSaveReq bean) {
-        return service.save(bean);
+        service.save(bean);
+        return DBResult.success();
+    }
+
+    @GetMapping("/queryList")
+    public DBPages<AccountPassengerQueryRes> queryList(@Valid AccountPassengerQueryReq bean) {
+        bean.setMemberId(LoginAccountContext.getId());
+        return service.queryList(bean);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public DBResult delete(@PathVariable Long id) {
+        service.delete(id);
+        return DBResult.success();
     }
 
 }
