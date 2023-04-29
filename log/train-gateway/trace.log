@@ -17,3 +17,19 @@
 2023-04-29 12:26:43.082 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.871 seconds (JVM running for 9.37)
 2023-04-29 12:26:43.083 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
 2023-04-29 12:26:43.084 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-04-29 12:36:07.715 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/login
+2023-04-29 12:37:07.021 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:42:07.349 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:42:17.561 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:42:25.443 INFO  com.train.gateway.file.LoginAccountFilter         :30   [32m                  [0;39m 需要登录验证：/system/management/account/name
+2023-04-29 12:42:25.443 INFO  com.train.gateway.file.LoginAccountFilter         :34   [32m                  [0;39m 账号登录验证开始，accessToken：null
+2023-04-29 12:42:25.444 INFO  com.train.gateway.file.LoginAccountFilter         :36   [32m                  [0;39m accessToken为空，请求被拦截
+2023-04-29 12:42:42.668 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:47:08.505 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:48:40.861 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:52:59.818 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:53:40.497 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:54:26.397 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 12:55:44.057 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 13:00:04.184 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
+2023-04-29 13:03:06.822 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/system/management/account/rendCode
