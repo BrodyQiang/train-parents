@@ -22,8 +22,9 @@ import java.util.List;
 /**
  * @author Mr.Liu
  * @email yxml2580@163.com
- * @createDate 2023/4/29 13:17
+ * @createDate 2023-05-02 15:15:44
  */
+
 @Service
 public class AccountPassengerService {
 
@@ -41,12 +42,11 @@ public class AccountPassengerService {
             // 新增
             //使用雪花算法生成id
             accountPassenger.setId(SnowUtil.getSnowflakeNextId());
-            accountPassenger.setMemberId(LoginAccountContext.getId());
             accountPassenger.setCreateTime(now);
             accountPassenger.setUpdateTime(now);
 
             mapper.insert(accountPassenger);
-        }else {
+        } else {
             accountPassenger.setUpdateTime(now);
             mapper.updateByPrimaryKeySelective(accountPassenger);
         }
@@ -58,9 +58,6 @@ public class AccountPassengerService {
         AccountPassengerExample example = new AccountPassengerExample();
         AccountPassengerExample.Criteria criteria = example.createCriteria();
 
-        if (ObjectUtil.isNotNull(bean.getMemberId())) {
-            criteria.andMemberIdEqualTo(bean.getMemberId());
-        }
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());
 

@@ -3,7 +3,6 @@ package com.train.bean.request;
 import com.train.common.request.PageBaseReq;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 @Data
