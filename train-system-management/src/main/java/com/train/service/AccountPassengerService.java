@@ -58,6 +58,9 @@ public class AccountPassengerService {
         AccountPassengerExample example = new AccountPassengerExample();
         AccountPassengerExample.Criteria criteria = example.createCriteria();
 
+        if (ObjectUtil.isNotNull(bean.getMemberId())) {
+            criteria.andMemberIdEqualTo(bean.getMemberId());
+        }
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());
 
