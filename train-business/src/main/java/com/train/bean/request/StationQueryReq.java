@@ -6,11 +6,11 @@ import lombok.Data;
 /**
 * @author Mr.Liu
 * @email yxml2580@163.com
-* @createDate ${now?string("yyyy-MM-dd HH:mm:ss")}
+* @createDate 2023-05-04 19:58:40
  */
 
 @Data
-public class ${Domain}QueryReq extends PageBaseReq {
+public class StationQueryReq extends PageBaseReq {
 
 
 }
