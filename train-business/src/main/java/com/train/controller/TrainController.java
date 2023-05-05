@@ -19,7 +19,7 @@ import javax.validation.Valid;
 */
 
 @RestController
-@RequestMapping("/train")
+@RequestMapping("/admin/train")
 @Api(value = "TrainController", tags = "")
 public class TrainController {
 
