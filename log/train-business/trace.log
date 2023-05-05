@@ -689,3 +689,443 @@ Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long fo
 2023-05-05 19:12:53.733 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m <==      Total: 5
 2023-05-05 19:12:53.737 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"pageNum":1,"pageSize":5,"pageTotal":1,"result":[{"code":"G1","createTime":1683284941000,"end":"上海","endPinyin":"shanghai","endTime":21600000,"id":1654443073226280960,"start":"北京","startPinyin":"beijing","startTime":7200000,"type":"G","updateTime":1683284941000},{"code":"G2","createTime":1683284987000,"end":"北京","endPinyin":"beijing","endTime":21600000,"id":1654443265186992128,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683284987000},{"code":"G3","createTime":1683285017000,"end":"武汉","endPinyin":"wuhan","endTime":21600000,"id":1654443388675690496,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285017000},{"code":"G4","createTime":1683285035000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443464034750464,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285035000},{"code":"D1","createTime":1683285166000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654444015308902400,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D","updateTime":1683285166000}],"total":5}
 2023-05-05 19:12:53.738 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-05-05 19:17:20.045 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:282)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:240)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1549)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:911)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer._parseInteger(NumberDeserializers.java:522)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:474)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:452)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:369)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3085)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:271)
+	... 55 common frames omitted
+2023-05-05 19:18:18.510 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:282)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:240)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1549)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:911)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer._parseInteger(NumberDeserializers.java:522)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:474)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:452)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:369)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3085)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:271)
+	... 55 common frames omitted
+2023-05-05 19:18:38.288 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:282)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:240)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "D": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 3, column: 19] (through reference chain: com.train.bean.request.TrainStationSaveReq["stationIndex"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1549)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:911)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer._parseInteger(NumberDeserializers.java:522)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:474)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:452)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:369)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3085)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:271)
+	... 55 common frames omitted
+2023-05-05 19:19:39.583 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:19:39.584 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:19:39.584 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:19:39.584 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:19:39.586 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":7200000,"km":0,"name":"上海","namePinyin":"shanghai","outTime":7800000,"stationIndex":1,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:19:39.591 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:19:39.592 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654445750073036800(Long), D1(String), 1(Integer), 上海(String), shanghai(String), 10:00:00(Time), 10:10:00(Time), 00:10:00(Time), 0(BigDecimal), 2023-05-05 19:19:39.59(Timestamp), 2023-05-05 19:19:39.59(Timestamp)
+2023-05-05 19:19:39.594 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:19:39.594 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:19:39.594 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2023-05-05 19:20:16.296 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:20:16.297 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:20:16.297 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:20:16.297 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:20:16.297 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":10800000,"km":60,"name":"重庆","namePinyin":"chongqing","outTime":11400000,"stationIndex":2,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:20:16.300 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:20:16.301 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654445904045936640(Long), D1(String), 2(Integer), 重庆(String), chongqing(String), 11:00:00(Time), 11:10:00(Time), 00:10:00(Time), 60(BigDecimal), 2023-05-05 19:20:16.3(Timestamp), 2023-05-05 19:20:16.3(Timestamp)
+2023-05-05 19:20:16.303 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:20:16.304 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:20:16.304 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2023-05-05 19:20:42.466 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:20:42.466 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:20:42.466 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:20:42.467 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:20:42.467 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":14400000,"km":100,"name":"郑州","namePinyin":"zhengzhou","outTime":15000000,"stationIndex":3,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:20:42.468 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:20:42.469 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654446013802483712(Long), D1(String), 3(Integer), 郑州(String), zhengzhou(String), 12:00:00(Time), 12:10:00(Time), 00:10:00(Time), 100(BigDecimal), 2023-05-05 19:20:42.468(Timestamp), 2023-05-05 19:20:42.468(Timestamp)
+2023-05-05 19:20:42.470 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:20:42.471 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:20:42.471 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-05-05 19:21:05.393 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:21:05.393 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:21:05.393 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:21:05.394 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:21:05.394 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":18000000,"km":100,"name":"北京","namePinyin":"beijing","outTime":18600000,"stationIndex":3,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:21:05.394 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:21:05.395 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654446109961097216(Long), D1(String), 3(Integer), 北京(String), beijing(String), 13:00:00(Time), 13:10:00(Time), 00:10:00(Time), 100(BigDecimal), 2023-05-05 19:21:05.394(Timestamp), 2023-05-05 19:21:05.394(Timestamp)
+2023-05-05 19:21:05.397 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'D1-3' for key 'train_code_index_unique'
+### The error may involve com.train.mapper.TrainStationMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into train_station (id, train_code, station_index,        `name`, name_pinyin, in_time,        out_time, stop_time, km, create_time,        update_time)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'D1-3' for key 'train_code_index_unique'
+; Duplicate entry 'D1-3' for key 'train_code_index_unique'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'D1-3' for key 'train_code_index_unique'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy81.insert(Unknown Source)
+	at com.train.service.TrainStationService.save(TrainStationService.java:46)
+	at com.train.controller.TrainStationController.save(TrainStationController.java:31)
+	at com.train.controller.TrainStationController$$FastClassBySpringCGLIB$$724293a7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.train.common.aspect.LogAspect.doAround(LogAspect.java:80)
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.train.controller.TrainStationController$$EnhancerBySpringCGLIB$$b91d87d5.save(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'D1-3' for key 'train_code_index_unique'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy108.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy106.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 80 common frames omitted
+2023-05-05 19:22:30.811 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:22:30.812 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:22:30.812 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:22:30.812 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:22:30.812 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":21600000,"km":100,"name":"郑州","namePinyin":"zhengzhou","outTime":22200000,"stationIndex":4,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:22:30.813 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:22:30.814 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654446468234350592(Long), D1(String), 4(Integer), 郑州(String), zhengzhou(String), 14:00:00(Time), 14:10:00(Time), 00:10:00(Time), 100(BigDecimal), 2023-05-05 19:22:30.813(Timestamp), 2023-05-05 19:22:30.813(Timestamp)
+2023-05-05 19:22:30.815 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:22:30.816 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:22:30.816 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-05-05 19:22:39.781 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:22:39.781 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/queryList GET
+2023-05-05 19:22:39.781 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.queryList
+2023-05-05 19:22:39.781 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:22:39.782 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"pageNum":1,"pageSize":10}]
+2023-05-05 19:22:39.786 DEBUG c.t.m.TrainStationMapper.selectByExample_COUNT    :181  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM train_station 
+2023-05-05 19:22:39.787 DEBUG c.t.m.TrainStationMapper.selectByExample_COUNT    :181  [32m                  [0;39m ==> Parameters: 
+2023-05-05 19:22:39.787 TRACE c.t.m.TrainStationMapper.selectByExample_COUNT    :187  [32m                  [0;39m <==    Columns: count(0)
+2023-05-05 19:22:39.787 TRACE c.t.m.TrainStationMapper.selectByExample_COUNT    :187  [32m                  [0;39m <==        Row: 4
+2023-05-05 19:22:39.788 DEBUG c.t.m.TrainStationMapper.selectByExample_COUNT    :181  [32m                  [0;39m <==      Total: 1
+2023-05-05 19:22:39.788 DEBUG c.train.mapper.TrainStationMapper.selectByExample :181  [32m                  [0;39m ==>  Preparing: select id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time from train_station LIMIT ? 
+2023-05-05 19:22:39.788 DEBUG c.train.mapper.TrainStationMapper.selectByExample :181  [32m                  [0;39m ==> Parameters: 10(Integer)
+2023-05-05 19:22:39.789 TRACE c.train.mapper.TrainStationMapper.selectByExample :187  [32m                  [0;39m <==    Columns: id, train_code, station_index, name, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time
+2023-05-05 19:22:39.789 TRACE c.train.mapper.TrainStationMapper.selectByExample :187  [32m                  [0;39m <==        Row: 1654445750073036800, D1, 1, 上海, shanghai, 10:00:00, 10:10:00, 00:10:00, 0.00, 2023-05-05 19:19:40.0, 2023-05-05 19:19:40.0
+2023-05-05 19:22:39.790 TRACE c.train.mapper.TrainStationMapper.selectByExample :187  [32m                  [0;39m <==        Row: 1654445904045936640, D1, 2, 重庆, chongqing, 11:00:00, 11:10:00, 00:10:00, 60.00, 2023-05-05 19:20:16.0, 2023-05-05 19:20:16.0
+2023-05-05 19:22:39.790 TRACE c.train.mapper.TrainStationMapper.selectByExample :187  [32m                  [0;39m <==        Row: 1654446013802483712, D1, 3, 北京, zhengzhou, 12:00:00, 12:10:00, 00:10:00, 100.00, 2023-05-05 19:20:42.0, 2023-05-05 19:20:42.0
+2023-05-05 19:22:39.790 TRACE c.train.mapper.TrainStationMapper.selectByExample :187  [32m                  [0;39m <==        Row: 1654446468234350592, D1, 4, 郑州, zhengzhou, 14:00:00, 14:10:00, 00:10:00, 100.00, 2023-05-05 19:22:31.0, 2023-05-05 19:22:31.0
+2023-05-05 19:22:39.791 DEBUG c.train.mapper.TrainStationMapper.selectByExample :181  [32m                  [0;39m <==      Total: 4
+2023-05-05 19:22:39.795 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"pageNum":1,"pageSize":4,"pageTotal":1,"result":[{"createTime":1683285580000,"id":1654445750073036800,"inTime":7200000,"km":0.00,"name":"上海","namePinyin":"shanghai","outTime":7800000,"stationIndex":1,"stopTime":-28200000,"trainCode":"D1","updateTime":1683285580000},{"createTime":1683285616000,"id":1654445904045936640,"inTime":10800000,"km":60.00,"name":"重庆","namePinyin":"chongqing","outTime":11400000,"stationIndex":2,"stopTime":-28200000,"trainCode":"D1","updateTime":1683285616000},{"createTime":1683285642000,"id":1654446013802483712,"inTime":14400000,"km":100.00,"name":"北京","namePinyin":"zhengzhou","outTime":15000000,"stationIndex":3,"stopTime":-28200000,"trainCode":"D1","updateTime":1683285642000},{"createTime":1683285751000,"id":1654446468234350592,"inTime":21600000,"km":100.00,"name":"郑州","namePinyin":"zhengzhou","outTime":22200000,"stationIndex":4,"stopTime":-28200000,"trainCode":"D1","updateTime":1683285751000}],"total":4}
+2023-05-05 19:22:39.795 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2023-05-05 19:22:59.425 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:22:59.426 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/delete/1654446468234350592 DELETE
+2023-05-05 19:22:59.426 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.delete
+2023-05-05 19:22:59.426 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:22:59.426 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [1654446468234350592]
+2023-05-05 19:22:59.427 DEBUG c.t.mapper.TrainStationMapper.deleteByPrimaryKey  :181  [32m                  [0;39m ==>  Preparing: delete from train_station where id = ? 
+2023-05-05 19:22:59.427 DEBUG c.t.mapper.TrainStationMapper.deleteByPrimaryKey  :181  [32m                  [0;39m ==> Parameters: 1654446468234350592(Long)
+2023-05-05 19:22:59.428 DEBUG c.t.mapper.TrainStationMapper.deleteByPrimaryKey  :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:22:59.428 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:22:59.428 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2023-05-05 19:23:02.606 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:23:02.606 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/trainStation/save POST
+2023-05-05 19:23:02.607 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainStationController.save
+2023-05-05 19:23:02.607 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:23:02.607 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"inTime":21600000,"km":100,"name":"郑州","namePinyin":"zhengzhou","outTime":22200000,"stationIndex":4,"stopTime":-28200000,"trainCode":"D1"}]
+2023-05-05 19:23:02.608 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==>  Preparing: insert into train_station (id, train_code, station_index, `name`, name_pinyin, in_time, out_time, stop_time, km, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:23:02.609 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m ==> Parameters: 1654446601588051968(Long), D1(String), 4(Integer), 郑州(String), zhengzhou(String), 14:00:00(Time), 14:10:00(Time), 00:10:00(Time), 100(BigDecimal), 2023-05-05 19:23:02.607(Timestamp), 2023-05-05 19:23:02.607(Timestamp)
+2023-05-05 19:23:02.610 DEBUG com.train.mapper.TrainStationMapper.insert        :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:23:02.610 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:23:02.611 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------

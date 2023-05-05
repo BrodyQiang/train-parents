@@ -44,3 +44,14 @@
 2023-05-05 19:12:39.006 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/delete/1654443568581971968
 2023-05-05 19:12:45.986 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/save
 2023-05-05 19:12:53.720 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/queryList
+2023-05-05 19:17:20.033 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:18:18.506 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:18:38.284 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:19:39.573 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:20:16.292 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:20:42.464 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:21:05.390 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:22:30.808 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:22:39.774 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/queryList
+2023-05-05 19:22:59.421 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/delete/1654446468234350592
+2023-05-05 19:23:02.601 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
