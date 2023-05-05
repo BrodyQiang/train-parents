@@ -1,11 +1,11 @@
 package com.train.controller;
 
-import com.train.bean.request.StationQueryReq;
-import com.train.bean.request.StationSaveReq;
-import com.train.bean.response.StationQueryRes;
+import com.train.bean.request.TrainQueryReq;
+import com.train.bean.request.TrainSaveReq;
+import com.train.bean.response.TrainQueryRes;
 import com.train.common.response.DBPages;
 import com.train.common.response.DBResult;
-import com.train.service.StationService;
+import com.train.service.TrainService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,25 +15,25 @@ import javax.validation.Valid;
 /**
 * @author Mr.Liu
 * @email yxml2580@163.com
-* @createDate 2023-05-04 19:58:40
+* @createDate 2023-05-05 18:32:50
 */
 
 @RestController
-@RequestMapping("/admin/station")
-@Api(value = "StationController", tags = "")
-public class StationController {
+@RequestMapping("/train")
+@Api(value = "TrainController", tags = "")
+public class TrainController {
 
     @Autowired
-    private StationService service;
+    private TrainService service;
 
     @PostMapping("/save")
-    public DBResult save(@RequestBody @Valid StationSaveReq bean) {
+    public DBResult save(@RequestBody @Valid TrainSaveReq bean) {
         service.save(bean);
         return DBResult.success();
     }
 
     @GetMapping("/queryList")
-    public DBPages<StationQueryRes> queryList(@Valid StationQueryReq bean) {
+    public DBPages<TrainQueryRes> queryList(@Valid TrainQueryReq bean) {
         return service.queryList(bean);
     }
 

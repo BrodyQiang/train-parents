@@ -80,3 +80,5 @@
 2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: []
 2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: "Holle World"
 2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------
+2023-05-04 20:08:45.603 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-04 20:08:45.610 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
