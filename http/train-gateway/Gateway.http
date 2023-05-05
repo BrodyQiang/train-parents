@@ -191,6 +191,35 @@ Content-Type: application/json
 
 ###
 
+# 火车车厢座位信息接口调试
+# 添加火车车厢座位信息  新增与修改接口一样 参数不同
+# 修改火车车厢座位信息 需要添加该参数  "id": "1654443568581971968",
+POST http://localhost:10001/business/admin/trainSeat/save
+Content-Type: application/json
+
+{
+  "trainCode": "D1",
+  "carriageIndex": 6,
+  "row": "01",
+  "col": "F",
+  "seatType": "01",
+  "carriageSeatIndex": 6
+}
+
+###
+
+# 查询火车车厢座位信息
+GET http://localhost:10001/business/admin/trainSeat/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+
+###
+
+# 删除火车车厢座位信息
+DELETE http://localhost:10001/business/admin/trainSeat/delete/1654450542149242880
+Content-Type: application/json
+
+###
+
 
 
 

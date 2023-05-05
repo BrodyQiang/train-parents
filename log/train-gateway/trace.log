@@ -55,3 +55,15 @@
 2023-05-05 19:22:39.774 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/queryList
 2023-05-05 19:22:59.421 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/delete/1654446468234350592
 2023-05-05 19:23:02.601 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainStation/save
+2023-05-05 19:27:59.091 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:28:19.924 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:29:29.464 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:29:59.456 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:30:03.043 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:30:07.931 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:30:10.924 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:30:13.718 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/queryList
+2023-05-05 19:30:26.569 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/delete/1654448398100729856
+2023-05-05 19:30:29.017 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/queryList
+2023-05-05 19:30:33.509 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/save
+2023-05-05 19:30:36.061 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/trainCarriage/queryList
