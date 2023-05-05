@@ -99,6 +99,37 @@ Content-Type: application/json
 
 ###
 
+# 车次接口调试
+# 添加车次  新增与修改接口一样 参数不同
+# 修改车次 需要添加该参数  "id": "1654443568581971968",
+POST http://localhost:10001/business/admin/train/save
+Content-Type: application/json
+
+{
+  "code": "D1",
+  "type": "D",
+  "start": "上海",
+  "startPinyin": "shanghai",
+  "startTime": "10:00:00",
+  "end": "郑州",
+  "endPinyin": "zhengzhou",
+  "endTime": "14:00:00"
+}
+
+###
+
+# 查询车次
+GET http://localhost:10001/business/admin/train/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+
+###
+
+# 删除车次
+DELETE http://localhost:10001/business/admin/train/delete/1654443568581971968
+Content-Type: application/json
+
+###
+
 
 
 
