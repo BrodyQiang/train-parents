@@ -130,6 +130,12 @@ Content-Type: application/json
 
 ###
 
+# 生成车座功能
+GET http://localhost:10001/business/admin/train/genSeat/D1
+Content-Type: application/json
+
+###
+
 
 # 火车两车站信息接口调试
 # 添加火车两车站信息  新增与修改接口一样 参数不同
@@ -170,11 +176,9 @@ Content-Type: application/json
 
 {
   "trainCode": "D1",
-  "index": 6,
+  "index": 7,
   "seatType": "01",
-  "seatCount": 20,
-  "rowCount": 5,
-  "colCount": 4
+  "rowCount": 5
 }
 
 ###

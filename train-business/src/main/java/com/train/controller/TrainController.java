@@ -5,6 +5,7 @@ import com.train.bean.request.TrainSaveReq;
 import com.train.bean.response.TrainQueryRes;
 import com.train.common.response.DBPages;
 import com.train.common.response.DBResult;
+import com.train.service.TrainSeatService;
 import com.train.service.TrainService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,9 @@ public class TrainController {
     @Autowired
     private TrainService service;
 
+    @Autowired
+    private TrainSeatService trainSeatService;
+
     @PostMapping("/save")
     public DBResult save(@RequestBody @Valid TrainSaveReq bean) {
         service.save(bean);
@@ -40,6 +44,13 @@ public class TrainController {
     @DeleteMapping("/delete/{id}")
     public DBResult delete(@PathVariable Long id) {
         service.delete(id);
+        return DBResult.success();
+    }
+
+
+    @GetMapping("/genSeat/{trainCode}")
+    public DBResult<Object> genSeat(@PathVariable String trainCode) {
+        trainSeatService.genTrainSeat(trainCode);
         return DBResult.success();
     }
 

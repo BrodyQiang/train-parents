@@ -6,15 +6,15 @@ import java.util.List;
 
 public enum SeatColEnum {
 
-    YDZ_A("A", "A", "1"),
-    YDZ_C("C", "C", "1"),
-    YDZ_D("D", "D", "1"),
-    YDZ_F("F", "F", "1"),
-    EDZ_A("A", "A", "2"),
-    EDZ_B("B", "B", "2"),
-    EDZ_C("C", "C", "2"),
-    EDZ_D("D", "D", "2"),
-    EDZ_F("F", "F", "2");
+    YDZ_A("A", "A", "01"),
+    YDZ_C("C", "C", "01"),
+    YDZ_D("D", "D", "01"),
+    YDZ_F("F", "F", "01"),
+    EDZ_A("A", "A", "02"),
+    EDZ_B("B", "B", "02"),
+    EDZ_C("C", "C", "02"),
+    EDZ_D("D", "D", "02"),
+    EDZ_F("F", "F", "02");
 
     private String code;
 
