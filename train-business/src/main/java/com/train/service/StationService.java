@@ -54,6 +54,7 @@ public class StationService {
     public DBPages<StationQueryRes> queryList(StationQueryReq bean) {
 
         StationExample example = new StationExample();
+        example.setOrderByClause("id desc");
         StationExample.Criteria criteria = example.createCriteria();
 
         // 分页

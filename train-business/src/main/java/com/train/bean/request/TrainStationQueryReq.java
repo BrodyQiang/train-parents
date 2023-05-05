@@ -12,5 +12,6 @@ import lombok.Data;
 @Data
 public class TrainStationQueryReq extends PageBaseReq {
 
+    private String trainCode;
 
 }

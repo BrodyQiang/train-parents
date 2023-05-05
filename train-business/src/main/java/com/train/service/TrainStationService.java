@@ -54,7 +54,12 @@ public class TrainStationService {
     public DBPages<TrainStationQueryRes> queryList(TrainStationQueryReq bean) {
 
         TrainStationExample example = new TrainStationExample();
+        example.setOrderByClause("id desc");
         TrainStationExample.Criteria criteria = example.createCriteria();
+        // 添加查询条件 按照车次查询
+        if (ObjectUtil.isNotEmpty(bean.getTrainCode())) {
+            criteria.andTrainCodeEqualTo(bean.getTrainCode());
+        }
 
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());
