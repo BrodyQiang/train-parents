@@ -54,7 +54,7 @@ public class TrainService {
     public DBPages<TrainQueryRes> queryList(TrainQueryReq bean) {
 
         TrainExample example = new TrainExample();
-        example.setOrderByClause("train_code asc,station_index asc");
+        example.setOrderByClause("id desc");
         TrainExample.Criteria criteria = example.createCriteria();
 
         // 分页

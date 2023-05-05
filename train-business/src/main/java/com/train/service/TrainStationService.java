@@ -54,7 +54,7 @@ public class TrainStationService {
     public DBPages<TrainStationQueryRes> queryList(TrainStationQueryReq bean) {
 
         TrainStationExample example = new TrainStationExample();
-        example.setOrderByClause("id desc");
+        example.setOrderByClause("train_code asc,station_index asc");
         TrainStationExample.Criteria criteria = example.createCriteria();
         // 添加查询条件 按照车次查询
         if (ObjectUtil.isNotEmpty(bean.getTrainCode())) {
