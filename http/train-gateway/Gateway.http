@@ -209,8 +209,10 @@ Content-Type: application/json
 ###
 
 # 查询火车车厢座位信息
-GET http://localhost:10001/business/admin/trainSeat/queryList?pageNum=1&pageSize=10
+GET http://localhost:10001/business/admin/trainSeat/queryList?pageNum=1&pageSize=10&trainCode=D2
 Content-Type: application/json
+
+
 
 ###
 
