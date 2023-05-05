@@ -1,12 +1,15 @@
 package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.TrainStationQueryReq;
 import com.train.bean.request.TrainStationSaveReq;
 import com.train.bean.response.TrainStationQueryRes;
+import com.train.common.enums.BusinessExceptionEnum;
+import com.train.common.exception.BusinessException;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.TrainStation;
@@ -38,6 +41,18 @@ public class TrainStationService {
 
         if (ObjectUtil.isNull(trainStation.getId())) {
             // 新增
+
+            // 保存之前，先校验唯一键是否存在
+            TrainStation trainStationDB = selectByUnique(bean.getTrainCode(), bean.getStationIndex());
+            if (ObjectUtil.isNotEmpty(trainStationDB)) {
+                throw new BusinessException(BusinessExceptionEnum.BUSINESS_TRAIN_STATION_INDEX_UNIQUE_ERROR);
+            }
+            // 保存之前，先校验唯一键是否存在
+            trainStationDB = selectByUnique(bean.getTrainCode(), bean.getName());
+            if (ObjectUtil.isNotEmpty(trainStationDB)) {
+                throw new BusinessException(BusinessExceptionEnum.BUSINESS_TRAIN_STATION_NAME_UNIQUE_ERROR);
+            }
+
             //使用雪花算法生成id
             trainStation.setId(SnowUtil.getSnowflakeNextId());
             trainStation.setCreateTime(now);
@@ -74,4 +89,31 @@ public class TrainStationService {
     public void delete(Long id) {
         mapper.deleteByPrimaryKey(id);
     }
+
+    private TrainStation selectByUnique(String trainCode, Integer stationIndex) {
+        TrainStationExample trainStationExample = new TrainStationExample();
+        trainStationExample.createCriteria()
+                .andTrainCodeEqualTo(trainCode)
+                .andStationIndexEqualTo(stationIndex);
+        List<TrainStation> list = mapper.selectByExample(trainStationExample);
+        if (CollUtil.isNotEmpty(list)) {
+            return list.get(0);
+        } else {
+            return null;
+        }
+    }
+
+    private TrainStation selectByUnique(String trainCode, String name) {
+        TrainStationExample trainStationExample = new TrainStationExample();
+        trainStationExample.createCriteria()
+                .andTrainCodeEqualTo(trainCode)
+                .andNameEqualTo(name);
+        List<TrainStation> list = mapper.selectByExample(trainStationExample);
+        if (CollUtil.isNotEmpty(list)) {
+            return list.get(0);
+        } else {
+            return null;
+        }
+    }
+
 }

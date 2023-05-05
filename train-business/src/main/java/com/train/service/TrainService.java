@@ -1,12 +1,15 @@
 package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.TrainQueryReq;
 import com.train.bean.request.TrainSaveReq;
 import com.train.bean.response.TrainQueryRes;
+import com.train.common.enums.BusinessExceptionEnum;
+import com.train.common.exception.BusinessException;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.Train;
@@ -38,6 +41,13 @@ public class TrainService {
 
         if (ObjectUtil.isNull(train.getId())) {
             // 新增
+
+            // 保存之前，先校验唯一键是否存在
+            Train trainDB = selectByUnique(bean.getCode());
+            if (ObjectUtil.isNotEmpty(trainDB)) {
+                throw new BusinessException(BusinessExceptionEnum.BUSINESS_TRAIN_CODE_UNIQUE_ERROR);
+            }
+
             //使用雪花算法生成id
             train.setId(SnowUtil.getSnowflakeNextId());
             train.setCreateTime(now);
@@ -70,4 +80,17 @@ public class TrainService {
     public void delete(Long id) {
         mapper.deleteByPrimaryKey(id);
     }
+
+    private Train selectByUnique(String code) {
+        TrainExample trainExample = new TrainExample();
+        trainExample.createCriteria()
+                .andCodeEqualTo(code);
+        List<Train> list = mapper.selectByExample(trainExample);
+        if (CollUtil.isNotEmpty(list)) {
+            return list.get(0);
+        } else {
+            return null;
+        }
+    }
+
 }

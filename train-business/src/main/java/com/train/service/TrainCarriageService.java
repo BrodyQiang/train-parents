@@ -1,12 +1,15 @@
 package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.TrainCarriageQueryReq;
 import com.train.bean.request.TrainCarriageSaveReq;
 import com.train.bean.response.TrainCarriageQueryRes;
+import com.train.common.enums.BusinessExceptionEnum;
+import com.train.common.exception.BusinessException;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.TrainCarriage;
@@ -44,6 +47,11 @@ public class TrainCarriageService {
         TrainCarriage trainCarriage = BeanUtil.copyProperties(bean, TrainCarriage.class);
         if (ObjectUtil.isNull(trainCarriage.getId())) {
             // 新增
+            // 保存之前，先校验唯一键是否存在
+            TrainCarriage trainCarriageDB = selectByUnique(bean.getTrainCode(), bean.getIndex());
+            if (ObjectUtil.isNotEmpty(trainCarriageDB)) {
+                throw new BusinessException(BusinessExceptionEnum.BUSINESS_TRAIN_CARRIAGE_INDEX_UNIQUE_ERROR);
+            }
             //使用雪花算法生成id
             trainCarriage.setId(SnowUtil.getSnowflakeNextId());
             trainCarriage.setCreateTime(now);
@@ -86,5 +94,18 @@ public class TrainCarriageService {
         TrainCarriageExample.Criteria criteria = trainCarriageExample.createCriteria();
         criteria.andTrainCodeEqualTo(trainCode);
         return mapper.selectByExample(trainCarriageExample);
+    }
+
+    private TrainCarriage selectByUnique(String trainCode, Integer index) {
+        TrainCarriageExample trainCarriageExample = new TrainCarriageExample();
+        trainCarriageExample.createCriteria()
+                .andTrainCodeEqualTo(trainCode)
+                .andIndexEqualTo(index);
+        List<TrainCarriage> list = mapper.selectByExample(trainCarriageExample);
+        if (CollUtil.isNotEmpty(list)) {
+            return list.get(0);
+        } else {
+            return null;
+        }
     }
 }
