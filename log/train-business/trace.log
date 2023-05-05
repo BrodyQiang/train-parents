@@ -1,84 +1,128 @@
-2023-05-04 19:41:35.033 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 15088 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
-2023-05-04 19:41:35.035 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
-2023-05-04 19:41:35.381 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train.mapper]' package. Please check your configuration.
-2023-05-04 19:41:35.463 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
-2023-05-04 19:41:36.082 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
-2023-05-04 19:41:36.097 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:41:36.105 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-05-04 19:41:36.105 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2023-05-04 19:41:36.180 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-05-04 19:41:36.181 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1118 ms
-2023-05-04 19:41:36.397 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-04 19:41:36.728 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2023-05-04 19:41:36.765 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:41:36.779 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
-2023-05-04 19:41:36.781 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 2.135 seconds (JVM running for 3.232)
-2023-05-04 19:41:36.783 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
-2023-05-04 19:41:36.783 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
-2023-05-04 19:43:42.158 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-04 19:43:42.158 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-05-04 19:43:42.165 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
-2023-05-04 19:43:42.184 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
-2023-05-04 19:43:42.184 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://localhost:10005/business/business/test GET
-2023-05-04 19:43:42.185 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TestController.test
-2023-05-04 19:43:42.185 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
-2023-05-04 19:43:42.223 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: []
-2023-05-04 19:43:42.226 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: "Holle World"
-2023-05-04 19:43:42.226 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
-2023-05-04 19:45:08.404 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2023-05-04 19:45:08.405 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-04 19:45:13.239 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 13536 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
-2023-05-04 19:45:13.242 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
-2023-05-04 19:45:13.668 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train.mapper]' package. Please check your configuration.
-2023-05-04 19:45:13.782 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
-2023-05-04 19:45:14.359 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
-2023-05-04 19:45:14.374 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:45:14.385 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-05-04 19:45:14.386 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2023-05-04 19:45:14.483 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-05-04 19:45:14.484 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1201 ms
-2023-05-04 19:45:14.747 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-04 19:45:15.113 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2023-05-04 19:45:15.176 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:45:15.200 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
-2023-05-04 19:45:15.203 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 2.434 seconds (JVM running for 3.763)
-2023-05-04 19:45:15.204 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
-2023-05-04 19:45:15.205 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
-2023-05-04 19:46:57.796 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2023-05-04 19:46:57.798 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-04 19:47:04.741 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 1636 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
-2023-05-04 19:47:04.744 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
-2023-05-04 19:47:05.240 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train.mapper]' package. Please check your configuration.
-2023-05-04 19:47:05.339 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
-2023-05-04 19:47:06.004 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
-2023-05-04 19:47:06.019 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:47:06.031 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-05-04 19:47:06.032 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2023-05-04 19:47:06.135 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-05-04 19:47:06.136 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1347 ms
-2023-05-04 19:47:06.441 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-04 19:47:06.911 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2023-05-04 19:47:07.014 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
-2023-05-04 19:47:07.043 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
-2023-05-04 19:47:07.048 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 2.752 seconds (JVM running for 3.898)
-2023-05-04 19:47:07.050 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
-2023-05-04 19:47:07.050 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
-2023-05-04 19:48:16.401 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-04 19:48:16.402 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-05-04 19:48:16.410 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 8 ms
-2023-05-04 19:48:16.427 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
-2023-05-04 19:48:16.428 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://localhost:10005/business/admin/business/test GET
-2023-05-04 19:48:16.429 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TestController.test
-2023-05-04 19:48:16.429 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
-2023-05-04 19:48:16.463 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: []
-2023-05-04 19:48:16.466 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: "Holle World"
-2023-05-04 19:48:16.466 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
-2023-05-04 19:48:26.322 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
-2023-05-04 19:48:26.323 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/business/test GET
-2023-05-04 19:48:26.323 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TestController.test
-2023-05-04 19:48:26.323 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
-2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: []
-2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: "Holle World"
-2023-05-04 19:48:26.324 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------
-2023-05-04 20:08:45.603 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2023-05-04 20:08:45.610 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-05 18:42:47.170 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 2012 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-05 18:42:47.173 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-05 18:42:48.346 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
+2023-05-05 18:42:48.362 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
+2023-05-05 18:42:48.381 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-05 18:42:48.382 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-05 18:42:48.461 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-05 18:42:48.462 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1253 ms
+2023-05-05 18:42:49.025 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-05 18:42:49.324 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-05-05 18:42:49.375 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
+2023-05-05 18:42:49.396 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
+2023-05-05 18:42:49.398 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 2.628 seconds (JVM running for 4.245)
+2023-05-05 18:42:49.401 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
+2023-05-05 18:42:49.401 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
+2023-05-05 18:48:24.202 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-05 18:48:24.202 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-05 18:48:24.219 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 16 ms
+2023-05-05 18:48:24.349 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.train.common.response.DBResult com.train.controller.StationController.save(com.train.bean.request.StationSaveReq) with 2 errors: [Field error in object 'stationSaveReq' on field 'updateTime': rejected value [null]; codes [NotNull.stationSaveReq.updateTime,NotNull.updateTime,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [stationSaveReq.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [【修改时间】不能为空]] [Field error in object 'stationSaveReq' on field 'createTime': rejected value [null]; codes [NotNull.stationSaveReq.createTime,NotNull.createTime,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [stationSaveReq.createTime,createTime]; arguments []; default message [createTime]]; default message [【新增时间】不能为空]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-05-05 18:49:14.067 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.train.common.response.DBResult com.train.controller.StationController.save(com.train.bean.request.StationSaveReq) with 2 errors: [Field error in object 'stationSaveReq' on field 'updateTime': rejected value [null]; codes [NotNull.stationSaveReq.updateTime,NotNull.updateTime,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [stationSaveReq.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [【修改时间】不能为空]] [Field error in object 'stationSaveReq' on field 'createTime': rejected value [null]; codes [NotNull.stationSaveReq.createTime,NotNull.createTime,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [stationSaveReq.createTime,createTime]; arguments []; default message [createTime]]; default message [【新增时间】不能为空]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-05-05 18:49:26.165 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-05 18:49:26.166 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'

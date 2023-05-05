@@ -72,6 +72,33 @@ accessToken: {{accessToken}}
 
 ###
 
+# 车站接口调试
+# 添加车站  新增与修改接口一样 参数不同
+# 修改车站 需要添加该参数  "id": "1654440085342523392",
+POST http://localhost:10001/business/admin/station/save
+Content-Type: application/json
+
+{
+
+  "name": "重庆",
+  "namePinyin": "chongqing",
+  "namePy": "cq"
+}
+
+###
+
+# 查询车站
+GET http://localhost:10001/business/admin/station/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+
+###
+
+# 删除车站
+DELETE http://localhost:10001/business/admin/station/delete/1654438720721522688
+Content-Type: application/json
+
+###
+
 
 
 
