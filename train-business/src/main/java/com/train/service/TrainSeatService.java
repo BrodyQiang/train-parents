@@ -54,7 +54,12 @@ public class TrainSeatService {
     public DBPages<TrainSeatQueryRes> queryList(TrainSeatQueryReq bean) {
 
         TrainSeatExample example = new TrainSeatExample();
+        example.setOrderByClause("train_code asc,`index` asc");
         TrainSeatExample.Criteria criteria = example.createCriteria();
+        // 添加查询条件 按照车次查询
+        if (ObjectUtil.isNotEmpty(bean.getTrainCode())) {
+            criteria.andTrainCodeEqualTo(bean.getTrainCode());
+        }
 
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());
