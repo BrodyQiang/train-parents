@@ -410,3 +410,282 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2023-05-05 19:00:40.908 DEBUG c.t.m.StationMapper.updateByPrimaryKeySelective   :181  [32m                  [0;39m <==    Updates: 1
 2023-05-05 19:00:40.908 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
 2023-05-05 19:00:40.908 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-05-05 19:08:27.057 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:08:27.057 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:08:27.058 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:08:27.058 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:08:27.061 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"G1","end":"上海","endPinyin":"shanghai","endTime":21600000,"start":"北京","startPinyin":"beijing","startTime":7200000,"type":"高铁"}]
+2023-05-05 19:08:27.065 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:08:27.066 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654442929298739200(Long), G1(String), 高铁(String), 北京(String), beijing(String), 10:00:00(Time), 上海(String), shanghai(String), 14:00:00(Time), 2023-05-05 19:08:27.065(Timestamp), 2023-05-05 19:08:27.065(Timestamp)
+2023-05-05 19:08:27.070 ERROR c.t.common.controller.ControllerExceptionHandler  :34   [32m                  [0;39m 系统异常：
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'type' at row 1
+### The error may involve com.train.mapper.TrainMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into train (id, code, `type`, `start`,        start_pinyin, start_time, `end`,        end_pinyin, end_time, create_time,        update_time)     values (?, ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'type' at row 1
+; Data truncation: Data too long for column 'type' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'type' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:104)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy79.insert(Unknown Source)
+	at com.train.service.TrainService.save(TrainService.java:46)
+	at com.train.controller.TrainController.save(TrainController.java:31)
+	at com.train.controller.TrainController$$FastClassBySpringCGLIB$$28bdcfc5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.train.common.aspect.LogAspect.doAround(LogAspect.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.train.controller.TrainController$$EnhancerBySpringCGLIB$$1aebeef.save(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'type' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4230)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy108.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy106.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 81 common frames omitted
+2023-05-05 19:09:01.377 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:09:01.377 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:09:01.378 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:09:01.378 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:09:01.378 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"G1","end":"上海","endPinyin":"shanghai","endTime":21600000,"start":"北京","startPinyin":"beijing","startTime":7200000,"type":"G"}]
+2023-05-05 19:09:01.381 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:09:01.382 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654443073226280960(Long), G1(String), G(String), 北京(String), beijing(String), 10:00:00(Time), 上海(String), shanghai(String), 14:00:00(Time), 2023-05-05 19:09:01.38(Timestamp), 2023-05-05 19:09:01.38(Timestamp)
+2023-05-05 19:09:01.384 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:09:01.384 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:09:01.384 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-05-05 19:09:47.144 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:09:47.144 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:09:47.144 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:09:47.144 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:09:47.145 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"G2","end":"北京","endPinyin":"beijing","endTime":21600000,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G"}]
+2023-05-05 19:09:47.147 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:09:47.149 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654443265186992128(Long), G2(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 北京(String), beijing(String), 14:00:00(Time), 2023-05-05 19:09:47.147(Timestamp), 2023-05-05 19:09:47.147(Timestamp)
+2023-05-05 19:09:47.152 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:09:47.154 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:09:47.154 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2023-05-05 19:10:16.587 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:10:16.587 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:10:16.588 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:10:16.588 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:10:16.588 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"G3","end":"武汉","endPinyin":"wuhan","endTime":21600000,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G"}]
+2023-05-05 19:10:16.590 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:10:16.591 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654443388675690496(Long), G3(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 武汉(String), wuhan(String), 14:00:00(Time), 2023-05-05 19:10:16.589(Timestamp), 2023-05-05 19:10:16.589(Timestamp)
+2023-05-05 19:10:16.593 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:10:16.594 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:10:16.595 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2023-05-05 19:10:34.555 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:10:34.555 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:10:34.555 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:10:34.555 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:10:34.556 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"G4","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G"}]
+2023-05-05 19:10:34.557 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:10:34.558 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654443464034750464(Long), G4(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:10:34.556(Timestamp), 2023-05-05 19:10:34.556(Timestamp)
+2023-05-05 19:10:34.560 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:10:34.561 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:10:34.561 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-05 19:10:59.480 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:10:59.481 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:10:59.481 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:10:59.481 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:10:59.482 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"D1","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D"}]
+2023-05-05 19:10:59.483 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:10:59.484 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654443568581971968(Long), D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:10:59.482(Timestamp), 2023-05-05 19:10:59.482(Timestamp)
+2023-05-05 19:10:59.485 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:10:59.486 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:10:59.486 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-05 19:11:05.757 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:11:05.757 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/queryList GET
+2023-05-05 19:11:05.758 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.queryList
+2023-05-05 19:11:05.758 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:11:05.759 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"pageNum":1,"pageSize":10}]
+2023-05-05 19:11:05.764 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM train 
+2023-05-05 19:11:05.765 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m ==> Parameters: 
+2023-05-05 19:11:05.765 TRACE com.train.mapper.TrainMapper.selectByExample_COUNT:187  [32m                  [0;39m <==    Columns: count(0)
+2023-05-05 19:11:05.766 TRACE com.train.mapper.TrainMapper.selectByExample_COUNT:187  [32m                  [0;39m <==        Row: 5
+2023-05-05 19:11:05.766 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m <==      Total: 1
+2023-05-05 19:11:05.766 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m ==>  Preparing: select id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time from train LIMIT ? 
+2023-05-05 19:11:05.767 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m ==> Parameters: 10(Integer)
+2023-05-05 19:11:05.768 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==    Columns: id, code, type, start, start_pinyin, start_time, end, end_pinyin, end_time, create_time, update_time
+2023-05-05 19:11:05.768 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443073226280960, G1, G, 北京, beijing, 10:00:00, 上海, shanghai, 14:00:00, 2023-05-05 19:09:01.0, 2023-05-05 19:09:01.0
+2023-05-05 19:11:05.769 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443265186992128, G2, G, 上海, shanghai, 10:00:00, 北京, beijing, 14:00:00, 2023-05-05 19:09:47.0, 2023-05-05 19:09:47.0
+2023-05-05 19:11:05.770 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443388675690496, G3, G, 上海, shanghai, 10:00:00, 武汉, wuhan, 14:00:00, 2023-05-05 19:10:17.0, 2023-05-05 19:10:17.0
+2023-05-05 19:11:05.770 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443464034750464, G4, G, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:35.0, 2023-05-05 19:10:35.0
+2023-05-05 19:11:05.771 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443568581971968, D1, D, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:59.0, 2023-05-05 19:10:59.0
+2023-05-05 19:11:05.771 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m <==      Total: 5
+2023-05-05 19:11:05.775 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"pageNum":1,"pageSize":5,"pageTotal":1,"result":[{"code":"G1","createTime":1683284941000,"end":"上海","endPinyin":"shanghai","endTime":21600000,"id":1654443073226280960,"start":"北京","startPinyin":"beijing","startTime":7200000,"type":"G","updateTime":1683284941000},{"code":"G2","createTime":1683284987000,"end":"北京","endPinyin":"beijing","endTime":21600000,"id":1654443265186992128,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683284987000},{"code":"G3","createTime":1683285017000,"end":"武汉","endPinyin":"wuhan","endTime":21600000,"id":1654443388675690496,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285017000},{"code":"G4","createTime":1683285035000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443464034750464,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285035000},{"code":"D1","createTime":1683285059000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443568581971968,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D","updateTime":1683285059000}],"total":5}
+2023-05-05 19:11:05.776 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-05 19:11:49.138 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:11:49.138 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:11:49.139 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:11:49.139 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:11:49.139 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"D1","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443568581971968,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D"}]
+2023-05-05 19:11:49.141 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==>  Preparing: update train SET code = ?, `type` = ?, `start` = ?, start_pinyin = ?, start_time = ?, `end` = ?, end_pinyin = ?, end_time = ?, update_time = ? where id = ? 
+2023-05-05 19:11:49.141 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==> Parameters: D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:11:49.139(Timestamp), 1654443568581971968(Long)
+2023-05-05 19:11:49.143 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:11:49.144 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:11:49.144 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-05 19:12:14.864 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:12:14.864 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:12:14.864 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:12:14.876 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:12:14.877 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"D1","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443568581971968,"start":"上海1","startPinyin":"shanghai","startTime":7200000,"type":"D"}]
+2023-05-05 19:12:14.879 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==>  Preparing: update train SET code = ?, `type` = ?, `start` = ?, start_pinyin = ?, start_time = ?, `end` = ?, end_pinyin = ?, end_time = ?, update_time = ? where id = ? 
+2023-05-05 19:12:14.881 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==> Parameters: D1(String), D(String), 上海1(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:12:14.878(Timestamp), 1654443568581971968(Long)
+2023-05-05 19:12:14.882 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:12:14.883 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:12:14.883 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-05 19:12:25.888 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:12:25.888 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:12:25.888 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:12:25.888 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:12:25.889 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"D1","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443568581971968,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D"}]
+2023-05-05 19:12:25.891 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==>  Preparing: update train SET code = ?, `type` = ?, `start` = ?, start_pinyin = ?, start_time = ?, `end` = ?, end_pinyin = ?, end_time = ?, update_time = ? where id = ? 
+2023-05-05 19:12:25.892 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m ==> Parameters: D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:12:25.889(Timestamp), 1654443568581971968(Long)
+2023-05-05 19:12:25.893 DEBUG c.t.mapper.TrainMapper.updateByPrimaryKeySelective:181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:12:25.894 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:12:25.894 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-05 19:12:39.009 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:12:39.009 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/delete/1654443568581971968 DELETE
+2023-05-05 19:12:39.009 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.delete
+2023-05-05 19:12:39.009 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:12:39.009 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [1654443568581971968]
+2023-05-05 19:12:39.010 DEBUG com.train.mapper.TrainMapper.deleteByPrimaryKey   :181  [32m                  [0;39m ==>  Preparing: delete from train where id = ? 
+2023-05-05 19:12:39.010 DEBUG com.train.mapper.TrainMapper.deleteByPrimaryKey   :181  [32m                  [0;39m ==> Parameters: 1654443568581971968(Long)
+2023-05-05 19:12:39.012 DEBUG com.train.mapper.TrainMapper.deleteByPrimaryKey   :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:12:39.012 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:12:39.012 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2023-05-05 19:12:45.989 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:12:45.989 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/save POST
+2023-05-05 19:12:45.989 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.save
+2023-05-05 19:12:45.990 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:12:45.990 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"code":"D1","end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D"}]
+2023-05-05 19:12:45.991 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==>  Preparing: insert into train (id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-05 19:12:45.991 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m ==> Parameters: 1654444015308902400(Long), D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-05 19:12:45.99(Timestamp), 2023-05-05 19:12:45.99(Timestamp)
+2023-05-05 19:12:45.993 DEBUG com.train.mapper.TrainMapper.insert               :181  [32m                  [0;39m <==    Updates: 1
+2023-05-05 19:12:45.994 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
+2023-05-05 19:12:45.994 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2023-05-05 19:12:53.723 INFO  com.train.common.aspect.LogAspect                 :50   [32m                  [0;39m ------------- 开始 -------------
+2023-05-05 19:12:53.723 INFO  com.train.common.aspect.LogAspect                 :51   [32m                  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/train/queryList GET
+2023-05-05 19:12:53.723 INFO  com.train.common.aspect.LogAspect                 :52   [32m                  [0;39m 类名方法: com.train.controller.TrainController.queryList
+2023-05-05 19:12:53.723 INFO  com.train.common.aspect.LogAspect                 :53   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-05-05 19:12:53.724 INFO  com.train.common.aspect.LogAspect                 :74   [32m                  [0;39m 请求参数: [{"pageNum":1,"pageSize":10}]
+2023-05-05 19:12:53.725 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM train 
+2023-05-05 19:12:53.726 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m ==> Parameters: 
+2023-05-05 19:12:53.727 TRACE com.train.mapper.TrainMapper.selectByExample_COUNT:187  [32m                  [0;39m <==    Columns: count(0)
+2023-05-05 19:12:53.727 TRACE com.train.mapper.TrainMapper.selectByExample_COUNT:187  [32m                  [0;39m <==        Row: 5
+2023-05-05 19:12:53.727 DEBUG com.train.mapper.TrainMapper.selectByExample_COUNT:181  [32m                  [0;39m <==      Total: 1
+2023-05-05 19:12:53.727 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m ==>  Preparing: select id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time from train LIMIT ? 
+2023-05-05 19:12:53.728 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m ==> Parameters: 10(Integer)
+2023-05-05 19:12:53.728 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==    Columns: id, code, type, start, start_pinyin, start_time, end, end_pinyin, end_time, create_time, update_time
+2023-05-05 19:12:53.729 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443073226280960, G1, G, 北京, beijing, 10:00:00, 上海, shanghai, 14:00:00, 2023-05-05 19:09:01.0, 2023-05-05 19:09:01.0
+2023-05-05 19:12:53.731 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443265186992128, G2, G, 上海, shanghai, 10:00:00, 北京, beijing, 14:00:00, 2023-05-05 19:09:47.0, 2023-05-05 19:09:47.0
+2023-05-05 19:12:53.732 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443388675690496, G3, G, 上海, shanghai, 10:00:00, 武汉, wuhan, 14:00:00, 2023-05-05 19:10:17.0, 2023-05-05 19:10:17.0
+2023-05-05 19:12:53.733 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654443464034750464, G4, G, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:35.0, 2023-05-05 19:10:35.0
+2023-05-05 19:12:53.733 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m                  [0;39m <==        Row: 1654444015308902400, D1, D, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:12:46.0, 2023-05-05 19:12:46.0
+2023-05-05 19:12:53.733 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m                  [0;39m <==      Total: 5
+2023-05-05 19:12:53.737 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200,"pageNum":1,"pageSize":5,"pageTotal":1,"result":[{"code":"G1","createTime":1683284941000,"end":"上海","endPinyin":"shanghai","endTime":21600000,"id":1654443073226280960,"start":"北京","startPinyin":"beijing","startTime":7200000,"type":"G","updateTime":1683284941000},{"code":"G2","createTime":1683284987000,"end":"北京","endPinyin":"beijing","endTime":21600000,"id":1654443265186992128,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683284987000},{"code":"G3","createTime":1683285017000,"end":"武汉","endPinyin":"wuhan","endTime":21600000,"id":1654443388675690496,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285017000},{"code":"G4","createTime":1683285035000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654443464034750464,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"G","updateTime":1683285035000},{"code":"D1","createTime":1683285166000,"end":"郑州","endPinyin":"zhengzhou","endTime":21600000,"id":1654444015308902400,"start":"上海","startPinyin":"shanghai","startTime":7200000,"type":"D","updateTime":1683285166000}],"total":5}
+2023-05-05 19:12:53.738 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------

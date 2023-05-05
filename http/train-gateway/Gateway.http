@@ -131,6 +131,38 @@ Content-Type: application/json
 ###
 
 
+# 火车两车站信息接口调试
+# 添加火车两车站信息  新增与修改接口一样 参数不同
+# 修改火车两车站信息 需要添加该参数  "id": "1654443568581971968",
+POST http://localhost:10001/business/admin/trainStation/save
+Content-Type: application/json
+
+{
+  "trainCode": "D1",
+  "stationIndex": 4,
+  "name": "郑州",
+  "namePinyin": "zhengzhou",
+  "inTime": "14:00:00",
+  "outTime": "14:10:00",
+  "stopTime": "00:10:00",
+  "km": "100"
+}
+
+###
+
+# 查询火车两车站信息
+GET http://localhost:10001/business/admin/trainStation/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+
+###
+
+# 删除火车两车站信息
+DELETE http://localhost:10001/business/admin/trainStation/delete/1654446468234350592
+Content-Type: application/json
+
+###
+
+
 
 
 
