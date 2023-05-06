@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <!-- 自动检查关键字，为关键字增加反引号 -->
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成的实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!-- 配置数据源，需要根据自己的项目修改 -->
+        <!--MySQL 5.7 之后配置 需要加.cj driverClass="com.mysql.cj.jdbc.Driver"-->
+        <!--MySQL 5.7 之前配置 不需要加.cj driverClass="com.mysql.jdbc.Driver"-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/12306-train-batch?serverTimezone=Asia/Shanghai"
+
+                        userId="train-user"
+                        password="train">
+        </jdbcConnection>
+
+        <!-- domain类的位置 targetProject是相对pom.xml的路径-->
+        <javaModelGenerator targetProject="../train-batch/src/main/java"
+                            targetPackage="com.train.domain"/>
+
+        <!-- mapper xml的位置 targetProject是相对pom.xml的路径 -->
+        <sqlMapGenerator targetProject="../train-batch/src/main/resources"
+                         targetPackage="mapper"/>
+
+        <!-- mapper类的位置 targetProject是相对pom.xml的路径 -->
+        <javaClientGenerator targetProject="../train-batch/src/main/java"
+                             targetPackage="com.train.mapper"
+                             type="XMLMAPPER"/>
+
+        <!--对应数据库的那张表  生成的类首字母大写 多张表就是写多个 table 标签-->
+        <table tableName="account_info" domainObjectName="AccountInfo"/>
+    </context>
+</generatorConfiguration>
