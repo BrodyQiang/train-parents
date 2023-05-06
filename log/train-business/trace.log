@@ -3764,3 +3764,7 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2023-05-05 21:15:07.315 DEBUG com.train.mapper.TrainSeatMapper.insert           :181  [32m                  [0;39m <==    Updates: 1
 2023-05-05 21:15:07.316 INFO  com.train.common.aspect.LogAspect                 :86   [32m                  [0;39m 返回结果: {"code":200}
 2023-05-05 21:15:07.316 INFO  com.train.common.aspect.LogAspect                 :87   [32m                  [0;39m ------------- 结束 耗时：280 ms -------------
+2023-05-05 21:27:00.601 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-05 21:27:00.602 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-05 21:27:00.603 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-05-05 21:27:00.608 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.

@@ -1,0 +1,4 @@
+GET http://localhost:10006/batch/batch/test
+Accept: application/json
+
+###

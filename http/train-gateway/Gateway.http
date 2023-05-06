@@ -6,6 +6,11 @@ GET http://localhost:10001/business/admin/business/test
 Accept: application/json
 
 ###
+GET http://localhost:10001/batch/batch/test
+Accept: application/json
+accessToken: {{accessToken}}
+
+###
 
 POST http://localhost:10001/system/management/account/rendCode
 Content-Type: application/json
