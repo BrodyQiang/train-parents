@@ -36,7 +36,7 @@ public class JobController {
         String jobGroupName = cronJobReq.getGroup();
         LOG.info("手动执行任务开始：{}, {}", jobClassName, jobGroupName);
         schedulerFactoryBean.getScheduler().triggerJob(JobKey.jobKey(jobClassName, jobGroupName));
-        return DBResult.success();
+        return DBResult.success("手动执行任务成功");
     }
 
     @RequestMapping(value = "/add")

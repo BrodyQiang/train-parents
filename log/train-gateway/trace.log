@@ -20,3 +20,8 @@
 2023-05-07 14:08:55.270 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/add
 2023-05-07 14:09:11.203 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/query
 2023-05-07 14:09:18.085 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/resume
+2023-05-07 14:15:53.221 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/query
+2023-05-07 14:16:06.544 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/pause
+2023-05-07 14:16:33.339 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/resume
+2023-05-07 14:16:47.552 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/reschedule
+2023-05-07 14:16:59.596 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/delete

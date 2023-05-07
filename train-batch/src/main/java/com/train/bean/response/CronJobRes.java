@@ -30,11 +30,11 @@ public class CronJobRes {
     // 定时任务表达式
     private String cronExpression;
 
-    // 时间
+    // 下次时间
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date nextFireTime;
 
-    // 时间
+    // 上次时间
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date preFireTime;
 
