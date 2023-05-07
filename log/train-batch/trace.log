@@ -82,3 +82,85 @@
 2023-05-07 11:44:37.277 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
 2023-05-07 11:44:37.277 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
 2023-05-07 11:44:37.278 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-07 14:08:07.232 INFO  com.train.TrainBatchApplication                   :50   [32m                  [0;39m Starting TrainBatchApplication on DESKTOP-J1SB6R6 with PID 11608 (D:\studies\backend\train-parents\train-batch\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-07 14:08:07.235 INFO  com.train.TrainBatchApplication                   :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-07 14:08:07.886 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
+2023-05-07 14:08:08.418 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10006 (http)
+2023-05-07 14:08:08.431 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10006"]
+2023-05-07 14:08:08.443 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-07 14:08:08.443 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-07 14:08:08.536 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-07 14:08:08.536 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1233 ms
+2023-05-07 14:08:08.671 INFO  org.quartz.impl.StdSchedulerFactory               :1208 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-05-07 14:08:08.679 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-07 14:08:08.679 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.1 created.
+2023-05-07 14:08:08.738 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-05-07 14:08:08.877 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-05-07 14:08:08.882 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-05-07 14:08:08.884 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-05-07 14:08:08.885 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2023-05-07 14:08:08.885 INFO  org.quartz.impl.StdSchedulerFactory               :1362 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-05-07 14:08:08.885 INFO  org.quartz.impl.StdSchedulerFactory               :1366 [32m                  [0;39m Quartz scheduler version: 2.3.1
+2023-05-07 14:08:08.885 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.train.config.MyJobFactory@24c685e7
+2023-05-07 14:08:09.171 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-05-07 14:08:09.297 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-07 14:08:09.709 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-05-07 14:08:09.712 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-05-07 14:08:09.738 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-05-07 14:08:09.862 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :732  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
+2023-05-07 14:08:09.868 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10006"]
+2023-05-07 14:08:09.885 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10006 (http) with context path '/batch'
+2023-05-07 14:08:09.888 INFO  com.train.TrainBatchApplication                   :59   [32m                  [0;39m Started TrainBatchApplication in 3.328 seconds (JVM running for 4.488)
+2023-05-07 14:08:11.864 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :748  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
+2023-05-07 14:08:11.891 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-05-07 14:08:11.894 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-05-07 14:08:11.895 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
+2023-05-07 14:08:11.895 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
+2023-05-07 14:08:11.896 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
+2023-05-07 14:08:11.897 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-05-07 14:08:55.352 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-07 14:08:55.353 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-07 14:08:55.359 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2023-05-07 14:08:55.409 INFO  com.train.common.aspect.LogAspect                 :50   [32m1683439735368tbu  [0;39m ------------- 开始 -------------
+2023-05-07 14:08:55.410 INFO  com.train.common.aspect.LogAspect                 :51   [32m1683439735368tbu  [0;39m 请求地址: http://127.0.0.1:10006/batch/admin/job/add POST
+2023-05-07 14:08:55.410 INFO  com.train.common.aspect.LogAspect                 :52   [32m1683439735368tbu  [0;39m 类名方法: com.train.controller.JobController.add
+2023-05-07 14:08:55.410 INFO  com.train.common.aspect.LogAspect                 :53   [32m1683439735368tbu  [0;39m 远程地址: 127.0.0.1
+2023-05-07 14:08:55.463 INFO  com.train.common.aspect.LogAspect                 :74   [32m1683439735368tbu  [0;39m 请求参数: [{"cronExpression":"*/2 * * * * ?","name":"com.train.job.TestJob"}]
+2023-05-07 14:08:55.465 INFO  com.train.controller.JobController                :48   [32m1683439735368tbu  [0;39m 创建定时任务开始：com.train.job.TestJob，null，*/2 * * * * ?，null
+2023-05-07 14:08:55.466 INFO  org.quartz.core.QuartzScheduler                   :547  [32m1683439735368tbu  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-05-07 14:08:55.486 INFO  com.train.controller.JobController                :78   [32m1683439735368tbu  [0;39m 创建定时任务结束：DBResult(code=200, msg=null, result=null)
+2023-05-07 14:08:55.489 INFO  com.train.common.aspect.LogAspect                 :86   [32m1683439735368tbu  [0;39m 返回结果: {"code":200}
+2023-05-07 14:08:55.490 INFO  com.train.common.aspect.LogAspect                 :87   [32m1683439735368tbu  [0;39m ------------- 结束 耗时：82 ms -------------
+2023-05-07 14:09:11.210 INFO  com.train.common.aspect.LogAspect                 :50   [32m16834397512108f9  [0;39m ------------- 开始 -------------
+2023-05-07 14:09:11.211 INFO  com.train.common.aspect.LogAspect                 :51   [32m16834397512108f9  [0;39m 请求地址: http://127.0.0.1:10006/batch/admin/job/query GET
+2023-05-07 14:09:11.211 INFO  com.train.common.aspect.LogAspect                 :52   [32m16834397512108f9  [0;39m 类名方法: com.train.controller.JobController.query
+2023-05-07 14:09:11.211 INFO  com.train.common.aspect.LogAspect                 :53   [32m16834397512108f9  [0;39m 远程地址: 127.0.0.1
+2023-05-07 14:09:11.211 INFO  com.train.common.aspect.LogAspect                 :74   [32m16834397512108f9  [0;39m 请求参数: []
+2023-05-07 14:09:11.211 INFO  com.train.controller.JobController                :171  [32m16834397512108f9  [0;39m 查看所有定时任务开始
+2023-05-07 14:09:11.218 INFO  com.train.controller.JobController                :202  [32m16834397512108f9  [0;39m 查看定时任务结束：DBResult(code=200, msg=null, result=[CronJobRes(group=DEFAULT, name=com.train.job.TestJob, description=null, state=NORMAL, cronExpression=*/2 * * * * ?, nextFireTime=Sun May 07 14:09:12 CST 2023, preFireTime=Sun May 07 14:09:10 CST 2023)])
+2023-05-07 14:09:11.224 INFO  com.train.common.aspect.LogAspect                 :86   [32m16834397512108f9  [0;39m 返回结果: {"code":200,"result":[{"cronExpression":"*/2 * * * * ?","group":"DEFAULT","name":"com.train.job.TestJob","nextFireTime":1683439752000,"preFireTime":1683439750000,"state":"NORMAL"}]}
+2023-05-07 14:09:11.225 INFO  com.train.common.aspect.LogAspect                 :87   [32m16834397512108f9  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-05-07 14:09:18.090 INFO  com.train.common.aspect.LogAspect                 :50   [32m1683439758089ts0  [0;39m ------------- 开始 -------------
+2023-05-07 14:09:18.090 INFO  com.train.common.aspect.LogAspect                 :51   [32m1683439758089ts0  [0;39m 请求地址: http://127.0.0.1:10006/batch/admin/job/resume POST
+2023-05-07 14:09:18.091 INFO  com.train.common.aspect.LogAspect                 :52   [32m1683439758089ts0  [0;39m 类名方法: com.train.controller.JobController.resume
+2023-05-07 14:09:18.091 INFO  com.train.common.aspect.LogAspect                 :53   [32m1683439758089ts0  [0;39m 远程地址: 127.0.0.1
+2023-05-07 14:09:18.091 INFO  com.train.common.aspect.LogAspect                 :74   [32m1683439758089ts0  [0;39m 请求参数: [{"name":"com.train.job.TestJob"}]
+2023-05-07 14:09:18.092 INFO  com.train.controller.JobController                :104  [32m1683439758089ts0  [0;39m 重启定时任务开始：com.train.job.TestJob，null
+2023-05-07 14:09:18.095 INFO  com.train.controller.JobController                :114  [32m1683439758089ts0  [0;39m 重启定时任务结束：DBResult(code=200, msg=null, result=null)
+2023-05-07 14:09:18.096 INFO  com.train.common.aspect.LogAspect                 :86   [32m1683439758089ts0  [0;39m 返回结果: {"code":200}
+2023-05-07 14:09:18.096 INFO  com.train.common.aspect.LogAspect                 :87   [32m1683439758089ts0  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-07 14:15:28.997 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-05-07 14:15:28.998 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-07 14:15:28.999 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :845  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-05-07 14:15:28.999 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2023-05-07 14:15:28.999 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-05-07 14:15:29.000 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2023-05-07 14:15:29.000 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-05-07 14:15:29.002 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
