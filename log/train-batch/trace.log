@@ -1,55 +1,84 @@
-2023-05-06 19:29:00.160 INFO  com.train.TrainBatchApplication                   :50   [32m                  [0;39m Starting TrainBatchApplication on DESKTOP-J1SB6R6 with PID 1064 (D:\studies\backend\train-parents\train-batch\target\classes started by 86180 in D:\studies\backend\train-parents)
-2023-05-06 19:29:00.163 INFO  com.train.TrainBatchApplication                   :652  [32m                  [0;39m The following profiles are active: dev
-2023-05-06 19:29:00.806 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
-2023-05-06 19:29:01.376 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10006 (http)
-2023-05-06 19:29:01.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10006"]
-2023-05-06 19:29:01.397 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-05-06 19:29:01.397 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2023-05-06 19:29:01.491 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-05-06 19:29:01.492 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1299 ms
-2023-05-06 19:29:01.882 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2023-05-06 19:29:02.014 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-06 19:29:02.370 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
-2023-05-06 19:29:02.373 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
-2023-05-06 19:29:02.395 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
-2023-05-06 19:29:02.436 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10006"]
-2023-05-06 19:29:02.453 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10006 (http) with context path '/batch'
-2023-05-06 19:29:02.455 INFO  com.train.TrainBatchApplication                   :59   [32m                  [0;39m Started TrainBatchApplication in 2.705 seconds (JVM running for 4.222)
-2023-05-06 19:33:08.091 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-06 19:33:17.530 INFO  com.train.TrainBatchApplication                   :50   [32m                  [0;39m Starting TrainBatchApplication on DESKTOP-J1SB6R6 with PID 6824 (D:\studies\backend\train-parents\train-batch\target\classes started by 86180 in D:\studies\backend\train-parents)
-2023-05-06 19:33:17.533 INFO  com.train.TrainBatchApplication                   :652  [32m                  [0;39m The following profiles are active: dev
-2023-05-06 19:33:18.173 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
-2023-05-06 19:33:18.721 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10006 (http)
-2023-05-06 19:33:18.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10006"]
-2023-05-06 19:33:18.744 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-05-06 19:33:18.745 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2023-05-06 19:33:18.838 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-05-06 19:33:18.838 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1245 ms
-2023-05-06 19:33:19.285 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2023-05-06 19:33:19.425 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-06 19:33:19.757 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
-2023-05-06 19:33:19.759 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
-2023-05-06 19:33:19.781 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
-2023-05-06 19:33:19.821 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10006"]
-2023-05-06 19:33:19.837 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10006 (http) with context path '/batch'
-2023-05-06 19:33:19.839 INFO  com.train.TrainBatchApplication                   :59   [32m                  [0;39m Started TrainBatchApplication in 2.918 seconds (JVM running for 4.183)
-2023-05-06 19:33:41.354 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-06 19:33:41.355 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-05-06 19:33:41.363 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 8 ms
-2023-05-06 19:33:41.395 INFO  com.train.common.aspect.LogAspect                 :50   [32m1683372821379koo  [0;39m ------------- 开始 -------------
-2023-05-06 19:33:41.397 INFO  com.train.common.aspect.LogAspect                 :51   [32m1683372821379koo  [0;39m 请求地址: http://localhost:10006/batch/batch/test GET
-2023-05-06 19:33:41.397 INFO  com.train.common.aspect.LogAspect                 :52   [32m1683372821379koo  [0;39m 类名方法: com.train.controller.TestController.test
-2023-05-06 19:33:41.397 INFO  com.train.common.aspect.LogAspect                 :53   [32m1683372821379koo  [0;39m 远程地址: 127.0.0.1
-2023-05-06 19:33:41.447 INFO  com.train.common.aspect.LogAspect                 :74   [32m1683372821379koo  [0;39m 请求参数: []
-2023-05-06 19:33:41.451 INFO  com.train.common.aspect.LogAspect                 :86   [32m1683372821379koo  [0;39m 返回结果: "Holle World batch"
-2023-05-06 19:33:41.452 INFO  com.train.common.aspect.LogAspect                 :87   [32m1683372821379koo  [0;39m ------------- 结束 耗时：58 ms -------------
-2023-05-06 19:35:16.508 INFO  com.train.common.interceptor.AccountInterceptor   :30   [32m16833729165076ge  [0;39m 获取账号登录accessToken：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODMzNzI4NzksIm1vYmlsZSI6IjEzMDEyMzQ1NjcxIiwiaWQiOjE2NTA0NTgwODgzODc1MTQzNjgsImV4cCI6MTY4MzQ1OTI3OSwiaWF0IjoxNjgzMzcyODc5fQ.hKSOD-B2GJEYlsx3SSXiAz61sboFnAay9XGq8OFncfQ
-2023-05-06 19:35:17.038 INFO  com.train.common.util.JwtUtil                     :55   [32m16833729165076ge  [0;39m 根据token获取原始内容：{"mobile":"13012345671","id":1650458088387514368}
-2023-05-06 19:35:17.040 INFO  com.train.common.interceptor.AccountInterceptor   :32   [32m16833729165076ge  [0;39m 当前登录账号：{"mobile":"13012345671","id":1650458088387514368}
-2023-05-06 19:35:17.076 INFO  com.train.common.aspect.LogAspect                 :50   [32m16833729165076ge  [0;39m ------------- 开始 -------------
-2023-05-06 19:35:17.076 INFO  com.train.common.aspect.LogAspect                 :51   [32m16833729165076ge  [0;39m 请求地址: http://127.0.0.1:10006/batch/batch/test GET
-2023-05-06 19:35:17.076 INFO  com.train.common.aspect.LogAspect                 :52   [32m16833729165076ge  [0;39m 类名方法: com.train.controller.TestController.test
-2023-05-06 19:35:17.076 INFO  com.train.common.aspect.LogAspect                 :53   [32m16833729165076ge  [0;39m 远程地址: 127.0.0.1
-2023-05-06 19:35:17.076 INFO  com.train.common.aspect.LogAspect                 :74   [32m16833729165076ge  [0;39m 请求参数: []
-2023-05-06 19:35:17.077 INFO  com.train.common.aspect.LogAspect                 :86   [32m16833729165076ge  [0;39m 返回结果: "Holle World batch"
-2023-05-06 19:35:17.077 INFO  com.train.common.aspect.LogAspect                 :87   [32m16833729165076ge  [0;39m ------------- 结束 耗时：2 ms -------------
+2023-05-07 11:40:16.888 INFO  com.train.TrainBatchApplication                   :50   [32m                  [0;39m Starting TrainBatchApplication on DESKTOP-J1SB6R6 with PID 7388 (D:\studies\backend\train-parents\train-batch\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-07 11:40:16.891 INFO  com.train.TrainBatchApplication                   :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-07 11:40:17.610 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
+2023-05-07 11:40:18.193 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10006 (http)
+2023-05-07 11:40:18.205 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10006"]
+2023-05-07 11:40:18.212 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-07 11:40:18.213 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-07 11:40:18.298 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-07 11:40:18.299 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1342 ms
+2023-05-07 11:40:18.705 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-05-07 11:40:18.847 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-07 11:40:19.271 INFO  org.quartz.impl.StdSchedulerFactory               :1208 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-05-07 11:40:19.283 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-07 11:40:19.283 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.1 created.
+2023-05-07 11:40:19.284 INFO  org.quartz.simpl.RAMJobStore                      :155  [32m                  [0;39m RAMJobStore initialized.
+2023-05-07 11:40:19.284 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-07 11:40:19.284 INFO  org.quartz.impl.StdSchedulerFactory               :1362 [32m                  [0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-07 11:40:19.285 INFO  org.quartz.impl.StdSchedulerFactory               :1366 [32m                  [0;39m Quartz scheduler version: 2.3.1
+2023-05-07 11:40:19.285 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@12365bd8
+2023-05-07 11:40:19.295 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-05-07 11:40:19.341 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-05-07 11:40:19.344 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-05-07 11:40:19.367 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-05-07 11:40:19.404 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :727  [32m                  [0;39m Starting Quartz Scheduler now
+2023-05-07 11:40:19.404 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-05-07 11:40:19.413 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10006"]
+2023-05-07 11:40:19.430 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10006 (http) with context path '/batch'
+2023-05-07 11:40:19.432 INFO  com.train.TrainBatchApplication                   :59   [32m                  [0;39m Started TrainBatchApplication in 3.003 seconds (JVM running for 4.57)
+2023-05-07 11:40:56.962 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-07 11:40:56.963 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-07 11:40:56.963 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :845  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-05-07 11:40:56.963 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-07 11:40:56.963 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-07 11:40:56.963 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-07 11:40:56.964 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-07 11:44:25.591 INFO  com.train.TrainBatchApplication                   :50   [32m                  [0;39m Starting TrainBatchApplication on DESKTOP-J1SB6R6 with PID 14408 (D:\studies\backend\train-parents\train-batch\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-07 11:44:25.593 INFO  com.train.TrainBatchApplication                   :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-07 11:44:26.173 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m                  [0;39m No MyBatis mapper was found in '[com.train]' package. Please check your configuration.
+2023-05-07 11:44:26.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10006 (http)
+2023-05-07 11:44:26.700 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10006"]
+2023-05-07 11:44:26.708 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-07 11:44:26.709 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-07 11:44:26.790 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-07 11:44:26.790 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1163 ms
+2023-05-07 11:44:27.200 INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping:69   [32m                  [0;39m Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2ControllerWebMvc.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2023-05-07 11:44:27.326 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-07 11:44:27.702 INFO  org.quartz.impl.StdSchedulerFactory               :1208 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-05-07 11:44:27.709 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-07 11:44:27.709 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.1 created.
+2023-05-07 11:44:27.710 INFO  org.quartz.simpl.RAMJobStore                      :155  [32m                  [0;39m RAMJobStore initialized.
+2023-05-07 11:44:27.711 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-07 11:44:27.711 INFO  org.quartz.impl.StdSchedulerFactory               :1362 [32m                  [0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-07 11:44:27.711 INFO  org.quartz.impl.StdSchedulerFactory               :1366 [32m                  [0;39m Quartz scheduler version: 2.3.1
+2023-05-07 11:44:27.711 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@349312d5
+2023-05-07 11:44:27.722 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-05-07 11:44:27.763 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:93   [32m                  [0;39m Documentation plugins bootstrapped
+2023-05-07 11:44:27.766 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:79   [32m                  [0;39m Found 1 custom documentation plugin(s)
+2023-05-07 11:44:27.787 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:44   [32m                  [0;39m Scanning for api listing references
+2023-05-07 11:44:27.820 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :727  [32m                  [0;39m Starting Quartz Scheduler now
+2023-05-07 11:44:27.821 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-05-07 11:44:27.829 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10006"]
+2023-05-07 11:44:27.845 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10006 (http) with context path '/batch'
+2023-05-07 11:44:27.847 INFO  com.train.TrainBatchApplication                   :59   [32m                  [0;39m Started TrainBatchApplication in 2.645 seconds (JVM running for 3.746)
+2023-05-07 11:44:37.276 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-07 11:44:37.276 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-07 11:44:37.277 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :845  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-05-07 11:44:37.277 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-07 11:44:37.277 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-07 11:44:37.277 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-07 11:44:37.278 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'

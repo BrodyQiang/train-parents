@@ -19,6 +19,7 @@
         <module>train-common</module>
         <module>train-generator</module>
         <module>train-business</module>
+        <module>train-batch</module>
     </modules>
 
     <groupId>com.train</groupId>
