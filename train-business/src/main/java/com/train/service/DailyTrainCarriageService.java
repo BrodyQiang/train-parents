@@ -11,6 +11,7 @@ import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.DailyTrainCarriage;
 import com.train.domain.DailyTrainCarriageExample;
+import com.train.enums.SeatColEnum;
 import com.train.mapper.DailyTrainCarriageMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,11 +32,17 @@ public class DailyTrainCarriageService {
 
     public void save(DailyTrainCarriageSaveReq bean) {
 
-        DailyTrainCarriage dailyTrainCarriage = BeanUtil.copyProperties(bean, DailyTrainCarriage.class);
 
         // 当前时间
         DateTime now = DateTime.now();
 
+        // 自动计算出列数和总座位数
+        List<SeatColEnum> seatColEnums = SeatColEnum.getColsByType(bean.getSeatType());
+        bean.setColCount(seatColEnums.size());
+        bean.setSeatCount(bean.getColCount() * bean.getRowCount());
+
+
+        DailyTrainCarriage dailyTrainCarriage = BeanUtil.copyProperties(bean, DailyTrainCarriage.class);
         if (ObjectUtil.isNull(dailyTrainCarriage.getId())) {
             // 新增
             //使用雪花算法生成id
