@@ -22,7 +22,7 @@ public class TrainBusinessApplication {
         LOG.info("启动成功！！");
         LOG.info("业务模块地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
         System.out.println("-----项目启动成功-----");
-        System.out.printf("业务模块地址: \thttp://127.0.0.1:%s", env.getProperty("server.port"));
+        System.out.printf("业务模块地址: \thttp://127.0.0.1:%s \n", env.getProperty("server.port"));
     }
 
 }

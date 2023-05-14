@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test() {
-        return "Holle World";
+        return "Holle World ---------------测试feign调用";
     }
 
 }
