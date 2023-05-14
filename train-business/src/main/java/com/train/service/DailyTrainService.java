@@ -19,6 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -126,7 +127,9 @@ public class DailyTrainService {
      * @param date 生成某日天的车次信息 包括车次信息、车站信息、车厢信息、座位信息
      * @param train 基础车次信息
      */
-    private void getDailyTrain(Date date, Train train) {
+
+    @Transactional  // 因为是批量操作，为了保证数据的一致性，这里使用事务
+    public void getDailyTrain(Date date, Train train) {
         LOG.info("生成当天车次信息，车次：{}，日期：{}", train.getCode(), DateUtil.formatDate(date));
         // 先删除当天的车次信息
         DailyTrainExample example = new DailyTrainExample();

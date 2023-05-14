@@ -19,6 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -96,6 +97,7 @@ public class DailyTrainStationService {
      * @param date 生成某天的车站信息
      * @param trainCode 某日车站的车次号
      */
+    @Transactional
     public void genDaily(Date date, String trainCode) {
         LOG.info("生成某天的车站信息，date:{},trainCode:{}", DateUtil.formatDate(date), trainCode);
 
