@@ -6,15 +6,15 @@ import java.util.List;
 
 public enum SeatColEnum {
 
-    YDZ_A("A", "A", "01"),
-    YDZ_C("C", "C", "01"),
-    YDZ_D("D", "D", "01"),
-    YDZ_F("F", "F", "01"),
-    EDZ_A("A", "A", "02"),
-    EDZ_B("B", "B", "02"),
-    EDZ_C("C", "C", "02"),
-    EDZ_D("D", "D", "02"),
-    EDZ_F("F", "F", "02");
+    YDZ_A("A", "A", "02"),
+    YDZ_C("C", "C", "02"),
+    YDZ_D("D", "D", "02"),
+    YDZ_F("F", "F", "02"),
+    EDZ_A("A", "A", "03"),
+    EDZ_B("B", "B", "03"),
+    EDZ_C("C", "C", "03"),
+    EDZ_D("D", "D", "03"),
+    EDZ_F("F", "F", "03");
 
     private String code;
 
@@ -62,7 +62,7 @@ public enum SeatColEnum {
         List<SeatColEnum> colList = new ArrayList<>();
         EnumSet<SeatColEnum> seatColEnums = EnumSet.allOf(SeatColEnum.class);
         for (SeatColEnum anEnum : seatColEnums) {
-            if (seatType.equals(anEnum.getType())) {
+            if (anEnum.getType().equals(seatType)) {
                 colList.add(anEnum);
             }
         }

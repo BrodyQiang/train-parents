@@ -135,4 +135,22 @@ public class DailyTrainSeatService {
         });
         LOG.info("生成当天的车次座位信息成功，date={},trainCode={}", DateUtil.formatDate(date), trainCode);
     }
+
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/14 20:33
+     * @param date 日期
+     * @param trainCode 车次
+     * @param seatType 座位类型
+     * @return int 根据日期、车次、座位类型查询剩余座位数
+     */
+    public int countSeat(Date date, String trainCode, String seatType) {
+        DailyTrainSeatExample example = new DailyTrainSeatExample();
+        example.createCriteria().andDateEqualTo(date).andTrainCodeEqualTo(trainCode).andSeatTypeEqualTo(seatType);
+        long count = mapper.countByExample(example);
+        if (count == 0L) {
+            return -1;
+        }
+        return (int) count;
+    }
 }

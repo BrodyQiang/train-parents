@@ -50,6 +50,9 @@ public class DailyTrainService {
     @Autowired
     private DailyTrainSeatService dailyTrainSeatService;
 
+    @Autowired
+    private DailyTrainTicketService dailyTrainTicketService;
+
     public void save(DailyTrainSaveReq bean) {
 
         DailyTrain dailyTrain = BeanUtil.copyProperties(bean, DailyTrain.class);
@@ -156,5 +159,8 @@ public class DailyTrainService {
 
         // 生成当天的座位信息
         dailyTrainSeatService.genDaily(date, train.getCode());
+
+        // 生成当天的余票信息
+        dailyTrainTicketService.genDaily(dailyTrain, date, train.getCode());
     }
 }

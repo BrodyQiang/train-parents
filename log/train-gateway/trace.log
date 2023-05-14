@@ -23,3 +23,31 @@
 2023-05-14 13:11:30.938 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/pause
 2023-05-14 13:11:54.150 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
 2023-05-14 14:06:19.441 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
+2023-05-14 20:56:55.437 INFO  com.train.gateway.GatewayApplication              :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-14 20:56:55.775 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=eae98208-2433-3b75-a517-236a36fb1455
+2023-05-14 20:56:57.791 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-05-14 20:56:57.792 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-05-14 20:56:57.793 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :120  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-05-14 20:56:59.003 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :82   [32m                  [0;39m Netty started on port(s): 10001
+2023-05-14 20:56:59.817 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 7.924 seconds (JVM running for 9.652)
+2023-05-14 20:56:59.818 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
+2023-05-14 20:56:59.818 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-05-14 20:58:34.316 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
+2023-05-14 21:11:59.070 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:15:41.502 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:18:25.801 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:21:32.992 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:21:57.948 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:25:44.712 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:27:46.216 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/D1
+2023-05-14 21:31:31.126 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run

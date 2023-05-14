@@ -2,3 +2,11 @@
 2023-05-14 14:06:20.226 ERROR com.train.service.DailyTrainCarriageService       :118  [32m1684044379767xts  [0;39m 车次G3没有车厢信息
 2023-05-14 14:06:20.245 ERROR com.train.service.DailyTrainCarriageService       :118  [32m1684044379767xts  [0;39m 车次G2没有车厢信息
 2023-05-14 14:06:20.262 ERROR com.train.service.DailyTrainCarriageService       :118  [32m1684044379767xts  [0;39m 车次G1没有车厢信息
+2023-05-14 20:58:35.329 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684069114846wl6  [0;39m 车次G4没有车厢信息
+2023-05-14 20:58:35.371 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684069114846wl6  [0;39m 车次G3没有车厢信息
+2023-05-14 20:58:35.450 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684069114846wl6  [0;39m 车次G2没有车厢信息
+2023-05-14 20:58:35.493 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684069114846wl6  [0;39m 车次G1没有车厢信息
+2023-05-14 21:31:31.422 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684071091325lso  [0;39m 车次G4没有车厢信息
+2023-05-14 21:31:31.451 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684071091325lso  [0;39m 车次G3没有车厢信息
+2023-05-14 21:31:31.469 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684071091325lso  [0;39m 车次G2没有车厢信息
+2023-05-14 21:31:31.493 ERROR com.train.service.DailyTrainCarriageService       :120  [32m1684071091325lso  [0;39m 车次G1没有车厢信息
