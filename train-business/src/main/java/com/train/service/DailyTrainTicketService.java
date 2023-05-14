@@ -2,6 +2,7 @@ package com.train.service;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.DailyTrainTicketQueryReq;
@@ -55,6 +56,19 @@ public class DailyTrainTicketService {
 
         DailyTrainTicketExample example = new DailyTrainTicketExample();
         DailyTrainTicketExample.Criteria criteria = example.createCriteria();
+
+        if (ObjUtil.isNotNull(bean.getDate())) {
+            criteria.andDateEqualTo(bean.getDate());
+        }
+        if (ObjUtil.isNotEmpty(bean.getTrainCode())) {
+            criteria.andTrainCodeEqualTo(bean.getTrainCode());
+        }
+        if (ObjUtil.isNotEmpty(bean.getStart())) {
+            criteria.andStartEqualTo(bean.getStart());
+        }
+        if (ObjUtil.isNotEmpty(bean.getEnd())) {
+            criteria.andEndEqualTo(bean.getEnd());
+        }
 
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());

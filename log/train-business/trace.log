@@ -1022,3 +1022,7 @@
 2023-05-14 14:06:20.694 INFO  com.train.service.DailyTrainSeatService           :134  [32m1684044379767xts  [0;39m 生成当天的车次座位信息成功，date=2023-05-29,trainCode=D1
 2023-05-14 14:06:20.708 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684044379767xts  [0;39m 返回结果: {"code":200}
 2023-05-14 14:06:20.708 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684044379767xts  [0;39m ------------- 结束 耗时：920 ms -------------
+2023-05-14 14:40:12.449 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-14 14:40:12.450 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-14 14:40:12.451 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-05-14 14:40:12.455 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.

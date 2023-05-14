@@ -17,3 +17,9 @@
 2023-05-14 12:25:06.147 INFO  com.train.gateway.GatewayApplication              :59   [32m                  [0;39m Started GatewayApplication in 6.829 seconds (JVM running for 8.142)
 2023-05-14 12:25:06.148 INFO  com.train.gateway.GatewayApplication              :18   [32m                  [0;39m 启动成功！！
 2023-05-14 12:25:06.148 INFO  com.train.gateway.GatewayApplication              :19   [32m                  [0;39m 网关地址: 	http://127.0.0.1:10001
+2023-05-14 13:06:44.910 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
+2023-05-14 13:08:35.794 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
+2023-05-14 13:11:17.323 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/add
+2023-05-14 13:11:30.938 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/pause
+2023-05-14 13:11:54.150 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run
+2023-05-14 14:06:19.441 INFO  com.train.gateway.file.LoginAccountFilter         :27   [32m                  [0;39m 不需要登录验证：/batch/admin/job/run

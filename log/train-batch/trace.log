@@ -626,3 +626,11 @@ Caused by: org.quartz.JobPersistenceException: The job (DEFAULT.com.train.job.Te
 2023-05-14 14:06:19.644 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684044379520cad  [0;39m ------------- 结束 耗时：75 ms -------------
 2023-05-14 14:06:19.670 INFO  com.train.job.DailyTrainJob                       :36   [32m1684044379669u36  [0;39m 生成15天后的车次数据开始
 2023-05-14 14:06:20.780 INFO  com.train.job.DailyTrainJob                       :41   [32m1684044379669u36  [0;39m 生成15天后的车次数据结束，结果：DBResult(code=200, msg=null, result=null)
+2023-05-14 14:40:12.416 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-05-14 14:40:12.418 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-14 14:40:12.427 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :845  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-05-14 14:40:12.427 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2023-05-14 14:40:12.427 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-05-14 14:40:12.428 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2023-05-14 14:40:12.429 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-05-14 14:40:12.433 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
