@@ -125,6 +125,19 @@ public class TrainSeatService {
             }
         }
     }
+
+    /**
+     * 根据车次查询所有的座位
+     * @param trainCode
+     * @return
+     */
+    public List<TrainSeat> selectByTrainCode(String trainCode) {
+        TrainSeatExample example = new TrainSeatExample();
+        example.setOrderByClause("carriage_index asc,carriage_seat_index asc");
+        TrainSeatExample.Criteria criteria = example.createCriteria();
+        criteria.andTrainCodeEqualTo(trainCode);
+        return mapper.selectByExample(example);
+    }
 }
 
 

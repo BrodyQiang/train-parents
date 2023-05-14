@@ -88,6 +88,12 @@ public class TrainCarriageService {
         mapper.deleteByPrimaryKey(id);
     }
 
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/14 13:40
+     * @param trainCode 车次
+     * @return List<TrainCarriage> 根据车次查询所有的车厢信息
+     */
     public List<TrainCarriage> selectByTrainCode(String trainCode) {
         TrainCarriageExample trainCarriageExample = new TrainCarriageExample();
         trainCarriageExample.setOrderByClause("`index` asc");

@@ -14,6 +14,18 @@ Content-Type: application/json
   "cronExpression": "*/10 * * * * ?",
   "desc": "测试任务"
 }
+
+###
+POST http://localhost:10001/batch/admin/job/add
+Content-Type: application/json
+
+{
+  "name": "com.train.job.DailyTrainJob",
+  "jobGroupName": "default",
+  "cronExpression": "*/10 * * * * ?",
+  "desc": "生成没日车次数据"
+}
+
 ###
 
 # 查询定时任务
@@ -26,7 +38,7 @@ POST http://localhost:10001/batch/admin/job/pause
 Content-Type: application/json
 
 {
-  "name": "com.train.job.TestJob",
+  "name": "com.train.job.DailyTrainJob",
   "jobGroupName": "default"
 }
 
@@ -72,5 +84,14 @@ Content-Type: application/json
 
 {
   "name": "com.train.job.TestJob",
+  "jobGroupName": "default"
+}
+###
+
+POST http://localhost:10001/batch/admin/job/run
+Content-Type: application/json
+
+{
+  "name": "com.train.job.DailyTrainJob",
   "jobGroupName": "default"
 }

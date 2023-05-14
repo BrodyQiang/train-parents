@@ -12,6 +12,8 @@ import com.train.common.enums.BusinessExceptionEnum;
 import com.train.common.exception.BusinessException;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
+import com.train.domain.Train;
+import com.train.domain.TrainExample;
 import com.train.domain.TrainStation;
 import com.train.domain.TrainStationExample;
 import com.train.mapper.TrainStationMapper;
@@ -116,4 +118,19 @@ public class TrainStationService {
         }
     }
 
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/14 13:21
+     * @param trainCode 车次
+     * @return List<TrainStation> 根据车次查询车站信息
+     */
+    public List<TrainStation> selectByTrainCode(String trainCode) {
+        TrainStationExample trainStationExample = new TrainStationExample();
+        trainStationExample.setOrderByClause("station_index asc"); // 车站序号排序
+        trainStationExample.createCriteria()
+                .andTrainCodeEqualTo(trainCode);
+        return mapper.selectByExample(trainStationExample);
+    }
 }
+
+

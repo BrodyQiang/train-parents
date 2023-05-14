@@ -81,6 +81,17 @@ public class TrainService {
         mapper.deleteByPrimaryKey(id);
     }
 
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/14 12:41
+     * 查询所有的车次信息
+     */
+    public List<Train> selectAll() {
+        TrainExample example = new TrainExample();
+        example.setOrderByClause("code desc");
+        return mapper.selectByExample(example);
+    }
+
     private Train selectByUnique(String code) {
         TrainExample trainExample = new TrainExample();
         trainExample.createCriteria()

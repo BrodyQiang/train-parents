@@ -15,3 +15,199 @@
 2023-05-14 12:20:30.694 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
 2023-05-14 12:25:11.118 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
 2023-05-14 12:25:11.119 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-14 12:25:18.188 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 7348 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-14 12:25:18.192 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-14 12:25:19.451 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
+2023-05-14 12:25:19.469 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
+2023-05-14 12:25:19.479 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-14 12:25:19.479 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-14 12:25:19.575 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-14 12:25:19.575 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1331 ms
+2023-05-14 12:25:20.207 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-14 12:25:20.487 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-05-14 12:25:20.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
+2023-05-14 12:25:20.563 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
+2023-05-14 12:25:20.565 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 2.804 seconds (JVM running for 4.237)
+2023-05-14 12:25:20.567 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
+2023-05-14 12:25:20.568 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
+2023-05-14 12:28:11.935 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 12:28:11.935 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-14 12:28:11.943 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 8 ms
+2023-05-14 12:28:11.975 INFO  com.train.common.aspect.LogAspect                 :50   [32m1684038491953p7q  [0;39m ------------- 开始 -------------
+2023-05-14 12:28:11.976 INFO  com.train.common.aspect.LogAspect                 :51   [32m1684038491953p7q  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/business/test GET
+2023-05-14 12:28:11.976 INFO  com.train.common.aspect.LogAspect                 :52   [32m1684038491953p7q  [0;39m 类名方法: com.train.controller.TestController.test
+2023-05-14 12:28:11.977 INFO  com.train.common.aspect.LogAspect                 :53   [32m1684038491953p7q  [0;39m 远程地址: 127.0.0.1
+2023-05-14 12:28:12.004 INFO  com.train.common.aspect.LogAspect                 :74   [32m1684038491953p7q  [0;39m 请求参数: []
+2023-05-14 12:28:12.006 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684038491953p7q  [0;39m 返回结果: "Holle World ---------------测试feign调用"
+2023-05-14 12:28:12.007 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684038491953p7q  [0;39m ------------- 结束 耗时：33 ms -------------
+2023-05-14 12:30:03.699 INFO  com.train.common.aspect.LogAspect                 :50   [32m1684038603699xqq  [0;39m ------------- 开始 -------------
+2023-05-14 12:30:03.699 INFO  com.train.common.aspect.LogAspect                 :51   [32m1684038603699xqq  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/business/test GET
+2023-05-14 12:30:03.699 INFO  com.train.common.aspect.LogAspect                 :52   [32m1684038603699xqq  [0;39m 类名方法: com.train.controller.TestController.test
+2023-05-14 12:30:03.700 INFO  com.train.common.aspect.LogAspect                 :53   [32m1684038603699xqq  [0;39m 远程地址: 127.0.0.1
+2023-05-14 12:30:03.700 INFO  com.train.common.aspect.LogAspect                 :74   [32m1684038603699xqq  [0;39m 请求参数: []
+2023-05-14 12:30:03.700 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684038603699xqq  [0;39m 返回结果: "Holle World ---------------测试feign调用"
+2023-05-14 12:30:03.700 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684038603699xqq  [0;39m ------------- 结束 耗时：1 ms -------------
+2023-05-14 13:06:06.362 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-14 13:06:06.363 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-14 13:06:20.659 INFO  com.train.TrainBusinessApplication                :50   [32m                  [0;39m Starting TrainBusinessApplication on DESKTOP-J1SB6R6 with PID 2760 (D:\studies\backend\train-parents\train-business\target\classes started by 86180 in D:\studies\backend\train-parents)
+2023-05-14 13:06:20.663 INFO  com.train.TrainBusinessApplication                :652  [32m                  [0;39m The following profiles are active: dev
+2023-05-14 13:06:22.049 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :90   [32m                  [0;39m Tomcat initialized with port(s): 10005 (http)
+2023-05-14 13:06:22.064 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10005"]
+2023-05-14 13:06:22.076 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-14 13:06:22.076 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-05-14 13:06:22.158 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-14 13:06:22.158 INFO  org.springframework.web.context.ContextLoader     :284  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1456 ms
+2023-05-14 13:06:22.820 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-14 13:06:23.149 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :171  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2023-05-14 13:06:23.210 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10005"]
+2023-05-14 13:06:23.228 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :202  [32m                  [0;39m Tomcat started on port(s): 10005 (http) with context path '/business'
+2023-05-14 13:06:23.231 INFO  com.train.TrainBusinessApplication                :59   [32m                  [0;39m Started TrainBusinessApplication in 3.149 seconds (JVM running for 4.482)
+2023-05-14 13:06:23.233 INFO  com.train.TrainBusinessApplication                :22   [32m                  [0;39m 启动成功！！
+2023-05-14 13:06:23.233 INFO  com.train.TrainBusinessApplication                :23   [32m                  [0;39m 业务模块地址: 	http://127.0.0.1:10005
+2023-05-14 13:11:20.063 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 13:11:20.063 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-14 13:11:20.069 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2023-05-14 13:11:20.095 INFO  com.train.common.aspect.LogAspect                 :50   [32m1684041080081mph  [0;39m ------------- 开始 -------------
+2023-05-14 13:11:20.096 INFO  com.train.common.aspect.LogAspect                 :51   [32m1684041080081mph  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/dailyTrain/genDaily/2023-05-29 GET
+2023-05-14 13:11:20.096 INFO  com.train.common.aspect.LogAspect                 :52   [32m1684041080081mph  [0;39m 类名方法: com.train.controller.DailyTrainController.genDaily
+2023-05-14 13:11:20.097 INFO  com.train.common.aspect.LogAspect                 :53   [32m1684041080081mph  [0;39m 远程地址: 127.0.0.1
+2023-05-14 13:11:20.126 INFO  com.train.common.aspect.LogAspect                 :74   [32m1684041080081mph  [0;39m 请求参数: [1685289600000]
+2023-05-14 13:11:20.161 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1684041080081mph  [0;39m HikariPool-1 - Starting...
+2023-05-14 13:11:20.281 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1684041080081mph  [0;39m HikariPool-1 - Start completed.
+2023-05-14 13:11:20.286 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041080081mph  [0;39m ==>  Preparing: select id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time from train order by code desc 
+2023-05-14 13:11:20.296 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041080081mph  [0;39m ==> Parameters: 
+2023-05-14 13:11:20.307 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==    Columns: id, code, type, start, start_pinyin, start_time, end, end_pinyin, end_time, create_time, update_time
+2023-05-14 13:11:20.309 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==        Row: 1654443464034750464, G4, G, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:35.0, 2023-05-05 19:10:35.0
+2023-05-14 13:11:20.311 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==        Row: 1654443388675690496, G3, G, 上海, shanghai, 10:00:00, 武汉, wuhan, 14:00:00, 2023-05-05 19:10:17.0, 2023-05-05 19:10:17.0
+2023-05-14 13:11:20.312 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==        Row: 1654443265186992128, G2, G, 上海, shanghai, 10:00:00, 北京, beijing, 14:00:00, 2023-05-05 19:09:47.0, 2023-05-05 19:09:47.0
+2023-05-14 13:11:20.313 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==        Row: 1654443073226280960, G1, G, 北京, beijing, 10:00:00, 上海, shanghai, 14:00:00, 2023-05-05 19:09:01.0, 2023-05-05 19:09:01.0
+2023-05-14 13:11:20.314 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041080081mph  [0;39m <==        Row: 1654444015308902400, D1, D, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:12:46.0, 2023-05-05 19:12:46.0
+2023-05-14 13:11:20.314 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041080081mph  [0;39m <==      Total: 5
+2023-05-14 13:11:20.328 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:20.329 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==> Parameters: 2023-05-29(Date), G4(String)
+2023-05-14 13:11:20.330 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m <==    Updates: 0
+2023-05-14 13:11:20.381 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:20.382 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==> Parameters: 1657614550062731264(Long), 2023-05-29(Date), G4(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:20.332(Timestamp), 2023-05-14 13:11:20.332(Timestamp)
+2023-05-14 13:11:20.384 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m <==    Updates: 1
+2023-05-14 13:11:20.385 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:20.386 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==> Parameters: 2023-05-29(Date), G3(String)
+2023-05-14 13:11:20.386 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m <==    Updates: 0
+2023-05-14 13:11:20.387 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:20.388 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==> Parameters: 1657614550087897088(Long), 2023-05-29(Date), G3(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 武汉(String), wuhan(String), 14:00:00(Time), 2023-05-14 13:11:20.387(Timestamp), 2023-05-14 13:11:20.387(Timestamp)
+2023-05-14 13:11:20.389 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m <==    Updates: 1
+2023-05-14 13:11:20.390 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:20.391 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==> Parameters: 2023-05-29(Date), G2(String)
+2023-05-14 13:11:20.392 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m <==    Updates: 0
+2023-05-14 13:11:20.393 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:20.394 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==> Parameters: 1657614550113062912(Long), 2023-05-29(Date), G2(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 北京(String), beijing(String), 14:00:00(Time), 2023-05-14 13:11:20.392(Timestamp), 2023-05-14 13:11:20.392(Timestamp)
+2023-05-14 13:11:20.396 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m <==    Updates: 1
+2023-05-14 13:11:20.397 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:20.397 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==> Parameters: 2023-05-29(Date), G1(String)
+2023-05-14 13:11:20.398 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m <==    Updates: 0
+2023-05-14 13:11:20.399 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:20.400 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==> Parameters: 1657614550138228736(Long), 2023-05-29(Date), G1(String), G(String), 北京(String), beijing(String), 10:00:00(Time), 上海(String), shanghai(String), 14:00:00(Time), 2023-05-14 13:11:20.399(Timestamp), 2023-05-14 13:11:20.399(Timestamp)
+2023-05-14 13:11:20.401 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m <==    Updates: 1
+2023-05-14 13:11:20.402 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:20.403 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m ==> Parameters: 2023-05-29(Date), D1(String)
+2023-05-14 13:11:20.404 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041080081mph  [0;39m <==    Updates: 0
+2023-05-14 13:11:20.404 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:20.405 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m ==> Parameters: 1657614550159200256(Long), 2023-05-29(Date), D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:20.404(Timestamp), 2023-05-14 13:11:20.404(Timestamp)
+2023-05-14 13:11:20.407 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041080081mph  [0;39m <==    Updates: 1
+2023-05-14 13:11:20.421 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684041080081mph  [0;39m 返回结果: {"code":200}
+2023-05-14 13:11:20.421 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684041080081mph  [0;39m ------------- 结束 耗时：327 ms -------------
+2023-05-14 13:11:30.012 INFO  com.train.common.aspect.LogAspect                 :50   [32m1684041090012h27  [0;39m ------------- 开始 -------------
+2023-05-14 13:11:30.013 INFO  com.train.common.aspect.LogAspect                 :51   [32m1684041090012h27  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/dailyTrain/genDaily/2023-05-29 GET
+2023-05-14 13:11:30.013 INFO  com.train.common.aspect.LogAspect                 :52   [32m1684041090012h27  [0;39m 类名方法: com.train.controller.DailyTrainController.genDaily
+2023-05-14 13:11:30.013 INFO  com.train.common.aspect.LogAspect                 :53   [32m1684041090012h27  [0;39m 远程地址: 127.0.0.1
+2023-05-14 13:11:30.013 INFO  com.train.common.aspect.LogAspect                 :74   [32m1684041090012h27  [0;39m 请求参数: [1685289600000]
+2023-05-14 13:11:30.015 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041090012h27  [0;39m ==>  Preparing: select id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time from train order by code desc 
+2023-05-14 13:11:30.015 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041090012h27  [0;39m ==> Parameters: 
+2023-05-14 13:11:30.016 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==    Columns: id, code, type, start, start_pinyin, start_time, end, end_pinyin, end_time, create_time, update_time
+2023-05-14 13:11:30.017 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==        Row: 1654443464034750464, G4, G, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:35.0, 2023-05-05 19:10:35.0
+2023-05-14 13:11:30.017 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==        Row: 1654443388675690496, G3, G, 上海, shanghai, 10:00:00, 武汉, wuhan, 14:00:00, 2023-05-05 19:10:17.0, 2023-05-05 19:10:17.0
+2023-05-14 13:11:30.018 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==        Row: 1654443265186992128, G2, G, 上海, shanghai, 10:00:00, 北京, beijing, 14:00:00, 2023-05-05 19:09:47.0, 2023-05-05 19:09:47.0
+2023-05-14 13:11:30.019 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==        Row: 1654443073226280960, G1, G, 北京, beijing, 10:00:00, 上海, shanghai, 14:00:00, 2023-05-05 19:09:01.0, 2023-05-05 19:09:01.0
+2023-05-14 13:11:30.020 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041090012h27  [0;39m <==        Row: 1654444015308902400, D1, D, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:12:46.0, 2023-05-05 19:12:46.0
+2023-05-14 13:11:30.020 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041090012h27  [0;39m <==      Total: 5
+2023-05-14 13:11:30.022 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:30.023 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==> Parameters: 2023-05-29(Date), G4(String)
+2023-05-14 13:11:30.025 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.029 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:30.031 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==> Parameters: 1657614590529376256(Long), 2023-05-29(Date), G4(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:30.026(Timestamp), 2023-05-14 13:11:30.026(Timestamp)
+2023-05-14 13:11:30.034 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.036 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:30.037 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==> Parameters: 2023-05-29(Date), G3(String)
+2023-05-14 13:11:30.039 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.040 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:30.042 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==> Parameters: 1657614590575513600(Long), 2023-05-29(Date), G3(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 武汉(String), wuhan(String), 14:00:00(Time), 2023-05-14 13:11:30.04(Timestamp), 2023-05-14 13:11:30.04(Timestamp)
+2023-05-14 13:11:30.072 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.074 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:30.075 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==> Parameters: 2023-05-29(Date), G2(String)
+2023-05-14 13:11:30.090 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.092 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:30.095 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==> Parameters: 1657614590789423104(Long), 2023-05-29(Date), G2(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 北京(String), beijing(String), 14:00:00(Time), 2023-05-14 13:11:30.091(Timestamp), 2023-05-14 13:11:30.091(Timestamp)
+2023-05-14 13:11:30.106 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.109 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:30.110 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==> Parameters: 2023-05-29(Date), G1(String)
+2023-05-14 13:11:30.122 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.123 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:30.125 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==> Parameters: 1657614590923640832(Long), 2023-05-29(Date), G1(String), G(String), 北京(String), beijing(String), 10:00:00(Time), 上海(String), shanghai(String), 14:00:00(Time), 2023-05-14 13:11:30.123(Timestamp), 2023-05-14 13:11:30.123(Timestamp)
+2023-05-14 13:11:30.138 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.139 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:30.141 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m ==> Parameters: 2023-05-29(Date), D1(String)
+2023-05-14 13:11:30.162 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.163 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:30.165 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m ==> Parameters: 1657614591091412992(Long), 2023-05-29(Date), D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:30.163(Timestamp), 2023-05-14 13:11:30.163(Timestamp)
+2023-05-14 13:11:30.205 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041090012h27  [0;39m <==    Updates: 1
+2023-05-14 13:11:30.206 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684041090012h27  [0;39m 返回结果: {"code":200}
+2023-05-14 13:11:30.206 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684041090012h27  [0;39m ------------- 结束 耗时：194 ms -------------
+2023-05-14 13:11:54.187 INFO  com.train.common.aspect.LogAspect                 :50   [32m1684041114187euk  [0;39m ------------- 开始 -------------
+2023-05-14 13:11:54.187 INFO  com.train.common.aspect.LogAspect                 :51   [32m1684041114187euk  [0;39m 请求地址: http://127.0.0.1:10005/business/admin/dailyTrain/genDaily/2023-05-29 GET
+2023-05-14 13:11:54.187 INFO  com.train.common.aspect.LogAspect                 :52   [32m1684041114187euk  [0;39m 类名方法: com.train.controller.DailyTrainController.genDaily
+2023-05-14 13:11:54.188 INFO  com.train.common.aspect.LogAspect                 :53   [32m1684041114187euk  [0;39m 远程地址: 127.0.0.1
+2023-05-14 13:11:54.188 INFO  com.train.common.aspect.LogAspect                 :74   [32m1684041114187euk  [0;39m 请求参数: [1685289600000]
+2023-05-14 13:11:54.188 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041114187euk  [0;39m ==>  Preparing: select id, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time from train order by code desc 
+2023-05-14 13:11:54.189 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041114187euk  [0;39m ==> Parameters: 
+2023-05-14 13:11:54.189 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==    Columns: id, code, type, start, start_pinyin, start_time, end, end_pinyin, end_time, create_time, update_time
+2023-05-14 13:11:54.190 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==        Row: 1654443464034750464, G4, G, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:10:35.0, 2023-05-05 19:10:35.0
+2023-05-14 13:11:54.190 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==        Row: 1654443388675690496, G3, G, 上海, shanghai, 10:00:00, 武汉, wuhan, 14:00:00, 2023-05-05 19:10:17.0, 2023-05-05 19:10:17.0
+2023-05-14 13:11:54.190 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==        Row: 1654443265186992128, G2, G, 上海, shanghai, 10:00:00, 北京, beijing, 14:00:00, 2023-05-05 19:09:47.0, 2023-05-05 19:09:47.0
+2023-05-14 13:11:54.191 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==        Row: 1654443073226280960, G1, G, 北京, beijing, 10:00:00, 上海, shanghai, 14:00:00, 2023-05-05 19:09:01.0, 2023-05-05 19:09:01.0
+2023-05-14 13:11:54.192 TRACE com.train.mapper.TrainMapper.selectByExample      :187  [32m1684041114187euk  [0;39m <==        Row: 1654444015308902400, D1, D, 上海, shanghai, 10:00:00, 郑州, zhengzhou, 14:00:00, 2023-05-05 19:12:46.0, 2023-05-05 19:12:46.0
+2023-05-14 13:11:54.192 DEBUG com.train.mapper.TrainMapper.selectByExample      :181  [32m1684041114187euk  [0;39m <==      Total: 5
+2023-05-14 13:11:54.193 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:54.194 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==> Parameters: 2023-05-29(Date), G4(String)
+2023-05-14 13:11:54.196 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.197 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:54.198 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==> Parameters: 1657614691897315328(Long), 2023-05-29(Date), G4(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:54.196(Timestamp), 2023-05-14 13:11:54.196(Timestamp)
+2023-05-14 13:11:54.200 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.201 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:54.201 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==> Parameters: 2023-05-29(Date), G3(String)
+2023-05-14 13:11:54.203 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.204 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:54.204 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==> Parameters: 1657614691922481152(Long), 2023-05-29(Date), G3(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 武汉(String), wuhan(String), 14:00:00(Time), 2023-05-14 13:11:54.203(Timestamp), 2023-05-14 13:11:54.203(Timestamp)
+2023-05-14 13:11:54.206 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.207 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:54.207 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==> Parameters: 2023-05-29(Date), G2(String)
+2023-05-14 13:11:54.208 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.209 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:54.210 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==> Parameters: 1657614691947646976(Long), 2023-05-29(Date), G2(String), G(String), 上海(String), shanghai(String), 10:00:00(Time), 北京(String), beijing(String), 14:00:00(Time), 2023-05-14 13:11:54.209(Timestamp), 2023-05-14 13:11:54.209(Timestamp)
+2023-05-14 13:11:54.211 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.212 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:54.212 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==> Parameters: 2023-05-29(Date), G1(String)
+2023-05-14 13:11:54.214 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.214 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:54.215 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==> Parameters: 1657614691968618496(Long), 2023-05-29(Date), G1(String), G(String), 北京(String), beijing(String), 10:00:00(Time), 上海(String), shanghai(String), 14:00:00(Time), 2023-05-14 13:11:54.214(Timestamp), 2023-05-14 13:11:54.214(Timestamp)
+2023-05-14 13:11:54.216 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.217 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==>  Preparing: delete from daily_train WHERE ( `date` = ? and code = ? ) 
+2023-05-14 13:11:54.217 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m ==> Parameters: 2023-05-29(Date), D1(String)
+2023-05-14 13:11:54.219 DEBUG com.train.mapper.DailyTrainMapper.deleteByExample :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.221 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==>  Preparing: insert into daily_train (id, `date`, code, `type`, `start`, start_pinyin, start_time, `end`, end_pinyin, end_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2023-05-14 13:11:54.221 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m ==> Parameters: 1657614691993784320(Long), 2023-05-29(Date), D1(String), D(String), 上海(String), shanghai(String), 10:00:00(Time), 郑州(String), zhengzhou(String), 14:00:00(Time), 2023-05-14 13:11:54.22(Timestamp), 2023-05-14 13:11:54.22(Timestamp)
+2023-05-14 13:11:54.223 DEBUG com.train.mapper.DailyTrainMapper.insert          :181  [32m1684041114187euk  [0;39m <==    Updates: 1
+2023-05-14 13:11:54.223 INFO  com.train.common.aspect.LogAspect                 :86   [32m1684041114187euk  [0;39m 返回结果: {"code":200}
+2023-05-14 13:11:54.223 INFO  com.train.common.aspect.LogAspect                 :87   [32m1684041114187euk  [0;39m ------------- 结束 耗时：36 ms -------------
+2023-05-14 14:05:33.252 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :208  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2023-05-14 14:05:33.254 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-14 14:05:33.256 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-05-14 14:05:33.263 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
