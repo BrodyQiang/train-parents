@@ -104,4 +104,15 @@ public class TrainService {
         }
     }
 
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/15 19:41
+     * @return List<TrainQueryRes> 返回所有的车次信息
+     */
+    public List<TrainQueryRes> queryAll() {
+        TrainExample example = new TrainExample();
+        example.setOrderByClause("code desc");
+        List<Train> list = mapper.selectByExample(example);
+        return BeanUtil.copyToList(list, TrainQueryRes.class);
+    }
 }

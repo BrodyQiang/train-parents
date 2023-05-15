@@ -1,4 +1,4 @@
-package com.train.controller;
+package com.train.controller.web;
 
 import com.train.bean.request.DailyTrainTicketQueryReq;
 import com.train.bean.request.DailyTrainTicketSaveReq;
@@ -19,28 +19,16 @@ import javax.validation.Valid;
 */
 
 @RestController
-@RequestMapping("/admin/dailyTrainTicket")
+@RequestMapping("/dailyTrainTicket")
 @Api(value = "DailyTrainTicketController", tags = "")
 public class DailyTrainTicketController {
 
     @Autowired
     private DailyTrainTicketService service;
 
-    @PostMapping("/save")
-    public DBResult save(@RequestBody @Valid DailyTrainTicketSaveReq bean) {
-        service.save(bean);
-        return DBResult.success();
-    }
-
     @GetMapping("/queryList")
     public DBPages<DailyTrainTicketQueryRes> queryList(@Valid DailyTrainTicketQueryReq bean) {
         return service.queryList(bean);
-    }
-
-    @DeleteMapping("/delete/{id}")
-    public DBResult delete(@PathVariable Long id) {
-        service.delete(id);
-        return DBResult.success();
     }
 
 }

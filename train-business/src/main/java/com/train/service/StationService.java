@@ -90,4 +90,16 @@ public class StationService {
         }
     }
 
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/15 19:37
+     * @return List<StationQueryRes> 查询所有的站点
+     */
+    public List<StationQueryRes> queryAll() {
+        StationExample example = new StationExample();
+        example.setOrderByClause("name_pinyin asc");
+        List<Station> list = mapper.selectByExample(example);
+        return BeanUtil.copyToList(list, StationQueryRes.class);
+
+    }
 }
