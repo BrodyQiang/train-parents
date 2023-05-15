@@ -68,6 +68,11 @@ accessToken: {{accessToken}}
 GET http://localhost:10001/system/management/accountPassenger/queryList?pageNum=1&pageSize=10
 Content-Type: application/json
 accessToken: {{accessToken}}
+###
+
+GET http://localhost:10001/system/management/accountPassenger/queryMine
+Content-Type: application/json
+accessToken: {{accessToken}}
 
 ###
 
