@@ -74,4 +74,18 @@ public class AccountPassengerService {
     public void delete(Long id) {
         mapper.deleteByPrimaryKey(id);
     }
+
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/15 19:49
+     * @return List<AccountPassengerQueryRes> 获取当前登录用户的乘客信息
+     */
+    public List<AccountPassengerQueryRes> queryMine() {
+        AccountPassengerExample example = new AccountPassengerExample();
+        example.setOrderByClause("name desc");
+        // 当前登录用户
+        example.createCriteria().andMemberIdEqualTo(LoginAccountContext.getId());
+        List<AccountPassenger> list = mapper.selectByExample(example);
+        return BeanUtil.copyToList(list, AccountPassengerQueryRes.class);
+    }
 }
