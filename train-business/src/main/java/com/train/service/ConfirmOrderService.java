@@ -69,4 +69,8 @@ public class ConfirmOrderService {
     public void delete(Long id) {
         mapper.deleteByPrimaryKey(id);
     }
+
+    public void doConfirm(ConfirmOrderSaveReq bean) {
+
+    }
 }
