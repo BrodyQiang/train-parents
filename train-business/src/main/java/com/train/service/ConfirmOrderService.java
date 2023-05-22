@@ -124,7 +124,7 @@ public class ConfirmOrderService {
         confirmOrder.setEnd(end);
         confirmOrder.setDailyTrainTicketId(bean.getDailyTrainTicketId());
         confirmOrder.setStatus(ConfirmOrderStatusEnum.INIT.getCode());
-        confirmOrder.setTickets(JSON.toJSONString(bean.getTickets()));
+        confirmOrder.setTickets(JSON.toJSONString(tickets));
         mapper.insert(confirmOrder);
 
         // 查出余票记录，需要得到真实的库存

@@ -1,14 +1,14 @@
 package com.train.controller.web;
 
-import com.train.bean.request.ConfirmOrderQueryReq;
 import com.train.bean.request.ConfirmOrderSaveReq;
-import com.train.bean.response.ConfirmOrderQueryRes;
-import com.train.common.response.DBPages;
 import com.train.common.response.DBResult;
 import com.train.service.ConfirmOrderService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
@@ -21,7 +21,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/confirmOrder")
 @Api(value = "ConfirmOrderController", tags = "")
-public class ConfirmOrderController {
+public class ConfirmOrderWebController {
 
     @Autowired
     private ConfirmOrderService service;

@@ -21,7 +21,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/dailyTrainTicket")
 @Api(value = "DailyTrainTicketController", tags = "")
-public class DailyTrainTicketController {
+public class DailyTrainTicketWebController {
 
     @Autowired
     private DailyTrainTicketService service;

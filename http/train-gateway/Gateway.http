@@ -236,6 +236,31 @@ Content-Type: application/json
 
 ###
 
+# 火车票信息确认订单接口调试
+POST http://localhost:10001/business/confirmOrder/doConfirm
+Content-Type: application/json
+accessToken: {{accessToken}}
+
+{
+  "trainCode": "D1",
+  "date": "2023-05-29",
+  "start": "上海",
+  "end": "郑州",
+  "tickets": [
+        {
+        "passengerId": "1652194811429654528",
+        "passengerType": "02",
+        "passengerName": "test",
+        "passengerIdCard": "123321",
+        "seatTypeCode": "02",
+        "seat": "A1"
+        }],
+  "dailyTrainTicketId": "01"
+
+}
+
+###
+
 
 
 

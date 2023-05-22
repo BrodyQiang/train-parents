@@ -18,9 +18,9 @@ import java.util.List;
 */
 
 @RestController
-@RequestMapping("/admin/train")
+@RequestMapping("/train")
 @Api(value = "TrainController", tags = "")
-public class TrainController {
+public class TrainWebController {
 
     @Autowired
     private TrainService service;

@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/station")
 @Api(value = "StationController", tags = "")
-public class StationController {
+public class StationWebController {
 
     @Autowired
     private StationService service;
