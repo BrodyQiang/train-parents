@@ -3,14 +3,18 @@ package com.train.service;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.ConfirmOrderQueryReq;
 import com.train.bean.request.ConfirmOrderSaveReq;
 import com.train.bean.response.ConfirmOrderQueryRes;
+import com.train.common.context.LoginAccountContext;
+import com.train.common.interceptor.AccountInterceptor;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.ConfirmOrder;
 import com.train.domain.ConfirmOrderExample;
+import com.train.enums.ConfirmOrderStatusEnum;
 import com.train.mapper.ConfirmOrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -70,7 +74,29 @@ public class ConfirmOrderService {
         mapper.deleteByPrimaryKey(id);
     }
 
+    /**
+     * 确认订单
+     *
+     * @param bean
+     */
     public void doConfirm(ConfirmOrderSaveReq bean) {
+        //省略业务数据校验，如：车次是否存在，余票是否存在，车次是否在有效期内，tickets条数>0，同乘客同车次是否已买过
+
+        // 保存确认订单表，状态初始
+        DateTime now = DateTime.now();
+        ConfirmOrder confirmOrder = new ConfirmOrder();
+        confirmOrder.setId(SnowUtil.getSnowflakeNextId());
+        confirmOrder.setCreateTime(now);
+        confirmOrder.setUpdateTime(now);
+        confirmOrder.setMemberId(LoginAccountContext.getId());
+        confirmOrder.setDate(bean.getDate());
+        confirmOrder.setTrainCode(bean.getTrainCode());
+        confirmOrder.setStart(bean.getStart());
+        confirmOrder.setEnd(bean.getEnd());
+        confirmOrder.setDailyTrainTicketId(bean.getDailyTrainTicketId());
+        confirmOrder.setStatus(ConfirmOrderStatusEnum.INIT.getCode());
+        confirmOrder.setTickets(JSON.toJSONString(bean.getTickets()));
+        mapper.insert(confirmOrder);
 
     }
 }
