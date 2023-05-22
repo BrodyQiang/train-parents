@@ -7,6 +7,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -22,7 +23,6 @@ public class ConfirmOrderSaveReq {
     /**
      * 会员id
      */
-    @NotNull(message = "【会员id】不能为空")
     private Long memberId;
 
     /**
@@ -59,7 +59,7 @@ public class ConfirmOrderSaveReq {
     /**
      * 车票
      */
-    @NotBlank(message = "【车票】不能为空")
+    @NotEmpty(message = "【车票】不能为空")
     private List<ConfirmOrderTicketReq> tickets;
 
 }
