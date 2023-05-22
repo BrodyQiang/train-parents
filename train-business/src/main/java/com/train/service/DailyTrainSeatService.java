@@ -153,4 +153,21 @@ public class DailyTrainSeatService {
         }
         return (int) count;
     }
+
+    /***
+     * @author Mr.Liu
+     * @date 2023/5/22 19:38
+     * @param date 时间
+     * @param trainCode 车次
+     * @param carriageIndex 车厢号
+     * @return List<DailyTrainSeat> 根据日期、车次、车厢号查询座位信息
+     */
+    public List<DailyTrainSeat> selectByCarriage(Date date, String trainCode, Integer carriageIndex) {
+        DailyTrainSeatExample example = new DailyTrainSeatExample();
+        example.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode)
+                .andCarriageIndexEqualTo(carriageIndex);
+        return mapper.selectByExample(example);
+    }
 }

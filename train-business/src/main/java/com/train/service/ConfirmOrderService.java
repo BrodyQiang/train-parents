@@ -17,9 +17,7 @@ import com.train.common.exception.BusinessException;
 import com.train.common.interceptor.AccountInterceptor;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
-import com.train.domain.ConfirmOrder;
-import com.train.domain.ConfirmOrderExample;
-import com.train.domain.DailyTrainTicket;
+import com.train.domain.*;
 import com.train.enums.ConfirmOrderStatusEnum;
 import com.train.enums.SeatColEnum;
 import com.train.enums.SeatTypeEnum;
@@ -49,6 +47,13 @@ public class ConfirmOrderService {
 
     @Autowired
     private DailyTrainTicketService dailyTrainTicketService;
+
+    @Autowired
+    private DailyTrainCarriageService dailyTrainCarriageService;
+
+    @Autowired
+    private DailyTrainSeatService dailyTrainSeatService;
+
 
     public void save(ConfirmOrderSaveReq bean) {
 
@@ -164,13 +169,47 @@ public class ConfirmOrderService {
             }
             LOG.info("计算得到所有座位的相对第一个座位的偏移值：{}", offsetList);
 
-        } else {
-            LOG.info("本次购票没有选座");
+            // 获取座位
+            getSeat(date,trainCode,oneTicket.getSeatTypeCode(),oneTicket.getSeat().split("")[0], // 从A1得到A
+                    offsetList
+            );
 
+        } else {
+
+            LOG.info("本次购票没有选座");
+            // 没有选座，就是随机分配座位
+            for (ConfirmOrderTicketReq ticketReq : tickets) {
+                // 随机分配座位  一个车箱一个车箱的获取座位数据
+                getSeat(date,trainCode,ticketReq.getSeatTypeCode(),null,null);
+            }
         }
 
 
 
+    }
+
+    /**
+     * 获取座位
+     *
+     * @param date 日期
+     * @param trainCode 车次
+     * @param seatType 座位类型
+     * @param column 第一个座位所在的列
+     * @param offsetList 相对第一个座位的偏移值
+     */
+    private void getSeat(Date date, String trainCode, String seatType, String column, List<Integer> offsetList) {
+
+        // 查出符合条件的车厢
+        List<DailyTrainCarriage> carriageList = dailyTrainCarriageService.selectBySeatType(date, trainCode, seatType);
+        LOG.info("共查出{}个符合条件的车厢", carriageList.size());
+
+        // 一个车箱一个车箱的获取座位数据
+        for (DailyTrainCarriage dailyTrainCarriage : carriageList) {
+            LOG.info("开始从车厢{}选座", dailyTrainCarriage.getIndex());
+            // 查出车厢的座位数
+            List<DailyTrainSeat> seatList = dailyTrainSeatService.selectByCarriage(date, trainCode, dailyTrainCarriage.getIndex());
+            LOG.info("车厢{}的座位数：{}", dailyTrainCarriage.getIndex(), seatList.size());
+        }
     }
 
     /**
