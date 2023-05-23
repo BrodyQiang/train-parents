@@ -254,6 +254,13 @@ accessToken: {{accessToken}}
         "passengerIdCard": "123321",
         "seatTypeCode": "02",
         "seat": "A1"
+        },{
+        "passengerId": "1652216014135496704",
+        "passengerType": "02",
+        "passengerName": "tes11t",
+        "passengerIdCard": "123321111",
+        "seatTypeCode": "02",
+        "seat": "C1"
         }],
   "dailyTrainTicketId": "01"
 
