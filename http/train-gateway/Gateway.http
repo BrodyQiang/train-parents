@@ -82,6 +82,16 @@ accessToken: {{accessToken}}
 
 ###
 
+GET http://localhost:10001/system/management/ticket/queryList?pageNum=1&pageSize=10
+Content-Type: application/json
+accessToken: {{accessToken}}
+
+{
+  "memberId": "1650458088387514368"
+}
+
+###
+
 # 车站接口调试
 # 添加车站  新增与修改接口一样 参数不同
 # 修改车站 需要添加该参数  "id": "1654440085342523392",

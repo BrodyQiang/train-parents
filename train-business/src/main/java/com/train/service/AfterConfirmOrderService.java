@@ -1,7 +1,15 @@
 package com.train.service;
 
+import com.train.bean.request.ConfirmOrderTicketReq;
+import com.train.common.context.LoginAccountContext;
+import com.train.common.feign.AccountFeignTicket;
+import com.train.common.request.AccountTicketReq;
+import com.train.common.response.DBResult;
+import com.train.domain.ConfirmOrder;
 import com.train.domain.DailyTrainSeat;
 import com.train.domain.DailyTrainTicket;
+import com.train.enums.ConfirmOrderStatusEnum;
+import com.train.mapper.ConfirmOrderMapper;
 import com.train.mapper.DailyTrainSeatMapper;
 import com.train.mapper.myMapper.MyMapperConfirmOrderMapper;
 import org.slf4j.Logger;
@@ -30,6 +38,12 @@ public class AfterConfirmOrderService {
     @Autowired
     private MyMapperConfirmOrderMapper myMapperConfirmOrderMapper;
 
+    @Autowired
+    private AccountFeignTicket accountFeignTicket;
+
+    @Autowired
+    private ConfirmOrderMapper confirmOrderMapper;
+
     /**
      * @param finalSeatList 最终的座位列表
      * @author Mr.Liu
@@ -41,7 +55,8 @@ public class AfterConfirmOrderService {
      * 更新确认订单为成功
      */
     @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList) {
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) {
+        int index = 0; // 用于记录当前下标
         finalSeatList.forEach(pp -> {
             // 创建新的座位对象 做shell的修改
             DailyTrainSeat newSeat = new DailyTrainSeat();
@@ -99,6 +114,34 @@ public class AfterConfirmOrderService {
                     maxStartIndex,
                     minEndIndex,
                     maxEndIndex);
+
+            // 调用会员服务接口，为会员增加一张车票
+            AccountTicketReq accountTicketReq = new AccountTicketReq();
+            accountTicketReq.setMemberId(LoginAccountContext.getId());
+            accountTicketReq.setPassengerId(tickets.get(index).getPassengerId());
+            accountTicketReq.setPassengerName(tickets.get(index).getPassengerName());
+            accountTicketReq.setDate(pp.getDate());
+            accountTicketReq.setTrainCode(pp.getTrainCode());
+            accountTicketReq.setCarriageIndex(pp.getCarriageIndex());
+            accountTicketReq.setRow(pp.getRow());
+            accountTicketReq.setCol(pp.getCol());
+            accountTicketReq.setStart(dailyTrainTicket.getStart());
+            accountTicketReq.setStartTime(dailyTrainTicket.getStartTime());
+            accountTicketReq.setEnd(dailyTrainTicket.getEnd());
+            accountTicketReq.setEndTime(dailyTrainTicket.getEndTime());
+            accountTicketReq.setSeatType(pp.getSeatType());
+
+            DBResult save = accountFeignTicket.save(accountTicketReq);
+            LOG.info("调用会员服务接口，为会员增加一张车票{}：" + save);
+
+
+            // 更新订单状态为成功
+            ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
+            confirmOrderForUpdate.setId(confirmOrder.getId());
+            confirmOrderForUpdate.setUpdateTime(new Date());
+            confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
+            confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
+
         });
 
     }

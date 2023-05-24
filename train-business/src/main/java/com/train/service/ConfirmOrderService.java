@@ -196,7 +196,7 @@ public class ConfirmOrderService {
         LOG.info("最终选座：{}", finalSeatList);
 
         // 保存座位信息 由于事务的原因 要让事务生效 所以写在别的类里面
-        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList);
+        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList,tickets,confirmOrder);
 
 
     }
