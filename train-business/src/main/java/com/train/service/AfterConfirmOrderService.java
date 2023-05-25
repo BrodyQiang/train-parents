@@ -86,7 +86,7 @@ public class AfterConfirmOrderService {
             char[] chars = newSeat.getSell().toCharArray();
             Integer maxStartIndex = endIndex - 1;
             Integer minEndIndex = startIndex + 1;
-            Integer minStartIndex = 0;
+            int minStartIndex = 0;
             for (int i = startIndex - 1; i >= 0; i--) {
                 char aChar = chars[i];
                 if (aChar == '1') {
@@ -96,7 +96,7 @@ public class AfterConfirmOrderService {
             }
             LOG.info("影响出发站区间：" + minStartIndex + "-" + maxStartIndex);
 
-            Integer maxEndIndex = newSeat.getSell().length();
+            int maxEndIndex = newSeat.getSell().length();
             for (int i = endIndex; i < newSeat.getSell().length(); i++) {
                 char aChar = chars[i];
                 if (aChar == '1') {
