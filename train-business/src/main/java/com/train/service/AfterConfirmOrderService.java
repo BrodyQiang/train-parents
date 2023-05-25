@@ -20,6 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author Mr.Liu
@@ -56,7 +57,7 @@ public class AfterConfirmOrderService {
      */
     @Transactional
     public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) {
-        int index = 0; // 用于记录当前下标
+        AtomicInteger index = new AtomicInteger(); // 用于记录当前下标
         finalSeatList.forEach(pp -> {
             // 创建新的座位对象 做shell的修改
             DailyTrainSeat newSeat = new DailyTrainSeat();
@@ -118,8 +119,8 @@ public class AfterConfirmOrderService {
             // 调用会员服务接口，为会员增加一张车票
             AccountTicketReq accountTicketReq = new AccountTicketReq();
             accountTicketReq.setMemberId(LoginAccountContext.getId());
-            accountTicketReq.setPassengerId(tickets.get(index).getPassengerId());
-            accountTicketReq.setPassengerName(tickets.get(index).getPassengerName());
+            accountTicketReq.setPassengerId(tickets.get(index.get()).getPassengerId());
+            accountTicketReq.setPassengerName(tickets.get(index.get()).getPassengerName());
             accountTicketReq.setDate(pp.getDate());
             accountTicketReq.setTrainCode(pp.getTrainCode());
             accountTicketReq.setCarriageIndex(pp.getCarriageIndex());
@@ -134,7 +135,7 @@ public class AfterConfirmOrderService {
             DBResult save = accountFeignTicket.save(accountTicketReq);
             LOG.info("调用会员服务接口，为会员增加一张车票{}：" + save);
 
-
+            index.getAndIncrement();
             // 更新订单状态为成功
             ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
             confirmOrderForUpdate.setId(confirmOrder.getId());
