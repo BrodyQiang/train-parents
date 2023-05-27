@@ -13,15 +13,17 @@ import java.util.Date;
  * @email yxml2580@163.com
  * @createDate 2023/5/14 12:18
  */
-@FeignClient(name = "train-business", url = "http://127.0.0.1:10005/business") // 指定服务名 + url(使用哪个地址) 时，name属性必须指定，否则会报错
-// @FeignClient(name = "train-business") // 指定服务名
+//@FeignClient(name = "train-business", url = "http://127.0.0.1:10005/business") // 指定服务名 + url(使用哪个地址) 时，name属性必须指定，否则会报错
+@FeignClient(name = "train-business") // 指定服务名
 public interface TrainBusinessFeign {
+
+    String BASE_URL = "/business";
 
     String URL = "/admin/dailyTrain";
 
-    @GetMapping("/admin/business/test")
+    @GetMapping(BASE_URL + "/admin/business/test")
     String test();
 
-    @GetMapping(URL + "/genDaily/{date}")
+    @GetMapping(BASE_URL + URL + "/genDaily/{date}")
     DBResult genDaily(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") Date date);
 }

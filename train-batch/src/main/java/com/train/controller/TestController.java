@@ -30,7 +30,7 @@ public class TestController {
     public String test() {
         String test = trainBusinessFeign.test();
         log.info("test:{}", test);
-        return "Holle World batch" + nacos;
+        return "Holle World batch" + nacos + test;
     }
 
 }

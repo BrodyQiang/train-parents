@@ -1,5 +1,7 @@
 package com.train.controller;
 
+import com.train.common.feign.AccountFeignTicket;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,9 +21,14 @@ public class TestController {
     @Value("${test.nacos}")
     private String nacos;
 
+    @Autowired
+    private AccountFeignTicket accountFeignTicket;
+
+
     @GetMapping("/test")
     public String test() {
-        return "Holle World ---------------测试feign调用" + nacos;
+        String test = accountFeignTicket.test();
+        return "Holle World ---------------测试feign调用" + nacos + test;
     }
 
 }
