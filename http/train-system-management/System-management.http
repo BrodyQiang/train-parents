@@ -2,6 +2,10 @@ GET http://localhost:10002/system/management/account/count
 Accept: application/json
 
 ###
+GET http://localhost:10002/system/management/test/test
+Accept: application/json
+
+###
 
 # ptrp 快捷键 快随生成一个post带参数的请求
 POST http://localhost:10002/system/management/account/register

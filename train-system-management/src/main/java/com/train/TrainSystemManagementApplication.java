@@ -22,7 +22,7 @@ public class TrainSystemManagementApplication {
         LOG.info("启动成功！！");
         LOG.info("系统支撑服务地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
         System.out.println("-----项目启动成功-----");
-        System.out.printf("系统支撑服务地址: \thttp://127.0.0.1:%s", env.getProperty("server.port"));
+        System.out.printf("系统支撑服务地址: \thttp://127.0.0.1:%s\n", env.getProperty("server.port"));
     }
 
 }
