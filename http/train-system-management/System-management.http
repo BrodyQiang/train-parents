@@ -7,6 +7,12 @@ Accept: application/json
 
 ###
 
+GET http://localhost:10001/system/management/test/test
+Accept: application/json
+accessToken: {{accessToken}}
+
+###
+
 # ptrp 快捷键 快随生成一个post带参数的请求
 POST http://localhost:10002/system/management/account/register
 Content-Type: application/x-www-form-urlencoded

@@ -2,3 +2,7 @@ GET http://localhost:10005/business/admin/business/test
 Accept: application/json
 
 ###
+GET http://localhost:10001/business/admin/business/test
+Accept: application/json
+
+###
