@@ -23,6 +23,7 @@ import com.train.mapper.DailyTrainTicketMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -73,7 +74,21 @@ public class DailyTrainTicketService {
 
     }
 
+    @Cacheable(value = "dailyTrainTicket.queryList") // 缓存
     public DBPages<DailyTrainTicketQueryRes> queryList(DailyTrainTicketQueryReq bean) {
+
+        // 常见的缓存过期策略
+        // TTL 超时时间
+        // LRU 最近最少使用
+        // LFU 最近最不经常使用
+        // FIFO 先进先出
+        // Random 随机淘汰策略
+        // 去缓存里取数据，因数据库本身就没数据而造成缓存穿透
+        // if (有数据) { null []
+        //     return
+        // } else {
+        //     去数据库取数据
+        // }
 
         DailyTrainTicketExample example = new DailyTrainTicketExample();
         DailyTrainTicketExample.Criteria criteria = example.createCriteria();

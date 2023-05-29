@@ -1,0 +1,11 @@
+GET http://localhost:10001/business/redis/set/123/test1
+Accept: application/json
+accessToken: {{accessToken}}
+
+###
+
+GET http://localhost:10001/business/redis/get/123
+Accept: application/json
+accessToken: {{accessToken}}
+
+###
