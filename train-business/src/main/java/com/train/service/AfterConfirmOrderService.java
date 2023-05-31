@@ -12,6 +12,8 @@ import com.train.enums.ConfirmOrderStatusEnum;
 import com.train.mapper.ConfirmOrderMapper;
 import com.train.mapper.DailyTrainSeatMapper;
 import com.train.mapper.myMapper.MyMapperConfirmOrderMapper;
+import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,8 +57,10 @@ public class AfterConfirmOrderService {
      * 为会员增加购票记录
      * 更新确认订单为成功
      */
-    @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) {
+//    @Transactional
+    @GlobalTransactional
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) throws Exception {
+        LOG.info("seata全局事务ID: {}", RootContext.getXID());
         AtomicInteger index = new AtomicInteger(); // 用于记录当前下标
         finalSeatList.forEach(pp -> {
             // 创建新的座位对象 做shell的修改
@@ -121,14 +125,14 @@ public class AfterConfirmOrderService {
             accountTicketReq.setMemberId(LoginAccountContext.getId());
             accountTicketReq.setPassengerId(tickets.get(index.get()).getPassengerId());
             accountTicketReq.setPassengerName(tickets.get(index.get()).getPassengerName());
-            accountTicketReq.setDate(pp.getDate());
+            accountTicketReq.setTrainDate(pp.getDate());
             accountTicketReq.setTrainCode(pp.getTrainCode());
             accountTicketReq.setCarriageIndex(pp.getCarriageIndex());
-            accountTicketReq.setRow(pp.getRow());
-            accountTicketReq.setCol(pp.getCol());
-            accountTicketReq.setStart(dailyTrainTicket.getStart());
+            accountTicketReq.setSeatRow(pp.getRow());
+            accountTicketReq.setSeatCol(pp.getCol());
+            accountTicketReq.setStartStation(dailyTrainTicket.getStart());
             accountTicketReq.setStartTime(dailyTrainTicket.getStartTime());
-            accountTicketReq.setEnd(dailyTrainTicket.getEnd());
+            accountTicketReq.setEndStation(dailyTrainTicket.getEnd());
             accountTicketReq.setEndTime(dailyTrainTicket.getEndTime());
             accountTicketReq.setSeatType(pp.getSeatType());
 
@@ -144,6 +148,11 @@ public class AfterConfirmOrderService {
             confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
 
         });
+
+        // 模拟调用方出现异常
+//        if (1 == 1) {
+//            throw new Exception("测试异常");
+//        }
 
     }
 }
