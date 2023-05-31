@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
 * @author Mr.Liu
 * @email yxml2580@163.com
-* @createDate 2023-05-24 19:43:07
+* @createDate 2023-05-31 19:26:06
 */
 
 
@@ -45,7 +45,7 @@ public class TicketSaveReq {
      */
     @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     @NotNull(message = "【日期】不能为空")
-    private Date date;
+    private Date trainDate;
 
     /**
      * 车次编号
@@ -63,19 +63,19 @@ public class TicketSaveReq {
      * 排号|01, 02
      */
     @NotBlank(message = "【排号】不能为空")
-    private String row;
+    private String seatRow;
 
     /**
      * 列号|枚举[SeatColEnum]
      */
     @NotBlank(message = "【列号】不能为空")
-    private String col;
+    private String seatCol;
 
     /**
      * 出发站
      */
     @NotBlank(message = "【出发站】不能为空")
-    private String start;
+    private String startStation;
 
     /**
      * 出发时间
@@ -88,7 +88,7 @@ public class TicketSaveReq {
      * 到达站
      */
     @NotBlank(message = "【到达站】不能为空")
-    private String end;
+    private String endStation;
 
     /**
      * 到站时间

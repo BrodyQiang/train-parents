@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 /**
 * @author Mr.Liu
 * @email yxml2580@163.com
-* @createDate 2023-05-24 19:43:07
+* @createDate 2023-05-31 19:26:06
 */
 
 
@@ -43,7 +43,7 @@ public class TicketQueryRes {
      * 日期
      */
     @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
-    private Date date;
+    private Date trainDate;
 
     /**
      * 车次编号
@@ -58,17 +58,17 @@ public class TicketQueryRes {
     /**
      * 排号|01, 02
      */
-    private String row;
+    private String seatRow;
 
     /**
      * 列号|枚举[SeatColEnum]
      */
-    private String col;
+    private String seatCol;
 
     /**
      * 出发站
      */
-    private String start;
+    private String startStation;
 
     /**
      * 出发时间
@@ -79,7 +79,7 @@ public class TicketQueryRes {
     /**
      * 到达站
      */
-    private String end;
+    private String endStation;
 
     /**
      * 到站时间
