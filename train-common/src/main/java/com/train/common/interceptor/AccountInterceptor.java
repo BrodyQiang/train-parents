@@ -26,6 +26,7 @@ public class AccountInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //获取header的token参数
         String accessToken = request.getHeader("accessToken");
+        LOG.info("开始获取header的token参数：{}", accessToken);
         if (StrUtil.isNotBlank(accessToken)) {
             LOG.info("获取账号登录accessToken：{}", accessToken);
             JSONObject loginAccount = JwtUtil.getJSONObject(accessToken);
@@ -33,6 +34,7 @@ public class AccountInterceptor implements HandlerInterceptor {
             AccountLoginRes member = JSONUtil.toBean(loginAccount, AccountLoginRes.class);
             LoginAccountContext.setAccount(member);
         }
+        LOG.info("结束并把信息已经放到本地变量中,存放的登录账号信息：{}", LoginAccountContext.getAccount());
         return true;
     }
 

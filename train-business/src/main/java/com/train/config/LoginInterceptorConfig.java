@@ -20,11 +20,12 @@ public class LoginInterceptorConfig implements WebMvcConfigurer {
    public void addInterceptors(InterceptorRegistry registry) {
        registry.addInterceptor(logInterceptor);
 
+       // server.servlet.context-path 不要配置 需要排除的路径 是不能加上 context-path 的 不然会导致拦截器排除的路径不生效
        registry.addInterceptor(accountInterceptor)
                .addPathPatterns("/**")
                .excludePathPatterns(
-                       "/system/management/account/login",
-                       "/system/management/account/rendCode"
+                       "/account/login",
+                       "/account/rendCode"
                );
    }
 }
