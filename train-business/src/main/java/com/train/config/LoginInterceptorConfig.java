@@ -24,8 +24,7 @@ public class LoginInterceptorConfig implements WebMvcConfigurer {
        registry.addInterceptor(accountInterceptor)
                .addPathPatterns("/**")
                .excludePathPatterns(
-                       "/account/login",
-                       "/account/rendCode"
+                       "/admin/business/test"
                );
    }
 }
