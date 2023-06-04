@@ -12,7 +12,6 @@ import com.train.common.util.SnowUtil;
 import com.train.domain.Ticket;
 import com.train.domain.TicketExample;
 import com.train.mapper.TicketMapper;
-import io.seata.core.context.RootContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +41,7 @@ public class TicketService {
      */
     public void save(AccountTicketReq bean) {
 
-        LOG.info("seata全局事务ID save: {}", RootContext.getXID());
+        //LOG.info("seata全局事务ID save: {}", RootContext.getXID());
 
         Ticket ticket = BeanUtil.copyProperties(bean, Ticket.class);
         // 当前时间

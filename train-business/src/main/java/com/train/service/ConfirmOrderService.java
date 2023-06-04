@@ -104,6 +104,8 @@ public class ConfirmOrderService {
      * 确认订单
      *
      * @param bean
+     *
+     * synchronized 多节点的时候 会超卖 但是这里是单节点的情况下，不会超卖
      */
     public void doConfirm(ConfirmOrderSaveReq bean) {
         //省略业务数据校验，如：车次是否存在，余票是否存在，车次是否在有效期内，tickets条数>0，同乘客同车次是否已买过

@@ -12,13 +12,10 @@ import com.train.enums.ConfirmOrderStatusEnum;
 import com.train.mapper.ConfirmOrderMapper;
 import com.train.mapper.DailyTrainSeatMapper;
 import com.train.mapper.myMapper.MyMapperConfirmOrderMapper;
-import io.seata.core.context.RootContext;
-import io.seata.spring.annotation.GlobalTransactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -58,9 +55,9 @@ public class AfterConfirmOrderService {
      * 更新确认订单为成功
      */
 //    @Transactional
-    @GlobalTransactional
+//    @GlobalTransactional
     public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> tickets, ConfirmOrder confirmOrder) throws Exception {
-        LOG.info("seata全局事务ID: {}", RootContext.getXID());
+        //LOG.info("seata全局事务ID: {}", RootContext.getXID());
         AtomicInteger index = new AtomicInteger(); // 用于记录当前下标
         finalSeatList.forEach(pp -> {
             // 创建新的座位对象 做shell的修改

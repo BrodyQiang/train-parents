@@ -253,7 +253,7 @@ accessToken: {{accessToken}}
 
 {
   "trainCode": "D1",
-  "date": "2023-05-29",
+  "date": "2023-06-04",
   "start": "上海",
   "end": "郑州",
   "tickets": [
@@ -278,8 +278,15 @@ accessToken: {{accessToken}}
 
 ###
 
+# 火车生成某日的座位信息接口调试
+GET http://localhost:10001/business/admin/dailyTrain/genDaily/2023-06-04
+Content-Type: application/json
 
+###
 
+# 查询火车某日的座位信息
+GET http://localhost:10001/business/admin/dailyTrainTicket/queryList?pageNum=1&pageSize=30&trainCode=D1&date=2023-06-04
+###
 
 
 

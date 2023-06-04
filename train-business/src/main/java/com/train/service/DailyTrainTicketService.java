@@ -74,7 +74,7 @@ public class DailyTrainTicketService {
 
     }
 
-    @Cacheable(value = "dailyTrainTicket.queryList") // 缓存
+    //@Cacheable(value = "dailyTrainTicket.queryList") // 缓存
     public DBPages<DailyTrainTicketQueryRes> queryList(DailyTrainTicketQueryReq bean) {
 
         // 常见的缓存过期策略
