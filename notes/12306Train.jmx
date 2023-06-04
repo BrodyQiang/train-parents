@@ -86,7 +86,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -113,14 +113,14 @@
         &quot;passengerName&quot;: &quot;test&quot;,&#xd;
         &quot;passengerIdCard&quot;: &quot;123321&quot;,&#xd;
         &quot;seatTypeCode&quot;: &quot;02&quot;,&#xd;
-        &quot;seat&quot;: &quot;A1&quot;&#xd;
+        &quot;seat&quot;: &quot;&quot;&#xd;
         },{&#xd;
         &quot;passengerId&quot;: &quot;1652216014135496704&quot;,&#xd;
         &quot;passengerType&quot;: &quot;02&quot;,&#xd;
         &quot;passengerName&quot;: &quot;tes11t&quot;,&#xd;
         &quot;passengerIdCard&quot;: &quot;123321111&quot;,&#xd;
         &quot;seatTypeCode&quot;: &quot;02&quot;,&#xd;
-        &quot;seat&quot;: &quot;C1&quot;&#xd;
+        &quot;seat&quot;: &quot;&quot;&#xd;
         }],&#xd;
   &quot;dailyTrainTicketId&quot;: &quot;01&quot;&#xd;
 &#xd;

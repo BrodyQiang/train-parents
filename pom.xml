@@ -67,6 +67,7 @@
         <pagehelper-spring-boot-starter.version>1.2.10</pagehelper-spring-boot-starter.version>
         <common.version>0.0.1-SNAPSHOT</common.version>
         <spring-plugin-core.version>2.0.0.RELEASE</spring-plugin-core.version>
+        <redisson.version>3.13.5</redisson.version>
     </properties>
 
 
@@ -247,6 +248,14 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+
+            <!--至少3.18.0版本，才支持spring boot 3-->
+            <!--升级到3.20.0，否则打包生产会报错：Could not initialize class org.redisson.spring.data.connection.RedissonConnection-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
 
 <!--            <dependency>-->
