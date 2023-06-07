@@ -1,5 +1,6 @@
 package com.train.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.train.common.feign.AccountFeignTicket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -29,6 +30,13 @@ public class TestController {
     public String test() {
         String test = accountFeignTicket.test();
         return "Holle World ---------------测试feign调用" + nacos + test;
+    }
+
+    @SentinelResource("hello")
+    @GetMapping("/hello")
+    public String hello() throws InterruptedException {
+        // Thread.sleep(500);
+        return "Hello World! Business!";
     }
 
 }
