@@ -8,6 +8,7 @@ import cn.hutool.core.util.EnumUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.ConfirmOrderQueryReq;
@@ -115,6 +116,7 @@ public class ConfirmOrderService {
      *
      * @param bean synchronized 多节点的时候 会超卖 但是这里是单节点的情况下，不会超卖
      */
+    @SentinelResource("doConfirm")
     public void doConfirm(ConfirmOrderSaveReq bean) {
 
         String lockKey = DateUtil.formatDate(bean.getDate()) + "-" + bean.getTrainCode();
