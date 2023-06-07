@@ -2,6 +2,7 @@ package com.train.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.train.common.feign.AccountFeignTicket;
+import com.train.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -19,6 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope // 动态刷新配置
 public class TestController {
 
+    @Autowired
+    private TestService testService;
+
+
     @Value("${test.nacos}")
     private String nacos;
 
@@ -35,8 +40,15 @@ public class TestController {
     @SentinelResource("hello")
     @GetMapping("/hello")
     public String hello() throws InterruptedException {
-        // Thread.sleep(500);
+        testService.hello2();
         return "Hello World! Business!";
+    }
+
+    @SentinelResource("hello1")
+    @GetMapping("/hello1")
+    public String hello1() throws InterruptedException {
+        testService.hello2();
+        return "Hello World! Business1!";
     }
 
 }
