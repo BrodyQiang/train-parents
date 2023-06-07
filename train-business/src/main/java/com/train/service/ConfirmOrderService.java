@@ -9,6 +9,7 @@ import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.train.bean.request.ConfirmOrderQueryReq;
@@ -116,7 +117,7 @@ public class ConfirmOrderService {
      *
      * @param bean synchronized 多节点的时候 会超卖 但是这里是单节点的情况下，不会超卖
      */
-    @SentinelResource("doConfirm")
+    @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
     public void doConfirm(ConfirmOrderSaveReq bean) {
 
         String lockKey = DateUtil.formatDate(bean.getDate()) + "-" + bean.getTrainCode();
@@ -482,5 +483,16 @@ public class ConfirmOrderService {
                 }
             }
         }
+    }
+
+
+    /**
+     * 降级方法，需包含限流方法的所有参数和BlockException参数
+     * @param bean
+     * @param e
+     */
+    public void doConfirmBlock(ConfirmOrderSaveReq bean, BlockException e) {
+        LOG.info("购票请求被限流：{}", bean);
+        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
     }
 }
