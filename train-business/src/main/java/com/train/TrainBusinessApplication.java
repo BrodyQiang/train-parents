@@ -34,9 +34,9 @@ public class TrainBusinessApplication {
         System.out.println("-----项目启动成功-----");
         System.out.printf("业务模块地址: \thttp://127.0.0.1:%s \n", env.getProperty("server.port"));
         // 限流规则
-        initFlowRules();
-        LOG.info("已定义限流规则");
-        System.out.println("已定义限流规则");
+//        initFlowRules();
+//        LOG.info("已定义限流规则");
+//        System.out.println("已定义限流规则");
     }
 
     private static void initFlowRules() {
