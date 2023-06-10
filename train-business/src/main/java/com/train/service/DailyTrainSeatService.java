@@ -138,6 +138,17 @@ public class DailyTrainSeatService {
 
     /***
      * @author Mr.Liu
+     * @date 2023/6/10 17:37
+     * @param date  日期
+     * @param trainCode  车次
+     * @return int
+     */
+    public int countSeat(Date date, String trainCode) {
+        return countSeat(date, trainCode, null);
+    }
+
+    /***
+     * @author Mr.Liu
      * @date 2023/5/14 20:33
      * @param date 日期
      * @param trainCode 车次
@@ -146,7 +157,12 @@ public class DailyTrainSeatService {
      */
     public int countSeat(Date date, String trainCode, String seatType) {
         DailyTrainSeatExample example = new DailyTrainSeatExample();
-        example.createCriteria().andDateEqualTo(date).andTrainCodeEqualTo(trainCode).andSeatTypeEqualTo(seatType);
+        DailyTrainSeatExample.Criteria criteria = example.createCriteria();
+        criteria.andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode);
+        if (StrUtil.isNotBlank(seatType)) {
+            criteria.andSeatTypeEqualTo(seatType);
+        }
         long count = mapper.countByExample(example);
         if (count == 0L) {
             return -1;

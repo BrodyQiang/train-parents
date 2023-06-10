@@ -53,6 +53,9 @@ public class DailyTrainService {
     @Autowired
     private DailyTrainTicketService dailyTrainTicketService;
 
+    @Autowired
+    private SkTokenService skTokenService;
+
     public void save(DailyTrainSaveReq bean) {
 
         DailyTrain dailyTrain = BeanUtil.copyProperties(bean, DailyTrain.class);
@@ -162,5 +165,8 @@ public class DailyTrainService {
 
         // 生成当天的余票信息
         dailyTrainTicketService.genDaily(dailyTrain, date, train.getCode());
+
+        // 生成令牌余量数据
+        skTokenService.genDaily(date, train.getCode());
     }
 }

@@ -128,4 +128,16 @@ public class DailyTrainStationService {
         });
         LOG.info("生成某天的车站信息完成，date:{},trainCode:{}", DateUtil.formatDate(date), trainCode);
     }
+
+    /***
+     * @author Mr.Liu
+     * @date 2023/6/10 17:43
+     * @param trainCode 车次号
+     * @return long  按车次查询全部车站
+     */
+    public long countByTrainCode(String trainCode) {
+        DailyTrainStationExample example = new DailyTrainStationExample();
+        example.createCriteria().andTrainCodeEqualTo(trainCode);
+        return mapper.countByExample(example);
+    }
 }
