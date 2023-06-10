@@ -23,6 +23,7 @@ import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
 import com.train.domain.*;
 import com.train.enums.ConfirmOrderStatusEnum;
+import com.train.enums.RedisKeyPreEnum;
 import com.train.enums.SeatColEnum;
 import com.train.enums.SeatTypeEnum;
 import com.train.mapper.ConfirmOrderMapper;
@@ -133,7 +134,7 @@ public class ConfirmOrderService {
         }
 
         // 购票
-        String lockKey = DateUtil.formatDate(bean.getDate()) + "-" + bean.getTrainCode();
+        String lockKey = RedisKeyPreEnum.CONFIRM_ORDER + "-" + DateUtil.formatDate(bean.getDate()) + "-" + bean.getTrainCode();
 //        Boolean setIfAbsent = redisTemplate.opsForValue().setIfAbsent(lockKey, lockKey, 5, TimeUnit.SECONDS);
 //        if (Boolean.TRUE.equals(setIfAbsent)) { setnx
 //            LOG.info("恭喜，抢到锁了！lockKey：{}", lockKey);

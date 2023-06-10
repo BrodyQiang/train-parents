@@ -4,5 +4,5 @@ import java.util.Date;
 
 public interface MyMapperSkTokenMapper {
 
-    int decrease(Date date, String trainCode);
+    int decrease(Date date, String trainCode, int decreaseCount);
 }

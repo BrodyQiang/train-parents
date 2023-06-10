@@ -133,11 +133,12 @@ public class DailyTrainStationService {
      * @author Mr.Liu
      * @date 2023/6/10 17:43
      * @param trainCode 车次号
+     * @param date 日期
      * @return long  按车次查询全部车站
      */
-    public long countByTrainCode(String trainCode) {
+    public long countByTrainCode(Date date,String trainCode) {
         DailyTrainStationExample example = new DailyTrainStationExample();
-        example.createCriteria().andTrainCodeEqualTo(trainCode);
+        example.createCriteria().andDateEqualTo(date).andTrainCodeEqualTo(trainCode);
         return mapper.countByExample(example);
     }
 }
