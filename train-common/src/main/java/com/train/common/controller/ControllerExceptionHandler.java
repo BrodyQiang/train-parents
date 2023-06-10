@@ -67,4 +67,16 @@ public class ControllerExceptionHandler {
         return DBResult.fail(e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList()).toString());
     }
 
+    /**
+     * 校验异常统一处理
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(value = RuntimeException.class)
+    @ResponseBody
+    public DBResult exceptionHandler(RuntimeException e) {
+        throw e;
+    }
+
+
 }

@@ -1,5 +1,6 @@
 package com.train.controller;
 
+import cn.hutool.core.util.RandomUtil;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.train.common.feign.AccountFeignTicket;
 import com.train.service.TestService;
@@ -32,6 +33,10 @@ public class TestController {
 
     @GetMapping("/test")
     public String test() {
+        int i = RandomUtil.randomInt(1, 10);
+        if (i <= 2) {
+            throw new RuntimeException("测试异常");
+        }
         //String test = accountFeignTicket.test();
         return "Holle World ---------------测试feign调用" + nacos /*+ test*/;
     }
