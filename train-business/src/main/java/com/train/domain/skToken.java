@@ -2,7 +2,7 @@ package com.train.domain;
 
 import java.util.Date;
 
-public class skToken {
+public class SkToken {
     private Long id;
 
     private Date date;

@@ -1,30 +1,30 @@
 package com.train.mapper;
 
-import com.train.domain.skToken;
-import com.train.domain.skTokenExample;
+import com.train.domain.SkToken;
+import com.train.domain.SkTokenExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface skTokenMapper {
-    long countByExample(skTokenExample example);
+public interface SkTokenMapper {
+    long countByExample(SkTokenExample example);
 
-    int deleteByExample(skTokenExample example);
+    int deleteByExample(SkTokenExample example);
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(skToken record);
+    int insert(SkToken record);
 
-    int insertSelective(skToken record);
+    int insertSelective(SkToken record);
 
-    List<skToken> selectByExample(skTokenExample example);
+    List<SkToken> selectByExample(SkTokenExample example);
 
-    skToken selectByPrimaryKey(Long id);
+    SkToken selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") skToken record, @Param("example") skTokenExample example);
+    int updateByExampleSelective(@Param("record") SkToken record, @Param("example") SkTokenExample example);
 
-    int updateByExample(@Param("record") skToken record, @Param("example") skTokenExample example);
+    int updateByExample(@Param("record") SkToken record, @Param("example") SkTokenExample example);
 
-    int updateByPrimaryKeySelective(skToken record);
+    int updateByPrimaryKeySelective(SkToken record);
 
-    int updateByPrimaryKey(skToken record);
+    int updateByPrimaryKey(SkToken record);
 }

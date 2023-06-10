@@ -4,14 +4,14 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
-import com.train.bean.request.skTokenQueryReq;
-import com.train.bean.request.skTokenSaveReq;
-import com.train.bean.response.skTokenQueryRes;
+import com.train.bean.request.SkTokenQueryReq;
+import com.train.bean.request.SkTokenSaveReq;
+import com.train.bean.response.SkTokenQueryRes;
 import com.train.common.response.DBPages;
 import com.train.common.util.SnowUtil;
-import com.train.domain.skToken;
-import com.train.domain.skTokenExample;
-import com.train.mapper.skTokenMapper;
+import com.train.domain.SkToken;
+import com.train.domain.SkTokenExample;
+import com.train.mapper.SkTokenMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,18 +20,18 @@ import java.util.List;
 /**
  * @author Mr.Liu
  * @email yxml2580@163.com
- * @createDate 2023-06-10 17:31:43
+ * @createDate 2023-06-10 17:41:31
  */
 
 @Service
-public class skTokenService {
+public class SkTokenService {
 
     @Autowired
-    private skTokenMapper mapper;
+    private SkTokenMapper mapper;
 
-    public void save(skTokenSaveReq bean) {
+    public void save(SkTokenSaveReq bean) {
 
-        skToken skToken = BeanUtil.copyProperties(bean, skToken.class);
+        SkToken skToken = BeanUtil.copyProperties(bean, SkToken.class);
 
         // 当前时间
         DateTime now = DateTime.now();
@@ -51,17 +51,17 @@ public class skTokenService {
 
     }
 
-    public DBPages<skTokenQueryRes> queryList(skTokenQueryReq bean) {
+    public DBPages<SkTokenQueryRes> queryList(SkTokenQueryReq bean) {
 
-        skTokenExample example = new skTokenExample();
-        skTokenExample.Criteria criteria = example.createCriteria();
+        SkTokenExample example = new SkTokenExample();
+        SkTokenExample.Criteria criteria = example.createCriteria();
 
         // 分页
         PageHelper.startPage(bean.getPageNum(), bean.getPageSize());
 
-        List<skToken> list = mapper.selectByExample(example);
+        List<SkToken> list = mapper.selectByExample(example);
 
-        List<skTokenQueryRes> result = BeanUtil.copyToList(list, skTokenQueryRes.class);
+        List<SkTokenQueryRes> result = BeanUtil.copyToList(list, SkTokenQueryRes.class);
 
         return DBPages.restPage(result);
     }

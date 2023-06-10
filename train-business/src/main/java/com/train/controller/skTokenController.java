@@ -1,11 +1,11 @@
 package com.train.controller;
 
-import com.train.bean.request.skTokenQueryReq;
-import com.train.bean.request.skTokenSaveReq;
-import com.train.bean.response.skTokenQueryRes;
+import com.train.bean.request.SkTokenQueryReq;
+import com.train.bean.request.SkTokenSaveReq;
+import com.train.bean.response.SkTokenQueryRes;
 import com.train.common.response.DBPages;
 import com.train.common.response.DBResult;
-import com.train.service.skTokenService;
+import com.train.service.SkTokenService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,25 +15,25 @@ import javax.validation.Valid;
 /**
 * @author Mr.Liu
 * @email yxml2580@163.com
-* @createDate 2023-06-10 17:31:43
+* @createDate 2023-06-10 17:41:31
 */
 
 @RestController
 @RequestMapping("/skToken")
-@Api(value = "skTokenController", tags = "")
-public class skTokenController {
+@Api(value = "SkTokenController", tags = "")
+public class SkTokenController {
 
     @Autowired
-    private skTokenService service;
+    private SkTokenService service;
 
     @PostMapping("/save")
-    public DBResult save(@RequestBody @Valid skTokenSaveReq bean) {
+    public DBResult save(@RequestBody @Valid SkTokenSaveReq bean) {
         service.save(bean);
         return DBResult.success();
     }
 
     @GetMapping("/queryList")
-    public DBPages<skTokenQueryRes> queryList(@Valid skTokenQueryReq bean) {
+    public DBPages<SkTokenQueryRes> queryList(@Valid SkTokenQueryReq bean) {
         return service.queryList(bean);
     }
 
