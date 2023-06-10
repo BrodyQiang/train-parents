@@ -71,6 +71,9 @@ public class ConfirmOrderService {
     @Autowired
     private RedissonClient redissonClient;
 
+    @Autowired
+    private  SkTokenService skTokenService;
+
     public void save(ConfirmOrderSaveReq bean) {
 
         ConfirmOrder confirmOrder = BeanUtil.copyProperties(bean, ConfirmOrder.class);
@@ -120,6 +123,16 @@ public class ConfirmOrderService {
     @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
     public void doConfirm(ConfirmOrderSaveReq bean) {
 
+        // 校验令牌余量
+        boolean validSkToken = skTokenService.validSkToken(bean.getDate(), bean.getTrainCode(), LoginAccountContext.getId());
+        if (validSkToken) {
+            LOG.info("令牌校验通过");
+        } else {
+            LOG.info("令牌校验不通过");
+            throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_SK_TOKEN_FAIL);
+        }
+
+        // 购票
         String lockKey = DateUtil.formatDate(bean.getDate()) + "-" + bean.getTrainCode();
 //        Boolean setIfAbsent = redisTemplate.opsForValue().setIfAbsent(lockKey, lockKey, 5, TimeUnit.SECONDS);
 //        if (Boolean.TRUE.equals(setIfAbsent)) { setnx
