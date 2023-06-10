@@ -30,11 +30,10 @@ public class TestController {
     @Autowired
     private AccountFeignTicket accountFeignTicket;
 
-
     @GetMapping("/test")
     public String test() {
-        String test = accountFeignTicket.test();
-        return "Holle World ---------------测试feign调用" + nacos + test;
+        //String test = accountFeignTicket.test();
+        return "Holle World ---------------测试feign调用" + nacos /*+ test*/;
     }
 
     @SentinelResource("hello")

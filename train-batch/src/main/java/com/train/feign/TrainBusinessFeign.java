@@ -1,6 +1,7 @@
 package com.train.feign;
 
 import com.train.common.response.DBResult;
+import com.train.feign.impl.BusinessFeignFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,7 @@ import java.util.Date;
  * @createDate 2023/5/14 12:18
  */
 //@FeignClient(name = "train-business", url = "http://127.0.0.1:10005/business") // 指定服务名 + url(使用哪个地址) 时，name属性必须指定，否则会报错
-@FeignClient(name = "train-business") // 指定服务名
+@FeignClient(name = "train-business" ,fallback = BusinessFeignFallback.class) // 指定服务名
 public interface TrainBusinessFeign {
 
     String BASE_URL = "/business";
