@@ -68,6 +68,7 @@
         <common.version>0.0.1-SNAPSHOT</common.version>
         <spring-plugin-core.version>2.0.0.RELEASE</spring-plugin-core.version>
         <redisson.version>3.13.5</redisson.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
     </properties>
 
 
@@ -263,6 +264,13 @@
 <!--                <artifactId>feigen-jackson</artifactId>-->
 <!--                <version>${feigin.jackson.version}</version>-->
 <!--            </dependency>-->
+
+            <!-- 图形验证码 升级到JDK17后，排除掉javax.servlet-api包 -->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

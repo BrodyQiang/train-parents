@@ -23,6 +23,7 @@ public class LoginAccountFilter implements Ordered, GlobalFilter {
         // 排除不需要拦截的请求
         if (path.contains("/admin")
                 || path.contains("/system/management/account/login")
+                || path.contains("/kaptcha")
                 || path.contains("/system/management/account/rendCode")) {
             LOG.info("不需要登录验证：{}", path);
             return chain.filter(exchange);

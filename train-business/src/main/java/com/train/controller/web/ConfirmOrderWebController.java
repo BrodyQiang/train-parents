@@ -12,6 +12,8 @@ import io.swagger.annotations.Api;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,9 +37,29 @@ public class ConfirmOrderWebController {
     @Autowired
     private ConfirmOrderService service;
 
+    @Autowired
+    private StringRedisTemplate redisTemplate;
+
     @PostMapping("/doConfirm")
     @SentinelResource(value = "confirmOrderDoConfirm", blockHandler = "doConfirmBlock")
     public DBResult doConfirm(@RequestBody @Valid ConfirmOrderSaveReq bean) {
+
+        // 图形验证码校验
+        String imageCodeToken = bean.getImageCodeToken();
+        String imageCode = bean.getImageCode();
+        String imageCodeRedis = redisTemplate.opsForValue().get(imageCodeToken);
+        LOG.info("从redis中获取到的验证码：{}", imageCodeRedis);
+        if (ObjectUtils.isEmpty(imageCodeRedis)) {
+            return DBResult.fail("验证码已过期");
+        }
+        // 验证码校验，大小写忽略，提升体验，比如Oo Vv Ww容易混
+        if (!imageCodeRedis.equalsIgnoreCase(imageCode)) {
+            return DBResult.fail("验证码不正确");
+        } else {
+            // 验证通过后，移除验证码
+            redisTemplate.delete(imageCodeToken);
+        }
+
         service.doConfirm(bean);
         return DBResult.success();
     }

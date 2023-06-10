@@ -272,7 +272,9 @@ accessToken: {{accessToken}}
         "seatTypeCode": "02",
         "seat": "C1"
         }],
-  "dailyTrainTicketId": "01"
+  "dailyTrainTicketId": "01",
+  "imageCode": "7c5n",
+  "imageCodeToken": "123"
 
 }
 
@@ -286,6 +288,10 @@ Content-Type: application/json
 
 # 查询火车某日的座位信息
 GET http://localhost:10001/business/admin/dailyTrainTicket/queryList?pageNum=1&pageSize=30&trainCode=D1&date=2023-06-04
+###
+
+# 查询图验证码接口
+GET http://localhost:10001/business/kaptcha/image-code/123
 ###
 
 
