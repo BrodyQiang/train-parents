@@ -59,8 +59,8 @@
                 <version>1.4.0</version>
                 <configuration>
                     <!--配置文件 生成那个表  那个数据库 生成到哪里 都是在这个.xml文件中的-->
-                    <configurationFile>src/main/resources/generator-config-train-system-management.xml</configurationFile>
-<!--                    <configurationFile>src/main/resources/generator-config-train-business.xml</configurationFile>-->
+<!--                    <configurationFile>src/main/resources/generator-config-train-system-management.xml</configurationFile>-->
+                    <configurationFile>src/main/resources/generator-config-train-business.xml</configurationFile>
 <!--                    <configurationFile>src/main/resources/generator-config-train-batch.xml</configurationFile>-->
                     <overwrite>true</overwrite>
                     <verbose>true</verbose>
